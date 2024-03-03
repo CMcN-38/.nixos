@@ -1,3 +1,15 @@
+#
+#b.             8  8 8888 `8.`8888.      ,8'  ,o888888o.       d888888o.
+#888o.          8  8 8888  `8.`8888.    ,8'. 8888     `88.   .`8888:' `88.
+#Y88888o.       8  8 8888   `8.`8888.  ,8',8 8888       `8b  8.`8888.   Y8
+#.`Y888888o.    8  8 8888    `8.`8888.,8' 88 8888        `8b `8.`8888.
+#8o. `Y888888o. 8  8 8888     `8.`88888'  88 8888         88  `8.`8888.
+#8`Y8o. `Y88888o8  8 8888     .88.`8888.  88 8888         88   `8.`8888.
+#8   `Y8o. `Y8888  8 8888    .8'`8.`8888. 88 8888        ,8P    `8.`8888.
+#8      `Y8o. `Y8  8 8888   .8'  `8.`8888.`8 8888       ,8P 8b   `8.`8888.
+#8         `Y8o.`  8 8888  .8'    `8.`8888.` 8888     ,88'  `8b.  ;8.`8888
+#8            `Yo  8 8888 .8'      `8.`8888.  `8888888P'     `Y8888P ,88P'
+#
 # Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
@@ -18,6 +30,7 @@
     ../pkgs/serv-pkgs.nix
     ../pkgs/term-pkgs.nix
     ../pkgs/wm-pkgs.nix
+    ../pkgs/fonts.nix
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -89,19 +102,6 @@
     shell = pkgs.zsh;
     extraGroups = ["wheel"]; # Enable ‘sudo’ for the user.
   };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["FiraCode"];})
-    fira-code-symbols
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    openmoji-color
-    freefont_ttf
-  ];
 
   xdg.portal.enable = true;
   # xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
