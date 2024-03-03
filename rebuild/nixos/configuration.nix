@@ -12,6 +12,12 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+
+    # Packages:
+    ../pkgs/gui-pkgs.nix
+    ../pkgs/serv-pkgs.nix
+    ../pkgs/term-pkgs.nix
+    ../pkgs/wm-pkgs.nix
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -82,53 +88,10 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     extraGroups = ["wheel"]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-      firefox
-      discord
-      steam
-      thunderbird
-      cider
-      obsidian
-    ];
   };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    wget
-    git
-    neovim
-    alacritty
-    nwg-look
-    swww
-    waybar
-    logiops
-    bluez
-    blueman
-    networkmanagerapplet
-    wireguard-tools
-    swaynotificationcenter
-    libnotify
-    xfce.thunar
-    wofi
-    zoxide
-    pavucontrol
-    starship
-    gh
-    vim
-    docker
-    grim
-    slurp
-    swappy
-    alejandra
-    fzf
-    mpv
-    lazygit
-    btop
-    (python3.withPackages (python-pkgs: [
-      python-pkgs.requests
-    ]))
-  ];
 
   fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["FiraCode"];})
