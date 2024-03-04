@@ -1,23 +1,5 @@
-warning: Git tree '/home/cameron/.nixos' is dirty
-error:
-       … while calling the 'seq' builtin
-
-         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:322:18:
-
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-
-         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:261:9:
-
-          260|       checkUnmatched =
-          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
-             |         ^
-          262|           let
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: getting status of '/nix/store/favawvprlir5ld9i6zhgaibydq9rqxfi-source/nixos': No such file or directory
+activating the configuration...
+setting up /etc...
+reloading user units for cameron...
+restarting sysinit-reactivation.target
+ dirty
