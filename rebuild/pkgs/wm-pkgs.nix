@@ -20,7 +20,13 @@
 # ╚══╝╚══╝ ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
 #                                                                                          
 
-{ pkgs, ... } : {
+{config, pkgs, ... } : {
+
+#            ┓
+#┏┓┏┓┏┓┏┓┏┓┏┓┃
+#┗┫┗ ┛┗┗ ┛ ┗┻┗
+# ┛           
+
     environment.systemPackages = with pkgs; [ 
                 pavucontrol
 
@@ -35,4 +41,17 @@
                 wofi
                 xfce.thunar        
         ];
+
+#┓       ┓     ┓
+#┣┓┓┏┏┓┏┓┃┏┓┏┓┏┫
+#┛┗┗┫┣┛┛ ┗┗┻┛┗┗┻
+#   ┛┛          
+
+    programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
+    xdg.portal.enable = true;
+    xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+    
 }

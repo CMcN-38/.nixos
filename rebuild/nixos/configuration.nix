@@ -10,9 +10,14 @@
 #8         `Y8o.`  8 8888  .8'    `8.`8888.` 8888     ,88'  `8b.  ;8.`8888
 #8            `Yo  8 8888 .8'      `8.`8888.  `8888888P'     `Y8888P ,88P'
 #
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
+#
+# ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ ██╗   ██╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+#██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ ██║   ██║██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+#██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗██║   ██║██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║
+#██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║██║   ██║██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+#╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝╚██████╔╝██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+# ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+#
 {
   config,
   lib,
@@ -20,6 +25,11 @@
   inputs,
   ...
 }: {
+  #•
+  #┓┏┳┓┏┓┏┓┏┓╋┏
+  #┗┛┗┗┣┛┗┛┛ ┗┛
+  #    ┛
+
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -33,68 +43,35 @@
     ../pkgs/fonts.nix
   ];
 
-  # Use the systemd-boot EFI boot loader.
+  #┓      ┓     ┓
+  #┣┓┏┓┏┓╋┃┏┓┏┓┏┫┏┓┏┓
+  #┗┛┗┛┗┛┗┗┗┛┗┻┗┻┗ ┛
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "targaryen"; # Define your hostname.
-  # Pick only one of the below networking options.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+  #  •         •
+  #┏┓┓┓┏  ┏┏┓╋╋┓┏┓┏┓┏
+  #┛┗┗┛┗  ┛┗ ┗┗┗┛┗┗┫┛
+  #                ┛
 
   # Set your time zone.
   time.timeZone = "Europe/London";
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Select internationalisation properties.
-  # i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  #   useXkbConfig = true; # use xkb.options in tty.
-  # };
-
+  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-  services.xserver.gdk-pixbuf.modulePackages = [pkgs.librsvg];
-  # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  # services.xserver.desktopManager.gnome.enable = true;
+  #            ┓ •
+  #┏┓┏┓╋┓┏┏┏┓┏┓┃┏┓┏┓┏┓
+  #┛┗┗ ┗┗┻┛┗┛┛ ┛┗┗┛┗┗┫
+  #                  ┛
 
-  # Configure keymap in X11
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  networking.hostName = "targaryen"; # Define your hostname.
 
-  programs.zsh.enable = true;
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable sound.
-  sound.enable = true;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
-  services.blueman.enable = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  #┓┏┏┏┓┏┓┏
+  #┗┻┛┗ ┛ ┛
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.cameron = {
@@ -103,9 +80,13 @@
     extraGroups = ["wheel"]; # Enable ‘sudo’ for the user.
   };
 
-  xdg.portal.enable = true;
-  # xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+  programs.zsh.enable = true;
+
+  # Enable CUPS to print documents.
+  # services.printing.enable = true;
+
+  # Enable touchpad support (enabled default in most desktopManager).
+  # services.xserver.libinput.enable = true;
 
   home-manager = {
     # also pass inputs to home-manager modules
@@ -115,29 +96,6 @@
     };
   };
 
-  programs.tmux = {
-    enable = true;
-    extraConfig = ''
-      set -g mouse on
-      set -g base-index 1
-      unbind C-b
-      set -g prefix C-h
-      bind C-h send-prefix
-      bind '"' split-window -v -c "#{pane_current_path}"
-      bind % split-window -h -c "#{pane_current_path}"
-      bind-key -T copy-mode-vi v send-keys -X begin-selection
-      bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
-      bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
-      bind-key -r i run-shell "tmux neww tmux-cht.sh"
-      run-shell ${pkgs.tmuxPlugins.sensible}/share/tmux-plugins/sensible/sensible.tmux
-      run-shell ${pkgs.tmuxPlugins.catppuccin}/share/tmux-plugins/catppuccin/catppuccin.tmux
-      run-shell ${pkgs.tmuxPlugins.yank}/share/tmux-plugins/yank/yank.tmux
-    '';
-  };
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
