@@ -41,6 +41,15 @@
                 vim
                 zoxide
         ];
+
+
+
+# ┓   ┓┓
+#┏┣┓┏┓┃┃
+#┛┛┗┗ ┗┗
+       
+        programs.zsh.enable = true;
+
         
 #╋┏┳┓┓┏┓┏
 #┗┛┗┗┗┻┛┗
