@@ -34,6 +34,7 @@
     lazygit
     mpv
     neovim
+    neofetch
     starship
     vim
     zoxide
