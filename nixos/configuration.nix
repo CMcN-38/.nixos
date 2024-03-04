@@ -112,9 +112,4 @@
       "cameron" = import ../home-manager/home.nix;
     };
   };
-
-  #programs.gnupg.agent = {
-  #  enable = true;
-  #  enableSSHSupport = true;
-  #};
 }
