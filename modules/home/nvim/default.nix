@@ -11,40 +11,40 @@
     vimdiffAlias = true;
 
     plugins = with pkgs.vimPlugins; [
-      vim-airline
-      vim-airline-themes
+      #vim-airline
+      #vim-airline-themes
 
       catppuccin-nvim
-      colorizer
+      #colorizer
 
-      cmp-nvim-lsp
-      friendly-snippets
-      cmp-buffer
-      fidget-nvim
-      cmp_luasnip
-      luasnip
-      nvim-cmp
+      #cmp-nvim-lsp
+      #friendly-snippets
+      #cmp-buffer
+      #fidget-nvim
+      #cmp_luasnip
+      #luasnip
+      #nvim-cmp
 
-      copilot-vim
+      #copilot-vim
 
       dashboard-nvim
-      nvim-web-devicons
+      #nvim-web-devicons
 
-      harpoon
+      #harpoon
 
-      indent-blankline-nvim
+      #indent-blankline-nvim
 
-      mason-nvim
-      mason-lspconfig-nvim
-      nvim-lspconfig
+      #mason-nvim
+      #mason-lspconfig-nvim
+      #nvim-lspconfig
 
-      neo-tree-nvim
-      plenary-nvim
-      nui-nvim
+      #neo-tree-nvim
+      #plenary-nvim
+      #nui-nvim
 
-      none-ls-nvim
+      #none-ls-nvim
 
-      tagbar
+      #tagbar
 
       telescope-nvim
       telescope-ui-select-nvim
@@ -60,11 +60,11 @@
         ]);
       }
 
-      vim-be-good
+      #vim-be-good
 
-      vim-commentary
+      #vim-commentary
 
-      which-key-nvim
+      #which-key-nvim
     ];
 
     extraLuaConfig = ''
