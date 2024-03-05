@@ -1,7 +1,6 @@
-return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
-	},
+	}
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
@@ -10,7 +9,7 @@ return {
 			"hrsh7th/cmp-buffer",
 			"j-hui/fidget.nvim",
 		},
-	},
+	}
 	{
 		"hrsh7th/nvim-cmp",
 		config = function()
@@ -44,5 +43,4 @@ return {
 				}),
 			})
 		end,
-	},
-}
+	}

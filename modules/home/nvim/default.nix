@@ -11,6 +11,20 @@
     vimdiffAlias = true;
 
     plugins = with pkgs.vimPlugins; [
+      vim-airline
+      vim-airline-themes
+
+      catppuccin-nvim
+      colorizer
+
+      cmp-nvim-lsp
+      luasnip
+      nvim-cmp
+
+      copilot-vim
+
+      dashboard-nvim
+      nvim-web-devicons
     ];
 
     extraLuaConfig = ''

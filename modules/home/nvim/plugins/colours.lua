@@ -1,4 +1,3 @@
-return {
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
@@ -11,7 +10,7 @@ return {
                         --vim command for transparent background
                         vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
 		end,
-	},
+	}
 
 	{
 		"norcalli/nvim-colorizer.lua",
@@ -20,5 +19,4 @@ return {
                         vim.opt.termguicolors = true
 			require("colorizer").setup()
 		end,
-	},
-}
+	}
