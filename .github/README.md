@@ -31,5 +31,28 @@
 </div>
 
 <p align="center">
-    <img src="
+    <img src=https://github.com/CMcN-38/.nixos/blob/main/.github/assets/desktop_SS.png" width= "800px" /> <br>
 </p>
+
+## ⭐Features
+    ⚙️ - Fully Declarative OS
+    ❄️ - Inbuilt Flake Support
+    🐱 - Catppuccin Theming
+    🍚 - Clear Setting Separation
+    🪟 - Full Hyprland Setup
+
+
+## ⭕ TODO:
+    ✅ - Flake Support
+    ✅ - Add Headings
+    ☑️ - Further Modularise Packages
+    ☑️ - Configure Better Variables for Easy Adoption
+    ☑️ - Build in dotfiles 
+
+
+## 🩵 Thanks To
+[No Boilerplate](https://github.com/0atman) -
+[Vimjoyer](https://github.com/vimjoyer) -
+[Zaney](https://gitlab.com/Zaney) -
+[Libre Pheonix](https://github.com/librephoenix) -
+[Sioomy](https://github.com/sioodmy)
