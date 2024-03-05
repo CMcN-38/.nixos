@@ -1,4 +1,4 @@
-        "epwalsh/obsidian.nvim",
+{        "epwalsh/obsidian.nvim",
         version = "*",  -- recommended, use latest release instead of latest commit
         --lazy = false,
         -- ft = "markdown",
@@ -9,12 +9,6 @@
         --   "BufReadPre path/to/my-vault/**.md",
         --   "BufNewFile path/to/my-vault/**.md",
         -- },
-        dependencies = {
-                -- Required.
-                "nvim-lua/plenary.nvim",
-
-                -- see below for full list of optional dependencies
-        },
         opts = {
                 workspaces = {
                         {
@@ -28,4 +22,4 @@
 
         config = function()
                 vim.opt.conceallevel = 2
-        end,
+        end,}
