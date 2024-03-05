@@ -16,6 +16,7 @@ vim.o.mouse = ""
 
 --KEYMAPS
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 local map = vim.api.nvim_set_keymap
 map('n', '<C-t>', ':silent !tmux neww tmux-sessioniser<CR>', {noremap = true, silent = true})
 
