@@ -35,19 +35,19 @@
 </p>
 
 ## ⭐Features
-    ⚙️ - Fully Declarative OS
-    ❄️ - Inbuilt Flake Support
-    🐱 - Catppuccin Theming
-    🍚 - Clear Setting Separation
-    🪟 - Full Hyprland Setup
+⚙️ - Fully Declarative OS
+❄️ - Inbuilt Flake Support
+🐱 - Catppuccin Theming
+🍚 - Clear Setting Separation
+🪟 - Full Hyprland Setup
 
 
 ## ⭕ TODO:
-    ✅ - Flake Support
-    ✅ - Add Headings
-    ☑️ - Further Modularise Packages
-    ☑️ - Configure Better Variables for Easy Adoption
-    ☑️ - Build in dotfiles 
+✅ - Flake Support
+✅ - Add Headings
+☑️ - Further Modularise Packages
+☑️ - Configure Better Variables for Easy Adoption
+☑️ - Build in dotfiles 
 
 
 ## 🩵 Thanks To
