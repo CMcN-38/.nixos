@@ -18,6 +18,10 @@
       colorizer
 
       cmp-nvim-lsp
+      friendly-snippets
+      cmp-buffer
+      fidget-nvim
+      cmp_luasnip
       luasnip
       nvim-cmp
 
