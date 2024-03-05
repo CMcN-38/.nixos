@@ -14,8 +14,6 @@
     ];
 
     extraLuaConfig = ''
-      -- Lua Code Here
-
       ${builtins.readFile ./options.lua}
       ${builtins.readFile ./plugins/airline.lua}
       ${builtins.readFile ./plugins/colours.lua}
