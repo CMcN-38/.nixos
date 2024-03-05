@@ -69,6 +69,7 @@
 
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./plugins/harpoon.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
       ${builtins.readFile ./plugins/airline.lua}
       ${builtins.readFile ./plugins/neotree.lua}
@@ -84,7 +85,6 @@
       ${builtins.readFile ./plugins/vim-be-good.lua}
       ${builtins.readFile ./plugins/vim-commentary.lua}
       ${builtins.readFile ./plugins/which-key.lua}
-      ${builtins.readFile ./plugins/harpoon.lua}
     '';
   };
 }
