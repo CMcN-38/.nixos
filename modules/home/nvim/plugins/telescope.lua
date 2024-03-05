@@ -11,6 +11,7 @@ require("telescope").setup({
         },
 })
 require("telescope").load_extension("ui-select")
-vim.keymap.set("n", "<C-f>", telescope.builtin.find_files, {})
-vim.keymap.set("n", "<leader>fg", telescope.builtin.live_grep, {})
+local telescoper = require("telescope.builtin")
+vim.keymap.set("n", "<C-f>", telescoper.find_files, {})
+vim.keymap.set("n", "<leader>fg", telescoper.live_grep, {})
 
