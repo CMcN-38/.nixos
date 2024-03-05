@@ -31,7 +31,7 @@
 </div>
 
 <p align="center">
-    <img src=https://github.com/CMcN-38/.nixos/blob/main/.github/assets/desktop_SS.png" width= "800px" /> <br>
+    <img src="https://github.com/CMcN-38/.nixos/blob/main/.github/assets/desktop_SS.png" width= "800px" /> <br>
 </p>
 
 ## ⭐Features
