@@ -1,3 +1,1 @@
-config = function()
-	vim.keymap.set('n', '<leader>tb', ':TagbarToggle right<CR>', {})
-end
+vim.keymap.set('n', '<leader>tb', ':TagbarToggle right<CR>', {})

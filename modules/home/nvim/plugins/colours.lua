@@ -1,12 +1,8 @@
-config = function()
-	require("catppuccin").setup({
-		flavour = "mocha",
-	})
-	vim.cmd.colorscheme("catppuccin")
-	--vim command for transparent background
-	vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
-end
-config = function()
-	vim.opt.termguicolors = true
-	require("colorizer").setup()
-end
+require("catppuccin").setup({
+        flavour = "mocha",
+})
+vim.cmd.colorscheme("catppuccin")
+--vim command for transparent background
+vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
+vim.opt.termguicolors = true
+require("colorizer").setup()
