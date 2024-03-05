@@ -5,8 +5,8 @@ config = function()
 	vim.cmd.colorscheme("catppuccin")
 	--vim command for transparent background
 	vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
-end,
+end
 config = function()
 	vim.opt.termguicolors = true
 	require("colorizer").setup()
-end,
+end
