@@ -49,7 +49,16 @@
       telescope-nvim
       telescope-ui-select-nvim
 
-      nvim-treesitter
+      {
+        plugin = nvim-treesitter.withPlugins (p: [
+          p.tree-sitter-nix
+          p.tree-sitter-vim
+          p.tree-sitter-bash
+          p.tree-sitter-lua
+          p.tree-sitter-python
+          p.tree-sitter-json
+        ]);
+      }
 
       vim-be-good
 
@@ -60,7 +69,9 @@
 
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./plugins/treesitter.lua}
       ${builtins.readFile ./plugins/airline.lua}
+      ${builtins.readFile ./plugins/neotree.lua}
       ${builtins.readFile ./plugins/colours.lua}
       ${builtins.readFile ./plugins/completion.lua}
       ${builtins.readFile ./plugins/copilot.lua}
@@ -68,11 +79,9 @@
       ${builtins.readFile ./plugins/harpoon.lua}
       ${builtins.readFile ./plugins/indent-blankline.lua}
       ${builtins.readFile ./plugins/lsp-config.lua}
-      ${builtins.readFile ./plugins/neotree.lua}
       ${builtins.readFile ./plugins/none-ls.lua}
       ${builtins.readFile ./plugins/tagbar.lua}
       ${builtins.readFile ./plugins/telescope.lua}
-      ${builtins.readFile ./plugins/treesitter.lua}
       ${builtins.readFile ./plugins/vim-be-good.lua}
       ${builtins.readFile ./plugins/vim-commentary.lua}
       ${builtins.readFile ./plugins/which-key.lua}
