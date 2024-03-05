@@ -30,7 +30,7 @@
       dashboard-nvim
       nvim-web-devicons
 
-      #harpoon
+      harpoon
 
       #indent-blankline-nvim
 
