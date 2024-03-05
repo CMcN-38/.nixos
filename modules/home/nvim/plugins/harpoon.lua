@@ -1,3 +1,4 @@
+branch = "harpoon2"
 local harpoon = require("harpoon")
 harpoon:setup()
 vim.keymap.set("n", "<leader>ha", function()
