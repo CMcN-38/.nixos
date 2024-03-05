@@ -30,8 +30,6 @@
       dashboard-nvim
       nvim-web-devicons
 
-      #harpoon
-
       indent-blankline-nvim
 
       mason-nvim
@@ -65,6 +63,8 @@
       vim-commentary
 
       which-key-nvim
+
+      harpoon
     ];
 
     extraLuaConfig = ''
@@ -76,7 +76,6 @@
       ${builtins.readFile ./plugins/completion.lua}
       ${builtins.readFile ./plugins/copilot.lua}
       ${builtins.readFile ./plugins/dashboard.lua}
-      ${builtins.readFile ./plugins/harpoon.lua}
       ${builtins.readFile ./plugins/indent-blankline.lua}
       ${builtins.readFile ./plugins/lsp-config.lua}
       ${builtins.readFile ./plugins/none-ls.lua}
@@ -85,6 +84,7 @@
       ${builtins.readFile ./plugins/vim-be-good.lua}
       ${builtins.readFile ./plugins/vim-commentary.lua}
       ${builtins.readFile ./plugins/which-key.lua}
+      ${builtins.readFile ./plugins/harpoon.lua}
     '';
   };
 }
