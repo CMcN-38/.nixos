@@ -1,25 +1,23 @@
-{ config, pkgs, ...}:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   programs.neovim = {
-    enable = true
+    enable = true;
 
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
 
     plugins = with pkgs.vimPlugins; [
-
-
-
-
-     ];
-
+    ];
 
     extraLuaConfig = ''
-        -- Lua Code Here
+      -- Lua Code Here
 
-        ${builtins.readFile ./options.lua}
-        ${builtins.readFile ./plugin/vim-airline.lua}
-    };
+      ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./plugin/vim-airline.lua}
+    '';
+  };
 }
