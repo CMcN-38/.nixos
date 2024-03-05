@@ -36,7 +36,9 @@
     neovim
     neofetch
     starship
+    unzip
     vim
+    wget
     zoxide
   ];
 

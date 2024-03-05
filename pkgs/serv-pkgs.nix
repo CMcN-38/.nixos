@@ -25,6 +25,7 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
+    go
     libnotify
     logiops
     networkmanagerapplet
