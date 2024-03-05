@@ -28,6 +28,7 @@
     libnotify
     logiops
     networkmanagerapplet
+    nodejs_21
     (python3.withPackages (python-pkgs: [
       python-pkgs.requests
     ]))
