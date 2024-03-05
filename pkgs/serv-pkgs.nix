@@ -30,9 +30,11 @@
     logiops
     networkmanagerapplet
     nodejs_21
-    (python3.withPackages (python-pkgs: [
-      python-pkgs.requests
-    ]))
+    (python3.withPackages (ps:
+      with ps; [
+        requests
+        pip
+      ]))
     wireguard-tools
   ];
 
