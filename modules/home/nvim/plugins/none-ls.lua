@@ -1,4 +1,3 @@
-return {
 	"nvimtools/none-ls.nvim",
 	config = function()
 		local null_ls = require("null-ls")
@@ -11,4 +10,3 @@ return {
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 	end,
-}

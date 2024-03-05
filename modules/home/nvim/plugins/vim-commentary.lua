@@ -1,3 +1,1 @@
-return {
         "tpope/vim-commentary"
-}
