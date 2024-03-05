@@ -17,7 +17,7 @@
    <a href="https://github.com/CMcN-38/.nixos/">
       <img src="https://img.shields.io/github/repo-size/CMcN-38/.nixos?color=ea999c&labelColor=303446&style=for-the-badge">
    </a>
-   <a href="https://github.com/CMcN-38/.nixos/.github/LICENSE">
+   <a href="https://github.com/CMcN-38/.nixos/blob/main/.github/LICENSE">
     <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=GPL-3&logoColor=ca9ee6&colorA=313244&colorB=cba6f7"/>
    </a>
       <a = href="https://nixos.org">
@@ -31,4 +31,5 @@
 </div>
 
 <p align="center">
+    <img src="
 </p>
