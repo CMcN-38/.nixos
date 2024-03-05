@@ -15,20 +15,20 @@
       #vim-airline-themes
 
       catppuccin-nvim
-      #colorizer
+      colorizer
 
-      #cmp-nvim-lsp
-      #friendly-snippets
-      #cmp-buffer
-      #fidget-nvim
-      #cmp_luasnip
-      #luasnip
-      #nvim-cmp
+      cmp-nvim-lsp
+      friendly-snippets
+      cmp-buffer
+      fidget-nvim
+      cmp_luasnip
+      luasnip
+      nvim-cmp
 
       #copilot-vim
 
       dashboard-nvim
-      #nvim-web-devicons
+      nvim-web-devicons
 
       #harpoon
 
