@@ -1,4 +1,3 @@
-event = 'VimEnter'
 require('dashboard').setup{
         theme = 'hyper',
         hide ={
