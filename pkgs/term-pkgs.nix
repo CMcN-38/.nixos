@@ -55,6 +55,7 @@
     enable = true;
     extraConfig = ''
       set -g mouse on
+      set-option -sa terminal-features ',screen-256color:RGB'
       set -g base-index 1
       unbind C-b
       set -g prefix C-h

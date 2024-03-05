@@ -35,6 +35,7 @@
         requests
         pip
       ]))
+    tree-sitter
     wireguard-tools
   ];
 
