@@ -1,4 +1,4 @@
-event = 'VimEnter',
+event = 'VimEnter'
 config = function()
 	require('dashboard').setup{
 		theme = 'hyper',
