@@ -1,4 +1,3 @@
-return {
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
         opts = {
@@ -11,4 +10,3 @@ return {
                         whitespace = { highlight = {"Whitespace", "NonText"} },
                 }
         end
-}

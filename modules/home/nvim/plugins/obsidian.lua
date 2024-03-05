@@ -1,4 +1,3 @@
-return {
         "epwalsh/obsidian.nvim",
         version = "*",  -- recommended, use latest release instead of latest commit
         --lazy = false,
@@ -30,4 +29,3 @@ return {
         config = function()
                 vim.opt.conceallevel = 2
         end,
-}

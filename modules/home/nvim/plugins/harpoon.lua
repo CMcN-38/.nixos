@@ -1,4 +1,3 @@
-return {
 	"ThePrimeagen/harpoon",
 	branch = "harpoon2",
 	dependencies = { "nvim-lua/plenary.nvim" },
@@ -15,4 +14,3 @@ return {
                 vim.keymap.set("n", "<leader>hp", function() harpoon:list():prev() end)
                 vim.keymap.set("n", "<leader>hn", function() harpoon:list():next() end)
         end,
-}

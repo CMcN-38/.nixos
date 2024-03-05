@@ -25,6 +25,33 @@
 
       dashboard-nvim
       nvim-web-devicons
+
+      harpoon
+
+      indent-blankline-nvim
+
+      mason-nvim
+      mason-lspconfig-nvim
+      nvim-lspconfig
+
+      neo-tree-nvim
+      plenary-nvim
+      nui-nvim
+
+      none-ls-nvim
+
+      tagbar
+
+      telescope-nvim
+      telescope-ui-select-nvim
+
+      nvim-treesitter
+
+      vim-be-good
+
+      vim-commentary
+
+      which-key-nvim
     ];
 
     extraLuaConfig = ''
@@ -39,7 +66,7 @@
       ${builtins.readFile ./plugins/lsp-config.lua}
       ${builtins.readFile ./plugins/neotree.lua}
       ${builtins.readFile ./plugins/none-ls.lua}
-      ${builtins.readFile ./plugins/obsidian.lua}
+      -- ${builtins.readFile ./plugins/obsidian.lua}
       ${builtins.readFile ./plugins/tagbar.lua}
       ${builtins.readFile ./plugins/telescope.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
