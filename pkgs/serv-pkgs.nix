@@ -33,6 +33,7 @@
     (python3.withPackages (ps:
       with ps; [
         requests
+        jedi-language-server
         pip
       ]))
     tree-sitter
