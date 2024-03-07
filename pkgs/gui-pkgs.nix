@@ -33,9 +33,7 @@
     thunderbird
   ];
 
-  #  programs.steam {
-  #    enable = true
-  #  };
+  programs.steam.enable = true;
   #  programs.steam.package = pkgs.steam.override {
   #     withPrimus = true;
   #     extraPkgs = pkgs: [ bumblebee glxinfo ];
