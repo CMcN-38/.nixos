@@ -5,10 +5,10 @@
 #.`Y888888o.    8  8 8888    `8.`8888.,8' 88 8888        `8b `8.`8888.
 #8o. `Y888888o. 8  8 8888     `8.`88888'  88 8888         88  `8.`8888.
 #8`Y8o. `Y88888o8  8 8888     .88.`8888.  88 8888         88   `8.`8888.
-#8   `Y8o. `Y8888  8 8888    .8'`8.`8888. 88 8888        ,8P    `8.`8888.
-#8      `Y8o. `Y8  8 8888   .8'  `8.`8888.`8 8888       ,8P 8b   `8.`8888.
-#8         `Y8o.`  8 8888  .8'    `8.`8888.` 8888     ,88'  `8b.  ;8.`8888
-#8            `Yo  8 8888 .8'      `8.`8888.  `8888888P'     `Y8888P ,88P'
+##8   `Y8o. `Y8888  8 8888    .8'`8.`8888. 88 8888        ,8P    `8.`8888.
+##8      `Y8o. `Y8  8 8888   .8'  `8.`8888.`8 8888       ,8P 8b   `8.`8888.
+##8         `Y8o.`  8 8888  .8'    `8.`8888.` 8888     ,88'  `8b.  ;8.`8888
+##8            `Yo  8 8888 .8'      `8.`8888.  `8888888P'     `Y8888P ,88P'
 #
 #
 # ██████╗ ██╗   ██╗██╗    ██████╗  █████╗  ██████╗██╗  ██╗ █████╗  ██████╗ ███████╗███████╗
@@ -30,7 +30,17 @@
     discord
     firefox
     obsidian
-    steam
     thunderbird
   ];
+
+  #  programs.steam {
+  #    enable = true
+  #  };
+  #  programs.steam.package = pkgs.steam.override {
+  #     withPrimus = true;
+  #     extraPkgs = pkgs: [ bumblebee glxinfo ];
+  #  };
+  #  programs.java.enable = true;
+  #  programs.steam.package = pkgs.steam.override { withJava = true; };
+  #  programs.steam.gamescopeSession.enable = true;
 }
