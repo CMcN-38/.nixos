@@ -30,7 +30,6 @@
     discord
     firefox
     obsidian
-    steam
     thunderbird
   ];
 }
