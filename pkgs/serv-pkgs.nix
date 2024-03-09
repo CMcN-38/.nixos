@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     go
+    lua
     libnotify
     logiops
     networkmanagerapplet
