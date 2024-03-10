@@ -37,6 +37,7 @@
         jedi-language-server
         pip
       ]))
+    syncthing
     tree-sitter
     wireguard-tools
   ];
