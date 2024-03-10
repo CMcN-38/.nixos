@@ -29,16 +29,10 @@
     cider
     discord
     firefox
+    localsend
     obsidian
     thunderbird
   ];
 
   programs.steam.enable = true;
-  #  programs.steam.package = pkgs.steam.override {
-  #     withPrimus = true;
-  #     extraPkgs = pkgs: [ bumblebee glxinfo ];
-  #  };
-  #  programs.java.enable = true;
-  #  programs.steam.package = pkgs.steam.override { withJava = true; };
-  #  programs.steam.gamescopeSession.enable = true;
 }
