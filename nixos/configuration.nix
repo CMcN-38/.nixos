@@ -50,20 +50,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  systemd.services.espanso = {
-    enable = true;
-    description = "espanso";
-    unitConfig = {
-      Type = "simple";
-    };
-    serviceConfig = {
-      ExecStart = "/nix/store/hnc3dqmgiand5chv85giignbaba9jxfr-espanso-2.1.8/bin/.espanso-wrapped launcher";
-      Restart = "on-failure";
-      RestartSec = "3";
-    };
-    wantedBy = ["default.target"];
-  };
-
   #  •         •
   #┏┓┓┓┏  ┏┏┓╋╋┓┏┓┏┓┏
   #┛┗┗┛┗  ┛┗ ┗┗┗┛┗┗┫┛
