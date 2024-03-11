@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     go
+    espanso
     lua
     libnotify
     logiops
