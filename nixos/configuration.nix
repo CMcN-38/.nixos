@@ -50,7 +50,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  systemd.services.foo = {
+  systemd.services.espanso = {
     enable = true;
     description = "espanso";
     unitConfig = {
