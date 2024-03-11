@@ -32,6 +32,7 @@
     localsend
     obsidian
     thunderbird
+    zotero
   ];
 
   programs.steam.enable = true;
