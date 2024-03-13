@@ -32,6 +32,7 @@
     logiops
     networkmanagerapplet
     nodejs_21
+    poppler_utils
     (python3.withPackages (ps:
       with ps; [
         requests
@@ -39,6 +40,7 @@
         pip
       ]))
     syncthing
+    tesseract4
     tree-sitter
     wireguard-tools
   ];
