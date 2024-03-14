@@ -38,6 +38,7 @@
     starship
     unzip
     vim
+    wally-cli
     wget
     zoxide
   ];
