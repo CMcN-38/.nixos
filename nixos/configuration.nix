@@ -69,6 +69,8 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  hardware.keyboard.zsa.enable = true;
+
   #            ┓ •
   #┏┓┏┓╋┓┏┏┏┓┏┓┃┏┓┏┓┏┓
   #┛┗┗ ┗┗┻┛┗┛┛ ┛┗┗┛┗┗┫
