@@ -39,7 +39,6 @@
         jedi-language-server
         pip
       ]))
-    rustup
     syncthing
     tesseract4
     tree-sitter
