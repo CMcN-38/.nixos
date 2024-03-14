@@ -31,6 +31,7 @@
     logiops
     networkmanagerapplet
     nodejs_21
+    openssl
     poppler_utils
     (python3.withPackages (ps:
       with ps; [
