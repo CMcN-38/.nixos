@@ -25,6 +25,7 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
+    espanso-wayland
     go
     lua
     libnotify
