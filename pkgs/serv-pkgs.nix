@@ -26,7 +26,6 @@
 
   environment.systemPackages = with pkgs; [
     go
-    espanso-wayland
     lua
     libnotify
     logiops
@@ -39,6 +38,7 @@
         jedi-language-server
         pip
       ]))
+    rustup
     syncthing
     tesseract4
     tree-sitter
