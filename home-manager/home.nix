@@ -25,6 +25,7 @@
 }: {
   imports = [
     ../modules/home/nvim/default.nix
+    ../modules/home/espanso/default.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -97,6 +98,8 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.espanso.enable = true;
 
   # ┓      •
   #╋┣┓┏┓┏┳┓┓┏┓┏┓
