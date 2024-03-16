@@ -99,7 +99,7 @@
   users.users.cameron = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = ["wheel" "input"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel"]; # Enable ‘sudo’ for the user.
   };
 
   #┓                           •
