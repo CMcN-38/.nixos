@@ -1,28 +1,25 @@
-activating the configuration...
-setting up /etc...
-reloading user units for cameron...
-restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
-em-path.drv
-  /nix/store/dsjyfgikig1miwiq1454mvi3ws58afih-dbus-1.drv
-  /nix/store/1axw68wlzywax3wd362w86m6y0f4jzcg-X-Restart-Triggers-dbus.drv
-  /nix/store/99ac7a0yd9isr4pr09an2105ayafzb0f-unit-dbus.service.drv
-  /nix/store/27f95sa7ygry3p28cck2x7p86c7ykwpx-user-units.drv
-  /nix/store/d9jn6l2iy2sw4hp3vsdz8vckqknq88j8-X-Restart-Triggers-polkit.drv
-  /nix/store/a0zjg2z9jgf99y94havb5r1q9qvmvg74-unit-polkit.service.drv
-  /nix/store/ryhylw1zbfvp86gm8r2nb6x8l7s7hm1m-unit-dbus.service.drv
-  /nix/store/38ixxx1bysbzdwkmvpf0l652agnz58xz-system-units.drv
-  /nix/store/skjm1wvcdq2snp85asabhd32zj7v768b-etc.drv
-  /nix/store/dq143lhm97lvqz9p7m3yr25qi68havyh-nixos-system-targaryen-24.05.20240303.b8697e5.drv
-building '/nix/store/1rjhi614yj3gj041l9bp7595xfixqz06-system-path.drv'...
-building '/nix/store/d9jn6l2iy2sw4hp3vsdz8vckqknq88j8-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/dsjyfgikig1miwiq1454mvi3ws58afih-dbus-1.drv'...
-building '/nix/store/a0zjg2z9jgf99y94havb5r1q9qvmvg74-unit-polkit.service.drv'...
-building '/nix/store/1axw68wlzywax3wd362w86m6y0f4jzcg-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/99ac7a0yd9isr4pr09an2105ayafzb0f-unit-dbus.service.drv'...
-building '/nix/store/ryhylw1zbfvp86gm8r2nb6x8l7s7hm1m-unit-dbus.service.drv'...
-building '/nix/store/27f95sa7ygry3p28cck2x7p86c7ykwpx-user-units.drv'...
-building '/nix/store/38ixxx1bysbzdwkmvpf0l652agnz58xz-system-units.drv'...
-building '/nix/store/skjm1wvcdq2snp85asabhd32zj7v768b-etc.drv'...
-building '/nix/store/dq143lhm97lvqz9p7m3yr25qi68havyh-nixos-system-targaryen-24.05.20240303.b8697e5.drv'...
+warning: Git tree '/home/cameron/.nixos' is dirty
+building the system configuration...
+warning: Git tree '/home/cameron/.nixos' is dirty
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/9mf8fkjw3vw1gm4s6j5fqlwrv5wf2knf-source/lib/attrsets.nix:967:11:
+
+          966|         || pred here (elemAt values 1) (head values) then
+          967|           head values
+             |           ^
+          968|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/9mf8fkjw3vw1gm4s6j5fqlwrv5wf2knf-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: getting status of '/nix/store/d8g15ph099zhi92h78kzarvnqwz6j0av-source/modules/home/espanso': No such file or directory
