@@ -34,6 +34,7 @@
     lazygit
     mpv
     neofetch
+    nix-search-cli
     #    neovim
     starship
     unzip
