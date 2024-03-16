@@ -25,7 +25,7 @@
 }: {
   imports = [
     ../modules/home/nvim/default.nix
-    #../modules/home/espanso/default.nix
+    ../modules/home/temp
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
