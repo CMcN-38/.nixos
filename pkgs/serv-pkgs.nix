@@ -44,6 +44,13 @@
     syncthing
     tesseract4
     tree-sitter
+
+    # Text Expander
+    snippetexpanderd
+    snippetexpander
+    snippetexpanderx
+    snippetexpandergui
+
     wireguard-tools
   ];
 
