@@ -23,7 +23,7 @@
   #┏┓┏┓┏┓┏┓┏┓┏┓┃
   #┗┫┗ ┛┗┗ ┛ ┗┻┗
   # ┛
-  #services.espanso.enable = true;
+  services.espanso.enable = true;
 
   environment.systemPackages = with pkgs; [
     go
