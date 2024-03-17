@@ -50,7 +50,7 @@
     #snippetexpander
     #snippetexpanderx
     #snippetexpandergui
-
+    at-spi2-atk
     snippetpixie
 
     wireguard-tools
