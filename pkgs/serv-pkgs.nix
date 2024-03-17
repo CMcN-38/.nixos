@@ -46,10 +46,12 @@
     tree-sitter
 
     # Text Expander
-    snippetexpanderd
-    snippetexpander
-    snippetexpanderx
-    snippetexpandergui
+    #snippetexpanderd
+    #snippetexpander
+    #snippetexpanderx
+    #snippetexpandergui
+
+    snippetpixie
 
     wireguard-tools
   ];
