@@ -53,6 +53,7 @@
     at-spi2-atk
 
     wireguard-tools
+    wl-clipboard
   ];
 
   programs.streamdeck-ui = {
