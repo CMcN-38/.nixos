@@ -30,6 +30,7 @@
     google-chrome
     discord
     firefox
+    libreoffice
     localsend
     obsidian
     thunderbird
