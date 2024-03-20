@@ -43,8 +43,10 @@
     rustup
     syncthing
     tesseract4
-    tigervnc
     tree-sitter
+
+    guacamole-server
+    guacamole-client
 
     # Text Expander
     snippetexpanderd
