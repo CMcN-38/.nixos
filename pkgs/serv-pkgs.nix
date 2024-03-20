@@ -43,6 +43,7 @@
     rustup
     syncthing
     tesseract4
+    tigervnc
     tree-sitter
 
     # Text Expander
