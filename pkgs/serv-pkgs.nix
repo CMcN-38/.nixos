@@ -45,9 +45,6 @@
     tesseract4
     tree-sitter
 
-    guacamole-server
-    guacamole-client
-
     # Text Expander
     snippetexpanderd
     snippetexpander
