@@ -71,6 +71,7 @@
       run-shell ${pkgs.tmuxPlugins.sensible}/share/tmux-plugins/sensible/sensible.tmux
       run-shell ${pkgs.tmuxPlugins.catppuccin}/share/tmux-plugins/catppuccin/catppuccin.tmux
       run-shell ${pkgs.tmuxPlugins.yank}/share/tmux-plugins/yank/yank.tmux
+      set-option -g status-position top
     '';
   };
 }
