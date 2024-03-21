@@ -25,7 +25,7 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
-    go
+    gccgo13
     hidapi
     lua
     libnotify
@@ -54,6 +54,7 @@
 
     wireguard-tools
     wl-clipboard
+    zig
   ];
 
   programs.streamdeck-ui = {
