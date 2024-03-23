@@ -2,7 +2,7 @@
 -- enable syntax highlighting
 vim.cmd('syntax on')
 -- change the color of the line numbers
-vim.cmd('highlight LineNr ctermfg=grey')
+vim.cmd('highlight LineNr ctermfg=white')
 -- enable nerd font
 vim.g.have_nerd_font = true
 
@@ -45,7 +45,7 @@ map('n', '<C-t>', ':silent !tmux neww tmux-sessioniser<CR>', {noremap = true, si
 
 -- Set highlight on search but clear on pressing Esc in normal mode
 vim.o.hlsearch = true
-vim.keymap.set('n', '<ESC>', ':nohlsearch<CR>')
+-- vim.keymap.set('n', '<ESC>', ':nohlsearch<CR>')
 
 -- Disable arrow keys in normal mode
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h"<CR>')
