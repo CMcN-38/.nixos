@@ -11,8 +11,7 @@
     vimdiffAlias = true;
 
     plugins = with pkgs.vimPlugins; [
-      vim-airline
-      vim-airline-themes
+      mini-nvim
 
       catppuccin-nvim
       colorizer
@@ -42,14 +41,12 @@
 
       none-ls-nvim
 
-      tagbar
-
       telescope-nvim
       telescope-ui-select-nvim
 
-      nvim-treesitter.withAllGrammars
+      todo-comments-nvim
 
-      vim-be-good
+      nvim-treesitter.withAllGrammars
 
       vim-commentary
 
@@ -62,7 +59,6 @@
       ${builtins.readFile ./options.lua}
       ${builtins.readFile ./plugins/harpoon.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
-      ${builtins.readFile ./plugins/airline.lua}
       ${builtins.readFile ./plugins/neotree.lua}
       ${builtins.readFile ./plugins/colours.lua}
       ${builtins.readFile ./plugins/completion.lua}
@@ -70,12 +66,9 @@
       ${builtins.readFile ./plugins/dashboard.lua}
       ${builtins.readFile ./plugins/indent-blankline.lua}
       ${builtins.readFile ./plugins/lsp-config.lua}
+      ${builtins.readFile ./plugins/mini.lua}
       ${builtins.readFile ./plugins/none-ls.lua}
-      ${builtins.readFile ./plugins/tagbar.lua}
       ${builtins.readFile ./plugins/telescope.lua}
-      ${builtins.readFile ./plugins/vim-be-good.lua}
-      ${builtins.readFile ./plugins/vim-commentary.lua}
-      ${builtins.readFile ./plugins/which-key.lua}
     '';
   };
 }
