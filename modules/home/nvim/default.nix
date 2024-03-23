@@ -48,7 +48,7 @@
 
       nvim-treesitter.withAllGrammars
 
-      vim-commentary
+      comment-nvim
 
       which-key-nvim
 
