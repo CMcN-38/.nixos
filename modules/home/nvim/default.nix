@@ -57,7 +57,6 @@
 
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
-      ${builtins.readFile ./plugins/harpoon.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
       ${builtins.readFile ./plugins/neotree.lua}
       ${builtins.readFile ./plugins/comment.lua}
@@ -70,6 +69,7 @@
       ${builtins.readFile ./plugins/mini.lua}
       ${builtins.readFile ./plugins/none-ls.lua}
       ${builtins.readFile ./plugins/telescope.lua}
+      ${builtins.readFile ./plugins/harpoon.lua}
     '';
   };
 }
