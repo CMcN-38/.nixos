@@ -37,7 +37,7 @@
     (python3.withPackages (ps:
       with ps; [
         requests
-        jedi-language-server
+        #        jedi-language-server
         pip
       ]))
     rustup
