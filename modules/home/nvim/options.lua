@@ -55,11 +55,11 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j"<CR>')
 
 
 -- HIGHLIGHT ON YANK
-vim.api.nvim_create_autocmd('TextYankPast', {
-        desc = 'Highlight on yank',
-        group = vim.api.nvim_create_augroup('HighlightOnYank', { clear = true }),
-        callback = function()
-                vim.highlight.on_yank()
-        end,
-})
+--vim.api.nvim_create_autocmd('TextYankPast', {
+--        desc = 'Highlight on yank',
+--        group = vim.api.nvim_create_augroup('HighlightOnYank', { clear = true }),
+--        callback = function()
+--                vim.highlight.on_yank()
+--        end,
+--})
 
