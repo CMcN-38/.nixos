@@ -32,7 +32,7 @@ vim.o.mouse = ""
 
 -- timeout for which-key
 vim.o.timeout = true
-vim.o.timeoutlen = 300
+vim.o.timeoutlen = 800
 
 --KEYMAPS
 -- set leader key, must be done before loading plugins
