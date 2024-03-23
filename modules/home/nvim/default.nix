@@ -60,6 +60,7 @@
       ${builtins.readFile ./plugins/harpoon.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
       ${builtins.readFile ./plugins/neotree.lua}
+      ${builtins.readFile ./plugins/comment.lua}
       ${builtins.readFile ./plugins/colours.lua}
       ${builtins.readFile ./plugins/completion.lua}
       ${builtins.readFile ./plugins/copilot.lua}
