@@ -37,7 +37,7 @@
     swappy
 
     rofi-wayland-unwrapped
-    rofi-emoji
+
     swaynotificationcenter
     swww
     waybar
@@ -53,6 +53,7 @@
     enable = true;
     xwayland.enable = true;
   };
+
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
 }
