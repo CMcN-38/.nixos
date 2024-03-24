@@ -37,6 +37,7 @@
     swappy
 
     rofi-wayland-unwrapped
+    rofi-emoji
     swaynotificationcenter
     swww
     waybar
