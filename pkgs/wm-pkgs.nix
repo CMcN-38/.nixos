@@ -36,10 +36,10 @@
     slurp
     swappy
 
+    rofi-wayland-unwrapped
     swaynotificationcenter
     swww
     waybar
-    wofi
     xfce.thunar
   ];
 
