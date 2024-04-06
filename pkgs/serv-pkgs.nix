@@ -52,7 +52,6 @@
     snippetexpandergui
     at-spi2-atk
 
-    wayvnc
     wireguard-tools
     wl-clipboard
     zig
