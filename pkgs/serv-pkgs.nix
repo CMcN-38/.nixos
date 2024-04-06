@@ -62,6 +62,8 @@
     autoStart = true; # optional
   };
 
+  services.xrdp.enable = true;
+
   #     ┓•
   #┏┓┓┏┏┫┓┏┓
   #┗┻┗┻┗┻┗┗┛
