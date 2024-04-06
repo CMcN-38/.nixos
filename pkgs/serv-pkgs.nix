@@ -44,7 +44,6 @@
     syncthing
     tesseract4
     tree-sitter
-    xfce.tumbler
 
     # Text Expander
     snippetexpanderd
