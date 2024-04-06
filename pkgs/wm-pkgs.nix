@@ -41,7 +41,9 @@
     swaynotificationcenter
     swww
     waybar
-    xfce.thunar
+
+    # For Thunar Thumbnails
+    xfce.tumbler
   ];
 
   #┓       ┓     ┓
@@ -53,6 +55,9 @@
     enable = true;
     xwayland.enable = true;
   };
+
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true;
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
