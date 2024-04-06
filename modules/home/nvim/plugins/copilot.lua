@@ -1,4 +1,4 @@
-vim.keymap.remap('i', 'C-space', 'copilot#Accept("\\<CR>")', {
+vim.keymap.set('i', '<C-Tab>', 'copilot#Accept("\\<CR>")', {
         expr = true,
         replace_keycodes = false,
 })
