@@ -27,7 +27,6 @@
   environment.systemPackages = with pkgs; [
     alacritty
     cider
-    google-chrome
     discord
     firefox
     libreoffice
