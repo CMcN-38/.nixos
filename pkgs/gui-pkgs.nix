@@ -28,6 +28,7 @@
     alacritty
     cider
     discord
+    google-chrome
     firefox
     libreoffice
     localsend
