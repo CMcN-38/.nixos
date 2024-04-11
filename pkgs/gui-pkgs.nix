@@ -32,6 +32,7 @@
     firefox
     libreoffice
     localsend
+    nomacs
     obsidian
     thunderbird
     zotero
