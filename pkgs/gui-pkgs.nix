@@ -30,6 +30,7 @@
     gimp
     google-chrome
     firefox
+    inkscape
     libreoffice
     localsend
     nomacs
