@@ -25,7 +25,7 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
-    fuse
+    fuseiso
     gccgo13
     hidapi
     lua
