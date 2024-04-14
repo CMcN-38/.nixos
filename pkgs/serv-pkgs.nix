@@ -25,7 +25,7 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
-    fuseiso
+    appimage-run
     gccgo13
     hidapi
     lua
