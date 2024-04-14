@@ -69,6 +69,8 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  hardware.logitech.wireless.enable = true;
+  hardware.logitech.wireless.enableGraphical = true;
   # hardware.keyboard.zsa.enable = true;
 
   #            ┓ •
