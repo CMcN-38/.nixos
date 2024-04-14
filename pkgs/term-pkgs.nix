@@ -40,6 +40,7 @@
     vim
     wally-cli
     wget
+    yarn
     zoxide
   ];
 
