@@ -30,7 +30,6 @@
     hidapi
     lua
     libnotify
-    logiops
     networkmanagerapplet
     nodejs_21
     openssl
@@ -45,13 +44,6 @@
     syncthing
     tesseract4
     tree-sitter
-
-    # Text Expander
-    snippetexpanderd
-    snippetexpander
-    snippetexpanderx
-    snippetexpandergui
-    at-spi2-atk
 
     wireguard-tools
     wl-clipboard
