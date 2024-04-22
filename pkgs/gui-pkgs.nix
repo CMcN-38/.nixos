@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     alacritty
+    blanket
     discord
     gimp
     google-chrome
