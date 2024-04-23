@@ -35,6 +35,7 @@
     openssl
     poppler_utils
     pamixer
+    playerctl
     (python3.withPackages (ps:
       with ps; [
         requests
