@@ -34,7 +34,7 @@
     nodejs_21
     openssl
     poppler_utils
-    pipewire
+    pamixer
     (python3.withPackages (ps:
       with ps; [
         requests
