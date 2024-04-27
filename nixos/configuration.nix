@@ -112,7 +112,11 @@
     shell = pkgs.zsh;
     extraGroups = ["wheel" "input"]; # Enable ‘sudo’ for the user.
   };
-
+  environment.etc = {
+    "xdg/user-dirs.defaults".text = ''
+      DOWNLOADS=../../../../../home/cameron/3_downloads
+    '';
+  };
   #┓                           •
   #┣┓┏┓┏┳┓┏┓━━┏┳┓┏┓┏┓┏┓┏┓┏┓┏┓  ┓┏┳┓┏┓┏┓┏┓╋
   #┛┗┗┛┛┗┗┗   ┛┗┗┗┻┛┗┗┻┗┫┗ ┛   ┗┛┗┗┣┛┗┛┛ ┗
