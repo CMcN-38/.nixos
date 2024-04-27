@@ -36,6 +36,7 @@
     localsend
     nomacs
     obsidian
+    obs-studio
     thunderbird
     zotero
   ];
