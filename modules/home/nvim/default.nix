@@ -53,30 +53,24 @@
       vim-be-good
 
       which-key-nvim
+      harpoon2
     ];
 
     extraLuaConfig = ''
-            {
-          "ThePrimeagen/harpoon",
-          branch = "harpoon2",
-          dependencies = { "nvim-lua/plenary.nvim" }
-      }
-
-
-            ${builtins.readFile ./options.lua}
-            ${builtins.readFile ./plugins/treesitter.lua}
-            ${builtins.readFile ./plugins/neotree.lua}
-            ${builtins.readFile ./plugins/comment.lua}
-            ${builtins.readFile ./plugins/colours.lua}
-            ${builtins.readFile ./plugins/completion.lua}
-            ${builtins.readFile ./plugins/copilot.lua}
-            ${builtins.readFile ./plugins/dashboard.lua}
-            ${builtins.readFile ./plugins/indent-blankline.lua}
-            ${builtins.readFile ./plugins/lsp-config.lua}
-            ${builtins.readFile ./plugins/mini.lua}
-            ${builtins.readFile ./plugins/none-ls.lua}
-            ${builtins.readFile ./plugins/telescope.lua}
-            ${builtins.readFile ./plugins/harpoon.lua}
+      ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./plugins/treesitter.lua}
+      ${builtins.readFile ./plugins/neotree.lua}
+      ${builtins.readFile ./plugins/comment.lua}
+      ${builtins.readFile ./plugins/colours.lua}
+      ${builtins.readFile ./plugins/completion.lua}
+      ${builtins.readFile ./plugins/copilot.lua}
+      ${builtins.readFile ./plugins/dashboard.lua}
+      ${builtins.readFile ./plugins/indent-blankline.lua}
+      ${builtins.readFile ./plugins/lsp-config.lua}
+      ${builtins.readFile ./plugins/mini.lua}
+      ${builtins.readFile ./plugins/none-ls.lua}
+      ${builtins.readFile ./plugins/telescope.lua}
+      ${builtins.readFile ./plugins/harpoon.lua}
     '';
   };
 }
