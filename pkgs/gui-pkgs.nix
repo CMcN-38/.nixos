@@ -38,6 +38,7 @@
     obsidian
     obs-studio
     thunderbird
+    wgnord
     zotero
   ];
 
