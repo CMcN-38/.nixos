@@ -49,6 +49,7 @@
       nvim-treesitter.withAllGrammars
 
       comment-nvim
+      vim-be-good
 
       which-key-nvim
 
