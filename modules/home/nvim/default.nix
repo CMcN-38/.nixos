@@ -10,6 +10,7 @@
     vimAlias = true;
     vimdiffAlias = true;
 
+    package = pkgs.neovim-unwrapped;
     plugins = with pkgs.vimPlugins; [
       mini-nvim
 
