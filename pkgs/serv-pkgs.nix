@@ -48,6 +48,7 @@
     tree-sitter
 
     wireguard-tools
+    wgnord
     wl-clipboard
     zig
   ];
