@@ -31,7 +31,7 @@
     lua
     libnotify
     networkmanagerapplet
-    nodejs_21
+    nodejs_22
     openssl
     poppler_utils
     pamixer
