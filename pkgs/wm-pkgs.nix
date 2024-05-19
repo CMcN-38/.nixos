@@ -29,6 +29,7 @@
   # ┛
 
   services.displayManager.sddm.wayland.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
 
   environment.systemPackages = with pkgs; [
     pavucontrol
