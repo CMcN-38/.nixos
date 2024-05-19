@@ -67,7 +67,7 @@
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
 
   services.displayManager.sddm.wayland.enable = true;
-  services.xserver.displayManager.sddm = {
+  services.displayManager.sddm = {
     enable = true;
     theme = "catppuccin-mocha";
   };
