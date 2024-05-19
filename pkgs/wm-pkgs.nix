@@ -43,10 +43,10 @@
     (catppuccin-sddm.override
       {
         flavor = "mocha";
-        # font = "Noto Sans";
+        font = "Fira Code";
         fontSize = "9";
-        #  background = "${./wallpaper.png}";
-        loginBackground = true;
+        # background = "${./wallpaper.png}";
+        loginBackground = false;
       })
   ];
 
