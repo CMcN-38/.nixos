@@ -30,6 +30,12 @@
 
   services.displayManager.sddm.wayland.enable = true;
   services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.settings = {
+    Theme = {
+      Current = "breeze";
+      ThemeDir = "/home/cameron/tokyo-night-sddm/";
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     pavucontrol
