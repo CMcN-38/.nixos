@@ -69,6 +69,7 @@
   services.xserver.enable = true;
   services.displayManager.sddm = {
     enable = true;
-    theme = "maldives";
+    #theme = "maldives";
+    theme = "mocha";
   };
 }
