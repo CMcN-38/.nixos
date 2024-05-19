@@ -70,6 +70,6 @@
   services.displayManager.sddm = {
     enable = true;
     #theme = "maldives";
-    theme = "mocha";
+    theme = "catppuccin-mocha";
   };
 }
