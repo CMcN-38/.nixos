@@ -28,15 +28,6 @@
   #┗┫┗ ┛┗┗ ┛ ┗┻┗
   # ┛
 
-  services.displayManager.sddm.wayland.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.settings = {
-    Theme = {
-      Current = "breeze";
-      ThemeDir = "/home/cameron/tokyo-night-sddm/";
-    };
-  };
-
   environment.systemPackages = with pkgs; [
     pavucontrol
 
@@ -50,6 +41,8 @@
     swaynotificationcenter
     swww
     waybar
+
+    catppuccin-sddm
 
     # For Thunar Thumbnails
     xfce.tumbler
@@ -70,4 +63,8 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+
+  services.displayManager.sddm.wayland.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.theme = "catppuccin";
 }
