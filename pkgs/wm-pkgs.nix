@@ -30,22 +30,24 @@
 
   environment.systemPackages = with pkgs; [
     pavucontrol
-
     #Screenshot Tools
     grim
     slurp
     swappy
-
     rofi-wayland-unwrapped
-
     swaynotificationcenter
     swww
     waybar
-
-    catppuccin-sddm
-
     # For Thunar Thumbnails
     xfce.tumbler
+    (catppuccin-sddm.override
+      {
+        flavor = "mocha";
+        # font = "Noto Sans";
+        fontSize = "9";
+        #  background = "${./wallpaper.png}";
+        loginBackground = true;
+      })
   ];
 
   #┓       ┓     ┓
