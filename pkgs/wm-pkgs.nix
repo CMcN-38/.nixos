@@ -44,7 +44,7 @@
       {
         flavor = "mocha";
         font = "Fira Code";
-        fontSize = "9";
+        fontSize = "16";
         # background = "${./wallpaper.png}";
         loginBackground = false;
       })
