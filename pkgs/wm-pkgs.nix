@@ -40,14 +40,14 @@
     waybar
     # For Thunar Thumbnails
     xfce.tumbler
-    (catppuccin-sddm.override
-      {
-        flavor = "mocha";
-        font = "Fira Code";
-        fontSize = "16";
-        # background = "${./wallpaper.png}";
-        loginBackground = false;
-      })
+    # (catppuccin-sddm.override
+    #   {
+    #     flavor = "mocha";
+    #     font = "Fira Code";
+    #     fontSize = "16";
+    #     # background = "${./wallpaper.png}";
+    #     loginBackground = false;
+    #   })
   ];
 
   #┓       ┓     ┓
@@ -66,18 +66,18 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    package = pkgs.kdePackages.sddm;
-    #theme = "maldives";
-    theme = "catppuccin-mocha";
-    extraPackages = with pkgs.kdePackages; [
-      breeze-icons
-      kirigami
-      plasma5support
-      qtsvg
-      qtvirtualkeyboard
-    ];
-  };
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   wayland.enable = true;
+  #   package = pkgs.kdePackages.sddm;
+  #   #theme = "maldives";
+  #   theme = "catppuccin-mocha";
+  #   extraPackages = with pkgs.kdePackages; [
+  #     breeze-icons
+  #     kirigami
+  #     plasma5support
+  #     qtsvg
+  #     qtvirtualkeyboard
+  #   ];
+  # };
 }
