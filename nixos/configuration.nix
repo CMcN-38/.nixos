@@ -121,6 +121,7 @@
   environment.sessionVariables = {
     XDG_DOWNLOAD_DIR = "/home/cameron/3_downloads";
     XDG_SESSION_TYPE = "wayland";
+    XDG_SESSION_DESKTOP = "Hyprland";
   };
 
   #┓
