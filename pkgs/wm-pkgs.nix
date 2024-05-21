@@ -69,15 +69,15 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    # package = pkgs.kdePackages.sddm;
+    package = pkgs.kdePackages.sddm;
     #theme = "maldives";
     theme = "catppuccin-mocha";
-    # extraPackages = with pkgs.kdePackages; [
-    #   breeze-icons
-    #   kirigami
-    #   plasma5support
-    #   qtsvg
-    #   qtvirtualkeyboard
-    # ];
+    extraPackages = with pkgs.kdePackages; [
+      breeze-icons
+      kirigami
+      plasma5support
+      qtsvg
+      qtvirtualkeyboard
+    ];
   };
 }
