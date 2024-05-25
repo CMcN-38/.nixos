@@ -29,6 +29,7 @@
     blanket
     discord
     gimp
+    goxlr-utility
     google-chrome
     firefox
     inkscape
