@@ -42,5 +42,6 @@
     zotero
   ];
 
+  services.goxlr-utility.enable = true;
   programs.steam.enable = true;
 }
