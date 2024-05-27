@@ -112,6 +112,12 @@
     shell = pkgs.zsh;
     extraGroups = ["wheel" "input"]; # Enable ‘sudo’ for the user.
   };
+
+  services.udev.extraRules = ''
+    SUBSYSTEM=="usb", ATTR{idVendor}=="1220", ATTR{idProduct}=="8fe4", TAG+="uaccess"
+    SUBSYSTEM=="usb", ATTR{idVendor}=="1220", ATTR{idProduct}=="8fe0", TAG+="uaccess"
+  '';
+
   # environment.etc = {
   #   "xdg/user-dirs.defaults".text = ''
   #     DOWNLOADS=../../../../../home/cameron/3_downloads
