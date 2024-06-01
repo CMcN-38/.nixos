@@ -32,6 +32,7 @@
     gh
     git
     lazygit
+    lsd
     mpv
     neofetch
     nix-search-cli
