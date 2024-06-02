@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
     appimage-run
     gccgo13
+    go
     hidapi
     lua
     libnotify
