@@ -32,6 +32,7 @@
     goxlr-utility
     google-chrome
     firefox
+    floorp
     inkscape
     libreoffice
     localsend
