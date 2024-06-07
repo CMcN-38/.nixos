@@ -29,6 +29,7 @@
     blanket
     discord
     gimp
+    gnome-podcasts
     goxlr-utility
     google-chrome
     firefox
