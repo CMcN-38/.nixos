@@ -41,6 +41,7 @@
     obsidian
     obs-studio
     thunderbird
+    vuze
     zotero
   ];
 
