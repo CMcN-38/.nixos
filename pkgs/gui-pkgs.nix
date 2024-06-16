@@ -41,7 +41,7 @@
     obsidian
     obs-studio
     thunderbird
-    vuze
+    transmission-gtk
     zotero
   ];
 
