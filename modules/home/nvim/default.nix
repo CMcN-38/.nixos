@@ -25,7 +25,7 @@
       luasnip
       nvim-cmp
 
-      copilot-vim
+      # copilot-vim
 
       dashboard-nvim
       nvim-web-devicons
