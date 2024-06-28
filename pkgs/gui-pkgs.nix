@@ -40,6 +40,7 @@
     nomacs
     obsidian
     obs-studio
+    prismlauncher
     thunderbird
     transmission-gtk
     zotero
