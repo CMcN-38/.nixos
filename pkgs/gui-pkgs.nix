@@ -31,7 +31,6 @@
     gimp
     gnome-podcasts
     goxlr-utility
-    google-chrome
     firefox
     floorp
     inkscape
@@ -40,7 +39,6 @@
     nomacs
     obsidian
     obs-studio
-    prismlauncher
     thunderbird
     transmission-gtk
     zotero
