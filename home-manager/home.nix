@@ -123,12 +123,13 @@
     };
     theme = {
       name = "Catppuccin-Mocha-Compact-Pink-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = ["pink"];
-        size = "compact";
-        tweaks = ["rimless"];
-        variant = "mocha";
-      };
+      # package = pkgs.catppuccin-gtk.override {
+      #   accents = ["pink"];
+      #   size = "compact";
+      #   tweaks = ["rimless"];
+      #   variant = "mocha";
+      # };
+      package = pkgs.catppuccin-gtk;
     };
     iconTheme = {
       # name = "Catppuccin-Papirus-Mocka-Pink";
