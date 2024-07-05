@@ -109,7 +109,7 @@
 
     package = pkgs.bibata-cursors;
     size = 24;
-    #    gtk.enable = true;
+    gtk.enable = true;
     x11.enable = true;
   };
 
@@ -131,8 +131,8 @@
       };
     };
     iconTheme = {
-      #      name = "Catppuccin-Papirus-Mocka-Pink";
-      name = "Papirus-Dark";
+      name = "Catppuccin-Papirus-Mocka-Pink";
+      # name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
         accent = "pink";
