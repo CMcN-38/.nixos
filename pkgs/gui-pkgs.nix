@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
     alacritty
     blanket
+    bottles
     discord
     gimp
     gnome-podcasts
