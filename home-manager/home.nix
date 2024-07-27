@@ -128,18 +128,18 @@
         accent = "pink";
       };
     };
-    # theme = {
-    #   name = "rose-pine";
-    #   package = pkgs.rose-pine-gtk-theme;
-    # };
     theme = {
-      name = "catppuccin-mocha-blue-compact+default";
-      package = pkgs.catppuccin-gtk.override {
-        accents = ["blue"];
-        variant = "mocha";
-        size = "compact";
-      };
+      name = "rose-pine";
+      package = pkgs.rose-pine-gtk-theme;
     };
+    # theme = {
+    #   name = "catppuccin-mocha-blue-compact+default";
+    #   package = pkgs.catppuccin-gtk.override {
+    #     accents = ["blue"];
+    #     variant = "mocha";
+    #     size = "compact";
+    #   };
+    # };
     gtk3.extraConfig = {
       Settings = ''
         gtk-application-prefer-dark-theme=0
