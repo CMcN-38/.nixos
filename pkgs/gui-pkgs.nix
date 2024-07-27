@@ -41,7 +41,7 @@
     obsidian
     obs-studio
     thunderbird
-    transmission-gtk
+    # transmission_4-gtk
     zotero
   ];
 
