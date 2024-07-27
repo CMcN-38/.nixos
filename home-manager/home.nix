@@ -128,9 +128,13 @@
         accent = "pink";
       };
     };
+    # theme = {
+    #   name = "rose-pine";
+    #   package = pkgs.rose-pine-gtk-theme;
+    # };
     theme = {
-      name = "rose-pine";
-      package = pkgs.rose-pine-gtk-theme;
+      name = "catppuccin";
+      package = pkgs.catppuccin-gtk;
     };
     gtk3.extraConfig = {
       Settings = ''
