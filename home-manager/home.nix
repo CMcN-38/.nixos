@@ -123,7 +123,16 @@
     };
     theme = {
       name = "catppuccin-mocha-compact-pink-dark";
-      package = pkgs.catppuccin-gtk.override {
+      package = pkgs.catppuccin-gtk.overrideAttrs {
+        src = pkgs.fetchFromGitHub {
+          owner = "catppuccin";
+          repo = "gtk";
+          rev = "v1.0.3";
+          fetchSubmodules = true;
+          hash = "sha256-q5/VcFsm3vNEw55zq/vcM11eo456SYE5TQA3g2VQjGc=";
+        };
+        postUnpack = "";
+
         accents = ["pink"];
         size = "compact";
         tweaks = ["rimless"];
