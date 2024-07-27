@@ -121,24 +121,6 @@
       size = 24;
       package = pkgs.bibata-cursors;
     };
-    theme = {
-      name = "catppuccin-mocha-compact-pink-dark";
-      package = pkgs.catppuccin-gtk.overrideAttrs {
-        src = pkgs.fetchFromGitHub {
-          owner = "catppuccin";
-          repo = "gtk";
-          rev = "v1.0.3";
-          fetchSubmodules = true;
-          hash = "sha256-q5/VcFsm3vNEw55zq/vcM11eo456SYE5TQA3g2VQjGc=";
-        };
-        postUnpack = "";
-
-        accents = ["pink"];
-        size = "compact";
-        tweaks = ["rimless"];
-        variant = "mocha";
-      };
-    };
     iconTheme = {
       name = "Catppuccin-Papirus-Mocka-Pink";
       # name = "Papirus-Dark";
@@ -146,6 +128,27 @@
         flavor = "mocha";
         accent = "pink";
       };
+    };
+    theme = {
+      name = "catppuccin-mocha-blue-compact+default";
+      package =
+        (pkgs.catppuccin-gtk.overrideAttrs {
+          src = pkgs.fetchFromGitHub {
+            owner = "catppuccin";
+            repo = "gtk";
+            rev = "v1.0.3";
+            fetchSubmodules = true;
+            hash = "sha256-q5/VcFsm3vNEw55zq/vcM11eo456SYE5TQA3g2VQjGc=";
+          };
+
+          postUnpack = "";
+        })
+        .override
+        {
+          accents = ["blue"];
+          variant = "mocha";
+          size = "compact";
+        };
     };
 
     gtk3.extraConfig = {
