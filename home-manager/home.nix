@@ -123,17 +123,16 @@
     };
     theme = {
       name = "Catppuccin-Mocha-Compact-Pink-Dark";
-      # package = pkgs.catppuccin-gtk.override {
-      #   accents = ["pink"];
-      #   size = "compact";
-      #   tweaks = ["rimless"];
-      #   variant = "mocha";
-      # };
-      package = pkgs.catppuccin-gtk;
+      package = pkgs.catppuccin-gtk.override {
+        accents = ["pink"];
+        size = "compact";
+        tweaks = ["rimless"];
+        variant = "mocha";
+      };
     };
     iconTheme = {
-      # name = "Catppuccin-Papirus-Mocka-Pink";
-      name = "Papirus-Dark";
+      name = "Catppuccin-Papirus-Mocka-Pink";
+      # name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
         accent = "pink";
