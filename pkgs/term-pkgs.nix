@@ -37,6 +37,7 @@
     neofetch
     nix-search-cli
     starship
+    timg
     unzip
     vim
     wally-cli
