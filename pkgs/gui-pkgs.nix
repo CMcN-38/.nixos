@@ -27,21 +27,17 @@
   environment.systemPackages = with pkgs; [
     alacritty
     blanket
-    bottles
     discord
     gimp
     gnome-podcasts
     goxlr-utility
     firefox
-    floorp
-    inkscape
     libreoffice
     localsend
-    nomacs
     obsidian
     obs-studio
     thunderbird
-    # transmission_4-gtk
+    transmission_4-gtk
     zotero
   ];
 
