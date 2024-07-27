@@ -122,35 +122,16 @@
       package = pkgs.bibata-cursors;
     };
     iconTheme = {
-      name = "Catppuccin-Papirus-Mocka-Pink";
-      # name = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "pink";
-      };
+      name = "Papirus-Dark";
+      # package = pkgs.catppuccin-papirus-folders.override {
+      #   flavor = "mocha";
+      #   accent = "pink";
+      # };
     };
     theme = {
-      name = "catppuccin-mocha-blue-compact+default";
-      package =
-        (pkgs.catppuccin-gtk.overrideAttrs {
-          src = pkgs.fetchFromGitHub {
-            owner = "catppuccin";
-            repo = "gtk";
-            rev = "v1.0.3";
-            fetchSubmodules = true;
-            hash = "sha256-q5/VcFsm3vNEw55zq/vcM11eo456SYE5TQA3g2VQjGc=";
-          };
-
-          postUnpack = "";
-        })
-        .override
-        {
-          accents = ["blue"];
-          variant = "mocha";
-          size = "compact";
-        };
+      name = "rose-pine";
+      package = pkgs.rose-pine-gtk-theme;
     };
-
     gtk3.extraConfig = {
       Settings = ''
         gtk-application-prefer-dark-theme=0
