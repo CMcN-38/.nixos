@@ -32,6 +32,7 @@
     gnome-podcasts
     goxlr-utility
     firefox
+    kitty
     libreoffice
     localsend
     obsidian
