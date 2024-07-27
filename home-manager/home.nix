@@ -134,7 +134,11 @@
     # };
     theme = {
       name = "catppuccin-mocha-blue-compact";
-      package = pkgs.catppuccin-gtk;
+      package = pkgs.catppuccin-gtk.override {
+        accents = ["blue"];
+        variant = "mocha";
+        size = "compact";
+      };
     };
     gtk3.extraConfig = {
       Settings = ''
