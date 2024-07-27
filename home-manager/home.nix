@@ -133,7 +133,7 @@
     #   package = pkgs.rose-pine-gtk-theme;
     # };
     theme = {
-      name = "catppuccin-mocha-blue-compact";
+      name = "catppuccin-mocha-blue-compact+default";
       package = pkgs.catppuccin-gtk.override {
         accents = ["blue"];
         variant = "mocha";
