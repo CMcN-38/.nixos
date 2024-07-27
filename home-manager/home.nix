@@ -133,7 +133,7 @@
     #   package = pkgs.rose-pine-gtk-theme;
     # };
     theme = {
-      name = "catppuccin";
+      name = "catppuccin-mocha-blue-compact";
       package = pkgs.catppuccin-gtk;
     };
     gtk3.extraConfig = {
