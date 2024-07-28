@@ -39,6 +39,10 @@
     obs-studio
     thunderbird
     transmission_4-gtk
+
+    quickemu
+    quickgui
+
     zotero
   ];
 
