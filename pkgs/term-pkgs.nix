@@ -28,6 +28,7 @@
     alejandra
     btop
     docker
+    file
     fzf
     gh
     git
