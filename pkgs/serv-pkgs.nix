@@ -32,6 +32,7 @@
     hidapi
     lua
     libnotify
+    rocmPackages_5.llvm.llvm
     networkmanagerapplet
     nodejs_22
     openssl
