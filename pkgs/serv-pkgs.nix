@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
     appimage-run
     clang_18
+    espanso-wayland
     gccgo13
     go
     hidapi
