@@ -45,7 +45,7 @@
 
     zotero
     rpi-imager
-    gparted
+    gnome-disk-utility
   ];
 
   services.goxlr-utility.enable = true;
