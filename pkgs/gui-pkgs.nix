@@ -44,6 +44,7 @@
     quickgui
 
     zotero
+    rpi-imager
   ];
 
   services.goxlr-utility.enable = true;
