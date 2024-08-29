@@ -44,8 +44,6 @@
     quickgui
 
     zotero
-    rpi-imager
-    gnome-disk-utility
   ];
 
   services.goxlr-utility.enable = true;
