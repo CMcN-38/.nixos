@@ -32,6 +32,7 @@
     go
     hidapi
     imagemagick
+    imagemagickBig
     lua
     libnotify
     rocmPackages_5.llvm.llvm
