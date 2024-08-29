@@ -31,6 +31,7 @@
     gccgo13
     go
     hidapi
+    imagemagick
     lua
     libnotify
     rocmPackages_5.llvm.llvm
