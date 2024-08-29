@@ -47,6 +47,7 @@
         requests
         jedi-language-server
         pip
+        wand
       ]))
     rustup
     syncthing
