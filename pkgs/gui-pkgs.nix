@@ -39,7 +39,7 @@
     thunderbird
     transmission_4-gtk
 
-    zotero
+    # zotero
     zotero_7
   ];
 
