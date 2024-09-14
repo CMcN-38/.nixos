@@ -25,7 +25,6 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
-    alacritty
     blanket
     discord
     gimp
@@ -40,10 +39,8 @@
     thunderbird
     transmission_4-gtk
 
-    quickemu
-    quickgui
-
     zotero
+    zotero_7
   ];
 
   services.goxlr-utility.enable = true;
