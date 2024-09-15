@@ -41,6 +41,7 @@
 
     # zotero
     zotero_7
+    paperwork
   ];
 
   services.goxlr-utility.enable = true;
