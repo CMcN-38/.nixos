@@ -35,6 +35,7 @@
     imagemagickBig
     lua
     libnotify
+    xorg.libxcb
     rocmPackages_5.llvm.llvm
     networkmanagerapplet
     nodejs_22
