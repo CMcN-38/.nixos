@@ -1,4 +1,9 @@
 warning: Git tree '/home/cameron/.nixos' is dirty
+warning: updating lock file '/home/cameron/.nixos/flake.lock':
+• Updated input 'nixpkgs':
+    'github:NixOS/nixpkgs/efdcf895bb5e6650c4f304eab1bae66c4fcddd6e' (2024-09-30)
+  → 'github:nixos/nixpkgs/fbca5e745367ae7632731639de5c21f29c8744ed' (2024-09-28)
+warning: Git tree '/home/cameron/.nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/cameron/.nixos' is dirty
 trace: warning: cameron profile: You are using
