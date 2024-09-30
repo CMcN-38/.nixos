@@ -32,7 +32,7 @@
 
   imports = [
     # Include the results of the hardware scan.
-    ./hardware-configuration.nix
+    ./hardware-configuration-targaryen.nix
     inputs.home-manager.nixosModules.default
 
     # Packages:
