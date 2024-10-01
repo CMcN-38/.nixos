@@ -68,7 +68,7 @@
       ];
     };
     nixosConfigurations.stark = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      specialArgs = {inherit inputs;};
       modules = [
         ./nixos/configuration-stark.nix
         inputs.home-manager.nixosModules.default
