@@ -25,7 +25,7 @@
 }: {
   imports = [
     ../modules/home/nvim/default.nix
-    ../modules/home/hypr/default.nix
+    ../modules/home/hypr/targaryen.nix
   ];
 
   home.username = "cameron";
