@@ -25,7 +25,7 @@
 }: {
   imports = [
     ../modules/home/nvim/default.nix
-    # ../modules/home/hypr/default.nix
+    ../modules/home/hypr/default.nix
   ];
 
   home.username = "cameron";
@@ -33,7 +33,7 @@
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
-  home.enableNixpkgsReleaseCheck = false;
+  # home.enableNixpkgsReleaseCheck = false;
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
