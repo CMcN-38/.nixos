@@ -94,9 +94,9 @@
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
   networking.useDHCP = false;
-  networking.interfaces.wlp2s0.ipv4.addresses = [
+  networking.interfaces.wlp1s0.ipv4.addresses = [
     {
-      address = "192.168.0.114";
+      address = "192.168.0.119";
       prefixLength = 24;
     }
   ];
