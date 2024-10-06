@@ -26,6 +26,8 @@
   imports = [
     ../modules/home/nvim/default.nix
     ../modules/home/hypr/stark.nix
+    ../modules/home/kitty/stark.nix
+    ../modules/home/btop/stark.nix
   ];
 
   home.username = "cameron";

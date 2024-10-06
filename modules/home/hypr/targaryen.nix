@@ -203,6 +203,12 @@
     windowrule = move 83% 2.5%, ^(pavucontrol)$
     windowrule = size 600 1000, ^(pavucontrol)$
 
+
+        #Rofi
+        windowrule = float, ^(Rofi)$
+        windowrule = center, ^(Rofi)$
+        windowrule = size 1000 350, ^(Rofi)$
+
     #Workspaces
     # windowrule = workspace 3, title:^(.\*Espanso.\*)$
     # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
