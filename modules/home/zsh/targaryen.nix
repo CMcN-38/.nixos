@@ -50,7 +50,7 @@
     cdcon = "cd ~/.config/";
   };
 
-  programs.zsh.localVariables = {
+  programs.zsh.sessionVariables = {
     XDG_CONFIG_HOME = "/home/cameron/.config";
 
     PATH = "$PATH:/usr/local/bin/:$HOME/.go/bin";
