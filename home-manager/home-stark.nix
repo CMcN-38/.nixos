@@ -28,6 +28,14 @@
     ../modules/home/hypr/stark.nix
     ../modules/home/kitty/stark.nix
     ../modules/home/btop/stark.nix
+    ../modules/home/mpv/targaryen.nix
+    ../modules/home/rofi/targaryen.nix
+    ../modules/home/starship/targaryen.nix
+    ../modules/home/swaync/targaryen.nix
+    ../modules/home/waybar/targaryen.nix
+    ../modules/home/wofi/targaryen.nix
+    ../modules/home/tmux/targaryen.nix
+    ../modules/home/zsh/targaryen.nix
   ];
 
   home.username = "cameron";

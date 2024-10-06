@@ -35,7 +35,6 @@
     ./hardware-configuration-stark.nix
     inputs.home-manager.nixosModules.default
 
-
     # Packages:
     ../pkgs/gui-pkgs.nix
     ../pkgs/serv-pkgs.nix
