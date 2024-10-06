@@ -142,5 +142,6 @@
     users = {
       "cameron" = import ../home-manager/home-targaryen.nix;
     };
+    backupFileExtension = ".tmp";
   };
 }
