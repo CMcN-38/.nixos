@@ -16,8 +16,12 @@ If you insist then you can disable this warning by adding
 
 to your configuration.
 
-activating the configuration...
-setting up /etc...
-reloading user units for cameron...
-restarting sysinit-reactivation.target
-the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+these 6 derivations will be built:
+  /nix/store/p5wqz9a1lrxbszvgnw565vxx7byxw2bz-linux-6.10.5.drv
+  /nix/store/b8gpmxl07kxysb65l8pfsx6ww0r356ma-linux-6.10.5-modules.drv
+  /nix/store/7gkwz1d8ljlw2i3l3dlwq7qfk6h0wbnk-linux-6.10.5-modules-shrunk.drv
+  /nix/store/4ngg00mpvs63ja9qhiphn7w0fswqjls3-initrd-linux-6.10.5.drv
+  /nix/store/xvahf6726amqia3654fh74a2agqp9yiv-boot.json.drv
+  /nix/store/11i2bk5p9r007s21rkhxw9y7cmaramq1-nixos-system-targaryen-24.05.20240928.fbca5e7.drv
+building '/nix/store/p5wqz9a1lrxbszvgnw565vxx7byxw2bz-linux-6.10.5.drv'...
+error: interrupted by the user
