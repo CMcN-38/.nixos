@@ -140,7 +140,8 @@
     # also pass inputs to home-manager modules
     extraSpecialArgs = {inherit inputs;};
     users = {
-      "cameron" = import ../home-manager/home.nix;
+      "cameron" = import ../home-manager/home-targaryen.nix;
     };
+    backupFileExtension = ".tmp";
   };
 }
