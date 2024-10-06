@@ -35,7 +35,7 @@
     lazygit
     lsd
     mpv
-    neofetch
+    # neofetch
     nix-search-cli
     starship
     timg
