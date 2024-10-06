@@ -7,7 +7,7 @@
   programs.starship.enable = true;
   programs.starship.settings = {
     # Sets user-defined palette
-    # palette = "catppuccin_macchiato";
+    palette = "catppuccin_mocha";
 
     character = {
       # Note the use of Catppuccin color 'maroon'
@@ -22,7 +22,7 @@
     };
     # palette tables should be last in the config ⚓️
 
-    palettes = {
+    palettes.catppuccin_mocha = {
 rosewater = "#f5e0dc";
 flamingo = "#f2cdcd";
 pink = "#f5c2e7";
