@@ -59,9 +59,7 @@
   };
 
   programs.zsh.initExtraFirst = ''
-
-    bindkey -s ^F 'tmux-sessioniser\n'
-    bindkey -s ^w 'waybar\n'
+    bindkey -s ^F "tmux-sessioniser\n"
 
     setopt correct # correct spelling errors
     setopt extendedglob # enable extended globbing
