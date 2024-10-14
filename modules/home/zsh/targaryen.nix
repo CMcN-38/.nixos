@@ -59,7 +59,6 @@
   };
 
   programs.zsh.initExtraFirst = ''
-    bindkey "^[F" "/usr/local/bin/tmux-sessioniser"
 
     setopt correct # correct spelling errors
     setopt extendedglob # enable extended globbing
@@ -72,6 +71,7 @@
   '';
 
   programs.zsh.initExtra = ''
+    bindkey ^F "/usr/local/bin/tmux-sessioniser"
 
     plugins=(git)
 
