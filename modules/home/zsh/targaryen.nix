@@ -48,6 +48,8 @@
     # Navigate to the root folder
     cdroot = "cd ~/../../..";
     cdcon = "cd ~/.config/";
+
+    ts = "tmux-sessioniser";
   };
 
   programs.zsh.sessionVariables = {
