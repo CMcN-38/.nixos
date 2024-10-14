@@ -59,7 +59,6 @@
   };
 
   programs.zsh.initExtraFirst = ''
-    bindkey -s '^I' 'tmux-sessioniser\n'
 
     setopt correct # correct spelling errors
     setopt extendedglob # enable extended globbing
@@ -72,6 +71,8 @@
   '';
 
   programs.zsh.initExtra = ''
+    bindkey -s '^f' 'tmux-sessioniser\n'
+
     plugins=(git)
 
             # zsh vim mode
