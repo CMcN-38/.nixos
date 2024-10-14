@@ -61,7 +61,7 @@
   programs.zsh.initExtraFirst = ''
 
     bindkey -s ^F 'tmux-sessioniser\n'
-    bindkey -s ^H 'Hyprland\n'
+    bindkey -s ^w 'waybar\n'
 
     setopt correct # correct spelling errors
     setopt extendedglob # enable extended globbing
