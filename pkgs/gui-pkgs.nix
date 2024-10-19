@@ -31,6 +31,7 @@
     gnome-podcasts
     goxlr-utility
     firefox
+    evince
     kitty
     libreoffice
     localsend
