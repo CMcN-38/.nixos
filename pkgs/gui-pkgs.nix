@@ -42,9 +42,6 @@
 
     # zotero
     zotero_7
-    paperwork
-
-    rpi-imager
   ];
 
   services.goxlr-utility.enable = true;
