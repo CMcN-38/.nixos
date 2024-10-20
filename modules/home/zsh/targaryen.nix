@@ -73,7 +73,7 @@
   '';
 
   programs.zsh.initExtra = ''
-    # bindkey -s "^F" "/usr/local/bin/tmux-sessioniser"
+    bindkey -s "^F" "/usr/local/bin/tmux-sessioniser"
 
     plugins=(git)
 

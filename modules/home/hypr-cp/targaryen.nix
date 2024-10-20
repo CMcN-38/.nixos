@@ -216,6 +216,8 @@
     # Transparency Rules
     windowrule = opacity 1, ^(firefox)$
     # windowrule = opacity 0.95, ^(firefox)$
+    # windowrule = opacity 1, ^(Zen Browser)$
+    # windowrule = opacity 0.95, ^(Zen Browser)$
     windowrule = opacity 0.95, ^(discord)$
     windowrule = opacity 0.95, ^(Cider)$
     # windowrule = opacity 0.85, ^(kitty)$
