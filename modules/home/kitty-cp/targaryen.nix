@@ -11,8 +11,7 @@
   programs.kitty.font.size = 16;
 
   # programs.kitty.themeFile = "Bright_Lights";
-  # programs.kitty.themeFile = "IR_Black";
-  programs.kitty.themeFile = "Nightfox";
+  programs.kitty.themeFile = "IR_Black";
 
   programs.kitty.settings = {
     enable_audio_bell = false;
