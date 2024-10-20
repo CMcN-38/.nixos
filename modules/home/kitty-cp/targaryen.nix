@@ -11,7 +11,7 @@
   programs.kitty.font.size = 16;
 
   # programs.kitty.themeFile = "Cyberpunk-Neon";
-  programs.kitty.themeFile = "Alucard";
+  programs.kitty.themeFile = "Atom";
 
   programs.kitty.settings = {
     enable_audio_bell = false;
