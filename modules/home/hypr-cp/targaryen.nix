@@ -139,8 +139,8 @@
 
     general {
         gaps_in = 5
-        gaps_out = 20
-        border_size = 2
+        gaps_out = 30
+        border_size = 3
         col.active_border = rgba(6ee9f8ff) 
         col.inactive_border = rgba(4e112aff)
 
@@ -150,7 +150,7 @@
     }
 
     decoration {
-        rounding = 8
+        rounding = 0
 
         blur {
             enabled = false
