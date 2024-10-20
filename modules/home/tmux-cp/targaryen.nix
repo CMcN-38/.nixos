@@ -26,7 +26,7 @@
       run-shell ${pkgs.tmuxPlugins.sensible}/share/tmux-plugins/sensible/sensible.tmux
       # run-shell ${pkgs.tmuxPlugins.catppuccin}/share/tmux-plugins/catppuccin/catppuccin.tmux
       # run-shell ${pkgs.tmuxPlugins.onedark-theme}/share/tmux-plugins/onedark-theme/tmux-onedark-theme.tmux
-      set -g status-bg '#080808' # dark slate blue
+      set -g @status-bg '#080808' # dark slate blue
       set -g @tmux_power_theme '#6ee9f8' # dark slate blue
       run-shell ${pkgs.tmuxPlugins.power-theme}/share/tmux-plugins/power/tmux-power.tmux
       run-shell ${pkgs.tmuxPlugins.yank}/share/tmux-plugins/yank/yank.tmux
