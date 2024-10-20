@@ -12,7 +12,7 @@
 
   # programs.kitty.themeFile = "Bright_Lights";
   # programs.kitty.themeFile = "IR_Black";
-  programs.kitty.themeFile = "NightLion_v2";
+  programs.kitty.themeFile = "Nightfox";
 
   programs.kitty.settings = {
     enable_audio_bell = false;
