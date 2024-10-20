@@ -24,7 +24,7 @@
   ...
 }: {
   imports = [
-    ../modules/home/nvim/default.nix
+    ../modules/home/nvim-cp/default.nix
     ../modules/home/hypr-cp/targaryen.nix
     ../modules/home/kitty-cp/targaryen.nix
     ../modules/home/btop/targaryen.nix
@@ -34,7 +34,7 @@
     ../modules/home/swaync/targaryen.nix
     ../modules/home/waybar/targaryen.nix
     ../modules/home/wofi/targaryen.nix
-    ../modules/home/tmux/targaryen.nix
+    ../modules/home/tmux-cp/targaryen.nix
     ../modules/home/zsh/targaryen.nix
   ];
 
