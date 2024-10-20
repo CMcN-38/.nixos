@@ -138,7 +138,7 @@
     }
 
     general {
-        gaps_in = 30
+        gaps_in = 5
         gaps_out = 5
         border_size = 3
         col.active_border = rgba(6ee9f8ff) 
