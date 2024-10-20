@@ -12,7 +12,7 @@
 
   # programs.kitty.themeFile = "Cyberpunk-Neon";
   # programs.kitty.themeFile = "Bright_Lights";
-  programs.kitty.themeFile = "Flat";
+  programs.kitty.themeFile = "Galaxy";
 
   programs.kitty.settings = {
     enable_audio_bell = false;
