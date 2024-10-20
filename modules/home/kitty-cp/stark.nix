@@ -8,7 +8,7 @@
   programs.kitty.shellIntegration.enableZshIntegration = true;
 
   programs.kitty.font.name = "FiraCode Nerd Font";
-  programs.kitty.font.size = 16;
+  programs.kitty.font.size = 14;
 
   programs.kitty.themeFile = "Catppuccin-Mocha";
 
