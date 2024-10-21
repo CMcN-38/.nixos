@@ -93,8 +93,8 @@
   };
 
   services.swaync.style = ''
-        @define-color bg-base #4e4e4e;
-        @define-color cc-grey #151f1e;
+        @define-color bg-base #151f1e;
+        @define-color cc-grey #4e4e4e;
         @define-color cc-white #eeeeee;
         @define-color cc-blue #96CBFE;
         @define-color cc-magenta #ff73fd;
@@ -108,7 +108,7 @@
     .control-center .notification-row:focus,
     .control-center .notification-row:hover {
         opacity: 0.9;
-        background: #4e4e4e
+        background: #151f1e
     }
 
     .notification-row {
@@ -124,7 +124,7 @@
     }
 
     .notification-content {
-        background: #4e4e4e;
+        background: #151f1e;
         padding: 10px;
         border-radius: 5px;
         border: 2px solid #96cbfe;
@@ -139,7 +139,7 @@
 
     .close-button {
         background: #ff6c60;
-        color: #151f1e;
+        color: #4e4e4e;
         text-shadow: none;
         padding: 0;
         border-radius: 5px;
@@ -180,12 +180,12 @@
 
     .notification-action:first-child {
         border-bottom-left-radius: 10px;
-        background: #4e4e4e
+        background: #151f1e
     }
 
     .notification-action:last-child {
         border-bottom-right-radius: 10px;
-        background: #4e4e4e
+        background: #151f1e
     }
 
     .inline-reply {
@@ -193,7 +193,7 @@
     }
 
     .inline-reply-entry {
-        background: #4e4e4e;
+        background: #151f1e;
         color: #eeeeee;
         caret-color: #eeeeee;
         border: 1px solid #a8ff60;
@@ -202,7 +202,7 @@
 
     .inline-reply-button {
         margin-left: 4px;
-        background: #4e4e4e;
+        background: #151f1e;
         border: 1px solid #a8ff60;
         border-radius: 5px;
         color: #eeeeee
@@ -215,7 +215,7 @@
     }
 
     .inline-reply-button:hover {
-        background: #4e4e4e
+        background: #151f1e
     }
 
     .body-image {
@@ -250,7 +250,7 @@
     }
 
     .control-center {
-        background: #4e4e4e;
+        background: #151f1e;
         border: 2px solid #ff73fd;
         border-radius: 5px;
     }
@@ -273,7 +273,7 @@
 
     .widget-title {
         color: #96cbfe;
-        background: #4e4e4e;
+        background: #151f1e;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         font-size: 1.5rem;
@@ -284,18 +284,18 @@
         font-size: 1rem;
         color: #eeeeee;
         text-shadow: none;
-        background: #4e4e4e;
+        background: #151f1e;
         box-shadow: none;
         border-radius: 5px;
     }
 
     .widget-title>button:hover {
         background: #ff6c60;
-        color: #4e4e4e;
+        color: #151f1e;
     }
 
     .widget-dnd {
-        background: #4e4e4e;
+        background: #151f1e;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
@@ -315,12 +315,12 @@
     }
 
     .widget-dnd>switch slider {
-        background: #4e4e4e;
+        background: #151f1e;
         border-radius: 5px
     }
 
     .widget-dnd>switch:checked slider {
-        background: #4e4e4e;
+        background: #151f1e;
         border-radius: 5px
     }
 
@@ -335,7 +335,7 @@
 
     .widget-mpris {
         color: #eeeeee;
-        background: #4e4e4e;
+        background: #151f1e;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
@@ -364,19 +364,19 @@
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
-        background: #151f1e;
+        background: #4e4e4e;
     }
 
     .widget-buttons-grid>flowbox>flowboxchild>button {
         margin: 3px;
-        background: #4e4e4e;
+        background: #151f1e;
         border-radius: 5px;
         color: #eeeeee;
     }
 
     .widget-buttons-grid>flowbox>flowboxchild>button:hover {
         background: #96cbfe;
-        color: #4e4e4e;
+        color: #151f1e;
     }
 
     .widget-menubar>box>.menu-button-bar>button {
@@ -390,7 +390,7 @@
     }
 
     .widget-volume {
-        background: #151f1e;
+        background: #4e4e4e;
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
@@ -404,14 +404,14 @@
     }
 
     .per-app-volume {
-        background-color: #4e4e4e;
+        background-color: #151f1e;
         padding: 4px 8px 8px;
         margin: 0 8px 8px;
         border-radius: 5px;
     }
 
     .widget-backlight {
-        background: #151f1e;
+        background: #4e4e4e;
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
