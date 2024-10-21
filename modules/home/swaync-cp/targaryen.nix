@@ -93,7 +93,7 @@
   };
 
   services.swaync.style = ''
-        @define-color bg-base #010101;
+        @define-color bg-base #4e4e4e;
         @define-color cc-grey #151f1e;
         @define-color cc-white #eeeeee;
         @define-color cc-blue #96CBFE;
@@ -108,7 +108,7 @@
     .control-center .notification-row:focus,
     .control-center .notification-row:hover {
         opacity: 0.9;
-        background: #010101
+        background: #4e4e4e
     }
 
     .notification-row {
@@ -124,7 +124,7 @@
     }
 
     .notification-content {
-        background: #010101;
+        background: #4e4e4e;
         padding: 10px;
         border-radius: 5px;
         border: 2px solid #96cbfe;
@@ -180,12 +180,12 @@
 
     .notification-action:first-child {
         border-bottom-left-radius: 10px;
-        background: #010101
+        background: #4e4e4e
     }
 
     .notification-action:last-child {
         border-bottom-right-radius: 10px;
-        background: #010101
+        background: #4e4e4e
     }
 
     .inline-reply {
@@ -193,7 +193,7 @@
     }
 
     .inline-reply-entry {
-        background: #010101;
+        background: #4e4e4e;
         color: #eeeeee;
         caret-color: #eeeeee;
         border: 1px solid #a8ff60;
@@ -202,7 +202,7 @@
 
     .inline-reply-button {
         margin-left: 4px;
-        background: #010101;
+        background: #4e4e4e;
         border: 1px solid #a8ff60;
         border-radius: 5px;
         color: #eeeeee
@@ -215,7 +215,7 @@
     }
 
     .inline-reply-button:hover {
-        background: #010101
+        background: #4e4e4e
     }
 
     .body-image {
@@ -250,7 +250,7 @@
     }
 
     .control-center {
-        background: #010101;
+        background: #4e4e4e;
         border: 2px solid #ff73fd;
         border-radius: 5px;
     }
@@ -273,7 +273,7 @@
 
     .widget-title {
         color: #96cbfe;
-        background: #010101;
+        background: #4e4e4e;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         font-size: 1.5rem;
@@ -284,18 +284,18 @@
         font-size: 1rem;
         color: #eeeeee;
         text-shadow: none;
-        background: #010101;
+        background: #4e4e4e;
         box-shadow: none;
         border-radius: 5px;
     }
 
     .widget-title>button:hover {
         background: #ff6c60;
-        color: #010101;
+        color: #4e4e4e;
     }
 
     .widget-dnd {
-        background: #010101;
+        background: #4e4e4e;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
@@ -315,12 +315,12 @@
     }
 
     .widget-dnd>switch slider {
-        background: #010101;
+        background: #4e4e4e;
         border-radius: 5px
     }
 
     .widget-dnd>switch:checked slider {
-        background: #010101;
+        background: #4e4e4e;
         border-radius: 5px
     }
 
@@ -335,7 +335,7 @@
 
     .widget-mpris {
         color: #eeeeee;
-        background: #010101;
+        background: #4e4e4e;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
@@ -369,14 +369,14 @@
 
     .widget-buttons-grid>flowbox>flowboxchild>button {
         margin: 3px;
-        background: #010101;
+        background: #4e4e4e;
         border-radius: 5px;
         color: #eeeeee;
     }
 
     .widget-buttons-grid>flowbox>flowboxchild>button:hover {
         background: #96cbfe;
-        color: #010101;
+        color: #4e4e4e;
     }
 
     .widget-menubar>box>.menu-button-bar>button {
@@ -404,7 +404,7 @@
     }
 
     .per-app-volume {
-        background-color: #010101;
+        background-color: #4e4e4e;
         padding: 4px 8px 8px;
         margin: 0 8px 8px;
         border-radius: 5px;
