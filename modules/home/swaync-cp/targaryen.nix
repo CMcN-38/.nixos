@@ -94,8 +94,7 @@
 
   services.swaync.style = ''
         @define-color bg-base #010101;
-        # @define-color cc-grey #151f1e;
-        @define-color cc-grey #eeeeee;
+        @define-color cc-grey #151f1e;
         @define-color cc-white #eeeeee;
         @define-color cc-blue #96CBFE;
         @define-color cc-magenta #ff73fd;
@@ -109,7 +108,7 @@
     .control-center .notification-row:focus,
     .control-center .notification-row:hover {
         opacity: 0.9;
-        background: @bg-base
+        background: #010101
     }
 
     .notification-row {
@@ -125,10 +124,10 @@
     }
 
     .notification-content {
-        background: @bg-base;
+        background: #010101;
         padding: 10px;
         border-radius: 5px;
-        border: 2px solid @cc-blue;
+        border: 2px solid #96cbfe;
         margin: 0;
     }
 
@@ -139,8 +138,8 @@
     }
 
     .close-button {
-        background: @cc-red;
-        color: @cc-grey;
+        background: #ff6c60;
+        color: #151f1e;
         text-shadow: none;
         padding: 0;
         border-radius: 5px;
@@ -150,14 +149,14 @@
 
     .close-button:hover {
         box-shadow: none;
-        background: @cc-red;
+        background: #ff6c60;
         transition: all .15s ease-in-out;
         border: none
     }
 
 
     .notification-action {
-        border: 2px solid @cc-blue;
+        border: 2px solid #96cbfe;
         border-top: none;
         border-radius: 5px;
     }
@@ -165,8 +164,8 @@
 
     .notification-default-action:hover,
     .notification-action:hover {
-        color: @cc-blue;
-        background: @cc-blue
+        color: #96cbfe;
+        background: #96cbfe
     }
 
     .notification-default-action {
@@ -181,12 +180,12 @@
 
     .notification-action:first-child {
         border-bottom-left-radius: 10px;
-        background: @bg-base
+        background: #010101
     }
 
     .notification-action:last-child {
         border-bottom-right-radius: 10px;
-        background: @bg-base
+        background: #010101
     }
 
     .inline-reply {
@@ -194,34 +193,34 @@
     }
 
     .inline-reply-entry {
-        background: @bg-base;
-        color: @cc-white;
-        caret-color: @cc-white;
-        border: 1px solid @cc-green;
+        background: #010101;
+        color: #eeeeee;
+        caret-color: #eeeeee;
+        border: 1px solid #a8ff60;
         border-radius: 5px
     }
 
     .inline-reply-button {
         margin-left: 4px;
-        background: @bg-base;
-        border: 1px solid @cc-green;
+        background: #010101;
+        border: 1px solid #a8ff60;
         border-radius: 5px;
-        color: @cc-white
+        color: #eeeeee
     }
 
     .inline-reply-button:disabled {
         background: initial;
-        color: @cc-magenta;
+        color: #ff73fd;
         border: 1px solid transparent
     }
 
     .inline-reply-button:hover {
-        background: @bg-base
+        background: #010101
     }
 
     .body-image {
         margin-top: 6px;
-        background-color: @cc-white;
+        background-color: #eeeeee;
         border-radius: 5px
     }
 
@@ -229,7 +228,7 @@
         font-size: 16px;
         font-weight: 700;
         background: transparent;
-        color: @cc-green;
+        color: #a8ff60;
         text-shadow: none
     }
 
@@ -237,7 +236,7 @@
         font-size: 16px;
         font-weight: 700;
         background: transparent;
-        color: @cc-white;
+        color: #eeeeee;
         text-shadow: none;
         margin-right: 18px
     }
@@ -246,13 +245,13 @@
         font-size: 15px;
         font-weight: 400;
         background: transparent;
-        color: @cc-white;
+        color: #eeeeee;
         text-shadow: none
     }
 
     .control-center {
-        background: @bg-base;
-        border: 2px solid @cc-magenta;
+        background: #010101;
+        border: 2px solid #ff73fd;
         border-radius: 5px;
     }
 
@@ -273,8 +272,8 @@
     }
 
     .widget-title {
-        color: @cc-blue;
-        background: @bg-base;
+        color: #96cbfe;
+        background: #010101;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         font-size: 1.5rem;
@@ -283,45 +282,45 @@
 
     .widget-title>button {
         font-size: 1rem;
-        color: @cc-white;
+        color: #eeeeee;
         text-shadow: none;
-        background: @bg-base;
+        background: #010101;
         box-shadow: none;
         border-radius: 5px;
     }
 
     .widget-title>button:hover {
-        background: @cc-red;
-        color: @bg-base;
+        background: #ff6c60;
+        color: #010101;
     }
 
     .widget-dnd {
-        background: @bg-base;
+        background: #010101;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
         font-size: large;
-        color: @cc-blue;
+        color: #96cbfe;
     }
 
     .widget-dnd>switch {
         border-radius: 5px;
-        /* border: 1px solid @cc-blue; */
-        background: @cc-blue;
+        /* border: 1px solid #96cbfe; */
+        background: #96cbfe;
     }
 
     .widget-dnd>switch:checked {
-        background: @cc-red;
-        border: 1px solid @cc-red;
+        background: #ff6c60;
+        border: 1px solid #ff6c60;
     }
 
     .widget-dnd>switch slider {
-        background: @bg-base;
+        background: #010101;
         border-radius: 5px
     }
 
     .widget-dnd>switch:checked slider {
-        background: @bg-base;
+        background: #010101;
         border-radius: 5px
     }
 
@@ -331,12 +330,12 @@
 
     .widget-label>label {
         font-size: 1rem;
-        color: @cc-white;
+        color: #eeeeee;
     }
 
     .widget-mpris {
-        color: @cc-white;
-        background: @bg-base;
+        color: #eeeeee;
+        background: #010101;
         padding: 5px 10px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
@@ -365,19 +364,19 @@
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
-        background: @cc-grey;
+        background: #151f1e;
     }
 
     .widget-buttons-grid>flowbox>flowboxchild>button {
         margin: 3px;
-        background: @bg-base;
+        background: #010101;
         border-radius: 5px;
-        color: @cc-white;
+        color: #eeeeee;
     }
 
     .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-        background: @cc-blue;
-        color: @bg-base;
+        background: #96cbfe;
+        color: #010101;
     }
 
     .widget-menubar>box>.menu-button-bar>button {
@@ -391,33 +390,33 @@
     }
 
     .widget-volume {
-        background: @cc-grey;
+        background: #151f1e;
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
         font-size: x-large;
-        color: @cc-white;
+        color: #eeeeee;
     }
 
     .widget-volume>box>button {
-        background: @cc-blue;
+        background: #96cbfe;
         border: none
     }
 
     .per-app-volume {
-        background-color: @bg-base;
+        background-color: #010101;
         padding: 4px 8px 8px;
         margin: 0 8px 8px;
         border-radius: 5px;
     }
 
     .widget-backlight {
-        background: @cc-grey;
+        background: #151f1e;
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 5px;
         font-size: x-large;
-        color: @cc-white
+        color: #eeeeee
     }
 
     /* .widget-inhibitors {
