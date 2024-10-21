@@ -31,7 +31,7 @@
     ../modules/home/mpv/targaryen.nix
     ../modules/home/rofi/targaryen.nix
     ../modules/home/starship/targaryen.nix
-    ../modules/home/swaync/targaryen.nix
+    ../modules/home/swaync-cp/targaryen.nix
     ../modules/home/waybar/targaryen.nix
     ../modules/home/wofi/targaryen.nix
     ../modules/home/tmux-cp/targaryen.nix
