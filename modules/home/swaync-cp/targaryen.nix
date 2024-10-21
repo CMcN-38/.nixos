@@ -98,11 +98,11 @@
         @define-color cc-grey #eeeeee;
         @define-color cc-white #eeeeee;
         @define-color cc-blue #96CBFE;
-        @define-color cc-dark-blue #ff73fd;
+        @define-color cc-magenta #ff73fd;
         @define-color cc-red #ff6c60;
         @define-color cc-green #a8ff60;
     * {
-        font-family: Fira Code Nerd Font;
+        font-family: Ubuntu Nerd Font;
         font-weight: bolder;
     }
 
@@ -211,7 +211,7 @@
 
     .inline-reply-button:disabled {
         background: initial;
-        color: @cc-dark-blue;
+        color: @cc-magenta;
         border: 1px solid transparent
     }
 
@@ -252,7 +252,7 @@
 
     .control-center {
         background: @bg-base;
-        border: 2px solid @cc-dark-blue;
+        border: 2px solid @cc-magenta;
         border-radius: 5px;
     }
 
