@@ -94,7 +94,8 @@
 
   services.swaync.style = ''
         @define-color bg-base "#010101";
-        @define-color cc-grey "#151f1e";
+        # @define-color cc-grey "#151f1e";
+        @define-color cc-grey "#eeeeee";
         @define-color cc-white "#eeeeee";
         @define-color cc-blue "#96CBFE";
         @define-color cc-dark-blue "#ff73fd";
