@@ -35,6 +35,7 @@
     imagemagickBig
     lua
     libnotify
+    logiops
     xorg.libxcb
     rocmPackages_5.llvm.llvm
     networkmanagerapplet
