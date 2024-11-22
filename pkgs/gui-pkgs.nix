@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     blanket
+    calibre
     discord
     gimp
     gnome-podcasts
