@@ -52,7 +52,7 @@
         pip
         wand
       ]))
-    rustup
+    # rustup
     rustc
     syncthing
     tesseract4
