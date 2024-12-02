@@ -53,6 +53,7 @@
         wand
       ]))
     rustup
+    rustc
     syncthing
     tesseract4
     tree-sitter
