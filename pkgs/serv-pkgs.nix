@@ -41,7 +41,7 @@
     rocmPackages_5.llvm.llvm
     networkmanagerapplet
     nodejs_22
-    openssl
+    openssl.dev
     poppler_utils
     pamixer
     playerctl
