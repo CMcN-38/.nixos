@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     appimage-run
+    cargo
     clang_18
     espanso-wayland
     gccgo13
