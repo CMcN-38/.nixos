@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: {
-  wayland.windowManager.hyprland.enable = true;
+  # wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.extraConfig = ''
     # Monitor Sttings
     monitor=,2736x1824,auto,1.266667
@@ -25,9 +25,6 @@
     env = XDG_CURRENT_DESKTOP,Hyprland,*
     env = XDG_SESSION_TYPE,wayland,*
     env = WLR_NO_HARDWARE_CURSORS,1
-    cursor {
-        no_hardware_cursors = true;
-}
       input {
         kb_layout = us
         kb_variant =
