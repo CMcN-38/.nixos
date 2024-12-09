@@ -4,7 +4,17 @@
   pkgs,
   ...
 }: {
-  # wayland.windowManager.hyprland.enable = true;
+  wayland.windowManager.hyprland.enable = true;
+        wayland.windowManager.xwayland.enable = true;
+
+wayland.windowManager.hyprland.settings = {
+                cursor = {
+                        no_hardware_cursors = true;
+                }
+        }
+wayland.windowManager.hyprland.cursor = {
+                no_hardware_cursors = true;
+                }
   wayland.windowManager.hyprland.extraConfig = ''
     # Monitor Sttings
     monitor=,2736x1824,auto,1.266667
