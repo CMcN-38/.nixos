@@ -19,6 +19,7 @@
 
     # Some default env vars.
     env = XCURSOR_SIZE,24
+    env = WLR_NO_HARDWARE_CURSORS,1
     env = QT_QPA_PLATFORMTHEME,qt5ct,*
     env = QT_WAYLAND_SHELL_INTEGRATION,xdg-shell
     env = QT_QPA_PLATFORM,wayland,xcb,*
