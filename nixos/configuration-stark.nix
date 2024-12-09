@@ -61,7 +61,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
