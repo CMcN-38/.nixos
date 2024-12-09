@@ -20,7 +20,7 @@
     # Some default env vars.
     env = XCURSOR_SIZE,24
     env = QT_QPA_PLATFORMTHEME,qt5ct,*
-    env = QT_WAYLAND_SHELL_INTEGRATION,qt-shell
+    env = QT_WAYLAND_SHELL_INTEGRATION,xdg-shell
     env = QT_QPA_PLATFORM,wayland,xcb,*
     env = XDG_CURRENT_DESKTOP,Hyprland,*
     env = XDG_SESSION_TYPE,wayland,*
