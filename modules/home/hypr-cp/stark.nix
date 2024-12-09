@@ -19,13 +19,15 @@
 
     # Some default env vars.
     env = XCURSOR_SIZE,24
-    env = WLR_NO_HARDWARE_CURSORS,1
     env = QT_QPA_PLATFORMTHEME,qt5ct,*
     env = QT_WAYLAND_SHELL_INTEGRATION,xdg-shell
     env = QT_QPA_PLATFORM,wayland,xcb,*
     env = XDG_CURRENT_DESKTOP,Hyprland,*
     env = XDG_SESSION_TYPE,wayland,*
     env = WLR_NO_HARDWARE_CURSORS,1
+    cursor {
+        no_hardware_cursors = true;
+}
       input {
         kb_layout = us
         kb_variant =
