@@ -19,10 +19,10 @@
 
     # Some default env vars.
     env = XCURSOR_SIZE,24
-    env = QT_QPA_PLATFORMTHEME,qt5ct
+    env = QT_QPA_PLATFORMTHEME,qt5ct,*
     env = QT_QPA_PLATFORM,wayland,xcb,*
-    env = XDG_CURRENT_DESKTOP,Hyprland
-    env = XDG_SESSION_TYPE,wayland
+    env = XDG_CURRENT_DESKTOP,Hyprland,*
+    env = XDG_SESSION_TYPE,wayland,*
     env = WLR_NO_HARDWARE_CURSORS,1
       input {
         kb_layout = us
