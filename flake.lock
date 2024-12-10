@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1733754861,
-        "narHash": "sha256-3JKzIou54yjiMVmvgdJwopekEvZxX3JDT8DpKZs4oXY=",
+        "lastModified": 1733769654,
+        "narHash": "sha256-aVvYDt8eitZVF6fdOrSoIzYRkQ5Gh6kfRvqkiaDRLL0=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "9ebaa80a227eaca9c87c53ed515ade013bc2bca9",
+        "rev": "e952e94955dcc6fa2120c1430789fc41363f5237",
         "type": "github"
       },
       "original": {
@@ -156,11 +156,11 @@
     "rpi-linux-6_6_47-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1733479805,
-        "narHash": "sha256-Ar2auaFO9LLTCpa35DwDI+CNdVPF/SZkkbY1xr1wJgs=",
+        "lastModified": 1733822505,
+        "narHash": "sha256-H3S95Ia3hR2szbbciu5VNCkQm8jFFy0gpTh2L1JNc04=",
         "owner": "raspberrypi",
         "repo": "linux",
-        "rev": "e442e5c1ab6bff5b5460b4fc949beb72aaf77970",
+        "rev": "c4b0b7e2c595c0af6ad06997ed2847efd291f189",
         "type": "github"
       },
       "original": {
