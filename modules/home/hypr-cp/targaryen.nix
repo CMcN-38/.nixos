@@ -153,7 +153,7 @@
 
     misc {
         force_default_wallpaper = 0 # Set to 0 to disable the anime mascot wallpapers
-        vrr = 1
+        # vrr = 1
     }
 
     general {
@@ -165,7 +165,7 @@
 
         layout = dwindle
 
-        allow_tearing = false
+        # allow_tearing = false
     }
 
     decoration {
