@@ -119,9 +119,9 @@ wayland.windowManager.hyprland = {
             bezier = winIn, 0.1, 1.1, 0.1, 1.1
             bezier = winOut, 0.3, -0.3, 0, 1
             bezier = liner, 1, 1, 1, 1
-            animation = windows, 1, 6, wind, default
-            animation = windowsIn, 1, 6, winIn, default
-            animation = windowsOut, 1, 5, winOut, default
+            animation = windows, 1, 6, wind, popin 80%
+            animation = windowsIn, 1, 6, winIn, popin 80%
+            animation = windowsOut, 1, 5, winOut, popin 80%
             animation = windowsMove, 1, 5, wind, slide
             animation = border, 1, 10, default
             animation = fade, 1, 10, default
@@ -141,6 +141,7 @@ wayland.windowManager.hyprland = {
                 range = 4
                 render_power = 3
                 color = rgba(1a1a1aee)
+                }
           }
           plugin {
             hyprtrails {
