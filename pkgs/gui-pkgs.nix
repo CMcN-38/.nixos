@@ -30,7 +30,7 @@
     discord
     gimp
     gnome-podcasts
-    goxlr-utility
+    # goxlr-utility
     firefox
     evince
     kitty
@@ -45,6 +45,6 @@
     zotero_7
   ];
 
-  services.goxlr-utility.enable = true;
+  # services.goxlr-utility.enable = true;
   programs.steam.enable = true;
 }
