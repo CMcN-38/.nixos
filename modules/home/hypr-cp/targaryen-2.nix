@@ -120,8 +120,8 @@ wayland.windowManager.hyprland = {
             bezier = winOut, 0.3, -0.3, 0, 1
             bezier = liner, 1, 1, 1, 1
             animation = windows, 1, 6, wind, default
-            animation = windowsIn, 1, 6, winIn, popin 80%
-            animation = windowsOut, 1, 5, winOut, popin 80%
+            animation = windowsIn, 1, 6, winIn, default
+            animation = windowsOut, 1, 5, winOut, default
             animation = windowsMove, 1, 5, wind, slide
             animation = border, 1, 10, default
             animation = fade, 1, 10, default
@@ -129,10 +129,6 @@ wayland.windowManager.hyprland = {
           }
           decoration {
             rounding = 0
-            drop_shadow = true
-            shadow_range = 4
-            shadow_render_power = 3
-            col.shadow = rgba(1a1a1aee)
             blur {
                 enabled = true
                 size = 3
@@ -140,6 +136,11 @@ wayland.windowManager.hyprland = {
                 new_optimizations = on
                 ignore_opacity = off
             }
+            shadow {
+                enabled = true
+                range = 4
+                render_power = 3
+                color = rgba(1a1a1aee)
           }
           plugin {
             hyprtrails {
