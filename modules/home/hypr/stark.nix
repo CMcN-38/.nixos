@@ -22,7 +22,9 @@
     env = QT_QPA_PLATFORMTHEME,qt5ct
     env = XDG_CURRENT_DESKTOP,Hyprland
     env = XDG_SESSION_TYPE,wayland
-    env = WLR_NO_HARDWARE_CURSORS,1
+      cursor {
+        no_hardware_cursors = true
+        }
       input {
         kb_layout = us
         kb_variant =
