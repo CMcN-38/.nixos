@@ -31,11 +31,14 @@ wayland.windowManager.hyprland = {
           exec-once = lxqt-policykit-agent
           monitor=,preferred,auto,1
           general {
-            gaps_in = 6
-            gaps_out = 8
-            border_size = 2
+            gaps_in = 5
+            gaps_out = 5
+            border_size = 3
             layout = dwindle
             resize_on_border = true
+            col.active_border = rgba(6ee9f8ff) 
+            col.inactive_border = rgba(4e112aff)
+            # allow_tearing = false
           }
           input {
             kb_options = grp:alt_shift_toggle
@@ -43,31 +46,58 @@ wayland.windowManager.hyprland = {
             follow_mouse = 1
             touchpad {
               natural_scroll = true
-              disable_while_typing = true
-              scroll_factor = 0.8
+              disable_while_typing = false
+              scroll_factor = 0.2
             }
-            sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+            sensitivity = 1 # -1.0 - 1.0, 0 means no modification.
             accel_profile = flat
           }
-          windowrule = noborder,^(wofi)$
-          windowrule = center,^(wofi)$
-          windowrule = center,^(steam)$
-          windowrule = float, nm-connection-editor|blueman-manager
-          windowrule = float, swayimg|vlc|Viewnior|pavucontrol
-          windowrule = float, nwg-look|qt5ct|mpv
-          windowrule = float, zoom
-          windowrulev2 = stayfocused, title:^()$,class:^(steam)$
-          windowrulev2 = minsize 1 1, title:^()$,class:^(steam)$
-          windowrulev2 = opacity 0.9 0.7, class:^(Brave)$
-          windowrulev2 = opacity 0.9 0.7, class:^(thunar)$
+
+
+    #Thunar Float
+    windowrule = float, ^(thunar)$
+    windowrule = center, ^(thunar)$
+    windowrule = size 2500 1000, ^(thunar)$
+
+    #Pulse Audio
+    windowrule = float, ^(pavucontrol)$
+    windowrule = move 83% 2.5%, ^(pavucontrol)$
+    windowrule = size 600 1000, ^(pavucontrol)$
+
+
+        #Rofi
+        windowrule = float, ^(Rofi)$
+        windowrule = center, ^(Rofi)$
+        windowrule = size 1000 350, ^(Rofi)$
+
+    #Workspaces
+    # windowrule = workspace 3, title:^(.\*Espanso.\*)$
+    # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
+
+    # Transparency Rules
+    windowrule = opacity 1, ^(firefox)$
+    # windowrule = opacity 0.95, ^(firefox)$
+    # windowrule = opacity 1, ^(Zen Browser)$
+    windowrule = opacity 0.95, ^(zen-alpha)$
+    windowrule = opacity 0.95, ^(discord)$
+    windowrule = opacity 0.95, ^(Cider)$
+    # windowrule = opacity 0.85, ^(kitty)$
+    # Layer Rules
+    layerrule = blur, ^(swaync)$
+    layerrule = blur, ^(waybar)$
+
+
           gestures {
             workspace_swipe = true
             workspace_swipe_fingers = 3
+            workspace_swipe_distance = 1200
           }
           misc {
             initial_workspace_tracking = 0
             mouse_move_enables_dpms = true
             key_press_enables_dpms = false
+            # vrr = 1
+            force_default_wallpaper = 0
           }
           animations {
             enabled = yes
@@ -84,15 +114,15 @@ wayland.windowManager.hyprland = {
             animation = workspaces, 1, 5, wind
           }
           decoration {
-            rounding = 10
+            rounding = 0
             drop_shadow = true
             shadow_range = 4
             shadow_render_power = 3
             col.shadow = rgba(1a1a1aee)
             blur {
                 enabled = true
-                size = 5
-                passes = 3
+                size = 3
+                passes = 1
                 new_optimizations = on
                 ignore_opacity = off
             }
@@ -105,17 +135,76 @@ wayland.windowManager.hyprland = {
             pseudotile = true
             preserve_split = true
           }
-          bind = ALT,Tab,cyclenext
-          bind = ALT,Tab,bringactivetotop
-          bind = ,XF86AudioRaiseVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
-          bind = ,XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
-          binde = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-          bind = ,XF86AudioPlay, exec, playerctl play-pause
-          bind = ,XF86AudioPause, exec, playerctl play-pause
-          bind = ,XF86AudioNext, exec, playerctl next
-          bind = ,XF86AudioPrev, exec, playerctl previous
-          bind = ,XF86MonBrightnessDown,exec,brightnessctl set 5%-
-          bind = ,XF86MonBrightnessUp,exec,brightnessctl set +5%
+
+    $mainMod = SUPER
+
+    # Basic app control bindings
+    bind = $mainMod, RETURN, exec, $terminal
+    bind = $mainMod, Q, killactive,
+    bind = $mainMod, M, exit,
+    bind = $mainMod, F, exec, $fileManager
+    bind = $mainMod, V, togglefloating,
+    bind = $mainMod, SPACE, exec, $menu
+    bind = $mainMod, P, pseudo, # dwindle
+    bind = $mainMod, J, togglesplit, # dwindle
+    bind = $mainMod, Z, exec, $browser
+    bind = $mainMod, O, exec, obsidian
+    bind = $mainMod, C, exec, appimage-run -d /home/cameron/2_desktop/Cider-linux-appimage-x64.AppImage
+    bind = $mainMod, D, exec, discordcanary
+
+    # Move focus with mainMod + arrow keys
+    bind = $mainMod, left, movefocus, l
+    bind = $mainMod, right, movefocus, r
+    bind = $mainMod, up, movefocus, u
+    bind = $mainMod, down, movefocus, d
+
+    # Switch workspaces with mainMod + [0-9]
+    bind = $mainMod, 1, workspace, 1
+    bind = $mainMod, 2, workspace, 2
+    bind = $mainMod, 3, workspace, 3
+    bind = $mainMod, 4, workspace, 4
+    bind = $mainMod, 5, workspace, 5
+    bind = $mainMod, 6, workspace, 6
+    bind = $mainMod, 7, workspace, 7
+    bind = $mainMod, 8, workspace, 8
+    bind = $mainMod, 9, workspace, 9
+    bind = $mainMod, 0, workspace, 10
+
+    # Move active window to a workspace with mainMod + SHIFT + [0-9]
+    bind = $mainMod SHIFT, 1, movetoworkspace, 1
+    bind = $mainMod SHIFT, 2, movetoworkspace, 2
+    bind = $mainMod SHIFT, 3, movetoworkspace, 3
+    bind = $mainMod SHIFT, 4, movetoworkspace, 4
+    bind = $mainMod SHIFT, 5, movetoworkspace, 5
+    bind = $mainMod SHIFT, 6, movetoworkspace, 6
+    bind = $mainMod SHIFT, 7, movetoworkspace, 7
+    bind = $mainMod SHIFT, 8, movetoworkspace, 8
+    bind = $mainMod SHIFT, 9, movetoworkspace, 9
+    bind = $mainMod SHIFT, 0, movetoworkspace, 10
+
+    # Example special workspace (scratchpad)
+    #bind = $mainMod, S, togglespecialworkspace, magic
+    #bind = $mainMod SHIFT, S, movetoworkspace, special:magic
+
+    # Scroll through existing workspaces with mainMod + scroll
+    bind = $mainMod, mouse_down, workspace, e+1
+    bind = $mainMod, mouse_up, workspace, e-1
+    bind = $mainMod CTRL, right, workspace, e+1
+    bind = $mainMod CTRL, left, workspace, e-1
+
+    # Move/resize windows with mainMod + LMB/RMB and dragging
+    bindm = $mainMod, mouse:272, movewindow
+    bindm = $mainMod, mouse:273, resizewindow
+
+    # Wallpapers
+    bind = $mainMod, W, exec, random_wallpaper
+    bind = $mainMod SHIFT, W, exec, random_secret_wallpaper
+    bind = $mainMod CTRL, W, exec, random_secret_wallpaper_1
+    bind = $mainMod CTRL, F, exec, random_secret_wallpaper_2
+    bind = $mainMod , Delete, exec, snippetexpandergui -s
+
+    # Screenshots
+    bind = $mainMod, S, exec, screenshot
         '';
 };
 }
