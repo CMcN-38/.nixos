@@ -23,7 +23,7 @@
     env = XDG_CURRENT_DESKTOP,Hyprland
     env = XDG_SESSION_TYPE,wayland
       cursor {
-        no_hardware_cursors = true
+        no_hardware_cursors = 1
         }
       input {
         kb_layout = us
