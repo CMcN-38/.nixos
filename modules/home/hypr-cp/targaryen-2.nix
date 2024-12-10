@@ -24,11 +24,17 @@ wayland.windowManager.hyprland = {
           env = MOZ_ENABLE_WAYLAND, 1
           exec-once = dbus-update-activation-environment --systemd --all
           exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-          exec-once = killall -q swww;sleep .5 && swww init
-          exec-once = killall -q waybar;sleep .5 && waybar
-          exec-once = killall -q swaync;sleep .5 && swaync
           exec-once = nm-applet --indicator
           exec-once = lxqt-policykit-agent
+    exec-once = waybar
+    exec-once = swaync
+    exec-once = logid
+    exec-once = streamdeck -n
+    exec-once = swww-daemon #Wallpaper
+    exec-once = random-wallpaper
+    exec-once = thunar --daemon #Start file manager daemon in the background
+    exec-once = goxlr-daemon --http-disable
+    exec-once = solaar -w hide
           monitor=,preferred,auto,1
 
     # Set programs that you use
@@ -113,13 +119,13 @@ wayland.windowManager.hyprland = {
             bezier = winIn, 0.1, 1.1, 0.1, 1.1
             bezier = winOut, 0.3, -0.3, 0, 1
             bezier = liner, 1, 1, 1, 1
-            animation = windows, 1, 6, wind, slide
-            animation = windowsIn, 1, 6, winIn, slide
-            animation = windowsOut, 1, 5, winOut, slide
+            animation = windows, 1, 6, wind, default
+            animation = windowsIn, 1, 6, winIn, popin 80%
+            animation = windowsOut, 1, 5, winOut, popin 80%
             animation = windowsMove, 1, 5, wind, slide
-            animation = border, 1, 1, liner
+            animation = border, 1, 10, default
             animation = fade, 1, 10, default
-            animation = workspaces, 1, 5, wind
+            animation = workspaces, 1, 5, default
           }
           decoration {
             rounding = 0
