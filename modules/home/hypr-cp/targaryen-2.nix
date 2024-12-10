@@ -30,6 +30,14 @@ wayland.windowManager.hyprland = {
           exec-once = nm-applet --indicator
           exec-once = lxqt-policykit-agent
           monitor=,preferred,auto,1
+
+    # Set programs that you use
+    $terminal = kitty
+    $fileManager = thunar
+    $menu = rofi -show drun
+    $browser = appimage-run -d /home/cameron/2_desktop/zen-specific.AppImage
+    # $browser = firefox
+
           general {
             gaps_in = 5
             gaps_out = 5
