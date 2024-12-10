@@ -25,14 +25,14 @@
   # ┛
 
   fonts.packages = with pkgs; [
-    # (nerd-fonts.override {fonts = ["FiraCode"];})
+    (nerdfonts.override {fonts = ["FiraCode"];})
     fira-code-symbols
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
     openmoji-color
     freefont_ttf
-    nerd-fonts.fira-code
+    # nerd-fonts.fira-code
   ];
   
 }
