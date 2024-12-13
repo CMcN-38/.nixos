@@ -75,7 +75,7 @@ wayland.windowManager.hyprland = {
     windowrule = size 2500 1000, ^(thunar)$
 
     #Pulse Audio
-    windowrule = float, ^(org.pulseaudio.pavucontrol)$
+    windowrule = float, ,^(Volume Control)$ 
     windowrule = move 83% 2.5%, ^(org.pulseaudio.pavucontrol)$
     windowrule = size 600 1000, ^(org.pulseaudio.pavucontrol)$
 
