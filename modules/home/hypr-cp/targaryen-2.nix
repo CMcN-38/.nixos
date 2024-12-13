@@ -83,7 +83,7 @@ wayland.windowManager.hyprland = {
         #Rofi
         windowrule = float, ^(Rofi)$
         windowrule = center, ^(Rofi)$
-        windowrule = size 1000 350, ^(Rofi)$
+        # windowrule = size 1000 350, ^(Rofi)$
 
     #Workspaces
     # windowrule = workspace 3, title:^(.\*Espanso.\*)$
