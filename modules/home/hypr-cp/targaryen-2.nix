@@ -77,7 +77,7 @@ wayland.windowManager.hyprland = {
     #Pulse Audio
     windowrule = float, ^(pavucontrol)$
     windowrule = move 83% 2.5%, ^(pavucontrol)$
-    windowrule = size 600 1000, ^(pavucontrol)$
+    # windowrule = size 600 1000, ^(pavucontrol)$
 
 
         #Rofi
