@@ -38,6 +38,7 @@
     localsend
     obsidian
     obs-studio
+                rpi-imager
     thunderbird
     transmission_4-gtk
 
