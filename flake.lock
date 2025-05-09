@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1733769654,
-        "narHash": "sha256-aVvYDt8eitZVF6fdOrSoIzYRkQ5Gh6kfRvqkiaDRLL0=",
+        "lastModified": 1746798521,
+        "narHash": "sha256-axfz/jBEH9XHpS7YSumstV7b2PrPf7L8bhWUtLBv3nA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "e952e94955dcc6fa2120c1430789fc41363f5237",
+        "rev": "e95a7c5b6fa93304cd2fd78cf676c4f6d23c422c",
         "type": "github"
       },
       "original": {
@@ -56,16 +56,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1733550349,
-        "narHash": "sha256-NcGumB4Lr6KSDq+nIqXtNA8QwAQKDSZT7N9OTGWbTrs=",
+        "lastModified": 1746663147,
+        "narHash": "sha256-Ua0drDHawlzNqJnclTJGf87dBmaO/tn7iZ+TCkTRpRc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "e2605d0744c2417b09f8bf850dfca42fcf537d34",
+        "rev": "dda3dcd3fe03e991015e9a74b22d35950f264a54",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-24.11",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -88,11 +88,11 @@
     "rpi-bluez-firmware-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1708969706,
-        "narHash": "sha256-KakKnOBeWxh0exu44beZ7cbr5ni4RA9vkWYb9sGMb8Q=",
+        "lastModified": 1741017538,
+        "narHash": "sha256-t+D4VUfEIov83KV4wiKp6TqXTHXGkxg/mANi4GW7QHs=",
         "owner": "RPi-Distro",
         "repo": "bluez-firmware",
-        "rev": "78d6a07730e2d20c035899521ab67726dc028e1c",
+        "rev": "2bbfb8438e824f5f61dae3f6ebb367a6129a4d63",
         "type": "github"
       },
       "original": {
@@ -105,11 +105,11 @@
     "rpi-firmware-nonfree-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1723266537,
-        "narHash": "sha256-T7eTKXqY9cxEMdab8Snda4CEOrEihy5uOhA6Fy+Mhnw=",
+        "lastModified": 1744123009,
+        "narHash": "sha256-5ywIPs3lpmqVOVP3B75H577fYkkucDqB7htY2U1DW8U=",
         "owner": "RPi-Distro",
         "repo": "firmware-nonfree",
-        "rev": "4b356e134e8333d073bd3802d767a825adec3807",
+        "rev": "c9d3ae6584ab79d19a4f94ccf701e888f9f87a53",
         "type": "github"
       },
       "original": {
@@ -156,11 +156,11 @@
     "rpi-linux-6_6_47-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1733822505,
-        "narHash": "sha256-H3S95Ia3hR2szbbciu5VNCkQm8jFFy0gpTh2L1JNc04=",
+        "lastModified": 1743008740,
+        "narHash": "sha256-9wumAt/c39yi9vYz/6vgSywSq5GH8Aa2ZFuXhU9N7fk=",
         "owner": "raspberrypi",
         "repo": "linux",
-        "rev": "c4b0b7e2c595c0af6ad06997ed2847efd291f189",
+        "rev": "bba53a117a4a5c29da892962332ff1605990e17a",
         "type": "github"
       },
       "original": {
