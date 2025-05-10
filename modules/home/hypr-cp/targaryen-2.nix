@@ -75,15 +75,15 @@ wayland.windowManager.hyprland = {
     windowrule = size 2500 1000, class:^(thunar)$
 
     #Pulse Audio
-    windowrule = float, ^(org.pulseaudio.pavucontrol)$, 
-    windowrule = move 83% 2.5%, ^(org.pulseaudio.pavucontrol)$
-    windowrule = size 600 1000, ^(org.pulseaudio.pavucontrol)$
+    windowrule = float, class:^(org.pulseaudio.pavucontrol)$, 
+    windowrule = move 83% 2.5%, class:^(org.pulseaudio.pavucontrol)$
+    windowrule = size 600 1000, class:^(org.pulseaudio.pavucontrol)$
 
 
         #Rofi
-        windowrule = float, ^(Rofi)$
-        windowrule = center, ^(Rofi)$
-        # windowrule = size 1000 350, ^(Rofi)$
+        windowrule = float, class:^(Rofi)$
+        windowrule = center, class:^(Rofi)$
+        # windowrule = size 1000 350, class:^(Rofi)$
 
     #Workspaces
     # windowrule = workspace 3, title:^(.\*Espanso.\*)$
