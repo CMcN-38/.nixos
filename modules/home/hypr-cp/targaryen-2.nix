@@ -93,12 +93,12 @@ wayland.windowManager.hyprland = {
     # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
 
     # Transparency Rules
-    windowrule = opacity 1, ^(firefox)$
-    # windowrule = opacity 0.95, ^(firefox)$
-    # windowrule = opacity 1, ^(Zen Browser)$
-    windowrule = opacity 0.95, ^(zen-alpha)$
-    windowrule = opacity 0.95, ^(discord)$
-    windowrule = opacity 0.95, ^(Cider)$
+    windowrule = opacity 1, class:^(firefox)$
+    # windowrule = opacity 0.95, class:^(firefox)$
+    # windowrule = opacity 1, class:^(Zen Browser)$
+    windowrule = opacity 0.95, class:^(zen)$
+    windowrule = opacity 0.95, class:^(discord)$
+    windowrule = opacity 0.95, class:^(Cider)$
     # windowrule = opacity 0.85, ^(kitty)$
     # Layer Rules
     layerrule = blur, ^(swaync)$
