@@ -70,9 +70,9 @@ wayland.windowManager.hyprland = {
 
 
     #Thunar Float
-    windowrule = float, ^(thunar)$
-    windowrule = center, ^(thunar)$
-    windowrule = size 2500 1000, ^(thunar)$
+    windowrule = float, class:^(thunar)$
+    windowrule = center, class:^(thunar)$
+    windowrule = size 2500 1000, class:^(thunar)$
 
     #Pulse Audio
     windowrule = float, ^(org.pulseaudio.pavucontrol)$, 
