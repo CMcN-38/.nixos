@@ -75,9 +75,12 @@ wayland.windowManager.hyprland = {
     windowrule = size 2500 1000, class:^(thunar)$
 
     #Pulse Audio
-    windowrule = float, class:^(org.pulseaudio.pavucontrol)$, 
-    windowrule = move 83% 2.5%, class:^(org.pulseaudio.pavucontrol)$
-    windowrule = size 600 1000, class:^(org.pulseaudio.pavucontrol)$
+    # windowrule = float, class:^(org.pulseaudio.pavucontrol)$, 
+    # windowrule = move 83% 2.5%, class:^(org.pulseaudio.pavucontrol)$
+    # windowrule = size 600 1000, class:^(org.pulseaudio.pavucontrol)$
+    windowrule = float, class:^(Volume Control)$, 
+    windowrule = move 83% 2.5%, class:^(Volume Control)$
+    windowrule = size 600 1000, class:^(Volume Control)$
 
 
         #Rofi
