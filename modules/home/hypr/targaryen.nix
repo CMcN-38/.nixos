@@ -157,11 +157,12 @@
             size = 3
             passes = 1
         }
-
-        drop_shadow = yes
-        shadow_range = 4
-        shadow_render_power = 3
-        col.shadow = rgba(1a1a1aee)
+        shadow {
+                enabled = true
+                range = 4
+                power = 3
+                color = rgba(1a1a1aee)
+                }
     }
 
     animations {
@@ -194,30 +195,30 @@
     exec-once = solaar -w hide
 
     #Thunar Float
-    windowrule = float, ^(thunar)$
-    windowrule = center, ^(thunar)$
-    windowrule = size 2500 1000, ^(thunar)$
+    windowrule = float, class:^(thunar)$
+    windowrule = center, class:^(thunar)$
+    windowrule = size 2500 1000, class:^(thunar)$
 
     #Pulse Audio
-    windowrule = float, ^(pavucontrol)$
-    windowrule = move 83% 2.5%, ^(pavucontrol)$
-    windowrule = size 600 1000, ^(pavucontrol)$
+    windowrule = float, class:^(pavucontrol)$
+    windowrule = move 83% 2.5%, class:^(pavucontrol)$
+    windowrule = size 600 1000, class:^(pavucontrol)$
 
 
         #Rofi
-        windowrule = float, ^(Rofi)$
-        windowrule = center, ^(Rofi)$
-        windowrule = size 1000 350, ^(Rofi)$
+        windowrule = float, class:^(Rofi)$
+        windowrule = center, class:^(Rofi)$
+        windowrule = size 1000 350, class:^(Rofi)$
 
     #Workspaces
     # windowrule = workspace 3, title:^(.\*Espanso.\*)$
     # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
 
     # Transparency Rules
-    windowrule = opacity 1, ^(firefox)$
-    # windowrule = opacity 0.95, ^(firefox)$
-    windowrule = opacity 0.95, ^(discord)$
-    windowrule = opacity 0.95, ^(Cider)$
+    windowrule = opacity 1, class:^(firefox)$
+    # windowrule = opacity 0.95, class:^(firefox)$
+    windowrule = opacity 0.95, class:^(discord)$
+    windowrule = opacity 0.95, class:^(Cider)$
     # windowrule = opacity 0.85, ^(kitty)$
     # Layer Rules
     layerrule = blur, ^(swaync)$
