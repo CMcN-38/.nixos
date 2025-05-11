@@ -25,7 +25,7 @@
 }: {
   imports = [
     ../modules/home/nvim/default.nix
-    ../modules/home/hypr/targaryen-2.nix
+    ../modules/home/hypr/targaryen.nix
     ../modules/home/kitty/targaryen.nix
     ../modules/home/btop/targaryen.nix
     ../modules/home/mpv/targaryen.nix
