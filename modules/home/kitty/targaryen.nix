@@ -10,7 +10,8 @@
   programs.kitty.font.name = "FiraCode Nerd Font";
   programs.kitty.font.size = 16;
 
-  programs.kitty.themeFile = "Catppuccin-Mocha";
+  # programs.kitty.themeFile = "Bright_Lights";
+  programs.kitty.themeFile = "IR_Black";
 
   programs.kitty.settings = {
     enable_audio_bell = false;

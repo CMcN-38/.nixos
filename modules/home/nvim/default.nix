@@ -14,8 +14,8 @@
     plugins = with pkgs.vimPlugins; [
       mini-nvim
 
-      catppuccin-nvim
       colorizer
+      ir_black
 
       cmp-nvim-lsp
       friendly-snippets
