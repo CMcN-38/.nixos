@@ -4,11 +4,39 @@
   pkgs,
   ...
 }: {
-  wayland.windowManager.hyprland.enable = true;
-  wayland.windowManager.hyprland.extraConfig = ''
-    # Monitor Sttings
-    # monitor=,2736x1824,auto,1.266667
-    monitor=,3840x2160,auto,1
+wayland.windowManager.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    systemd.enable = true;
+    extraConfig =
+        ''
+          env = NIXOS_OZONE_WL, 1
+          env = NIXPKGS_ALLOW_UNFREE, 1
+          env = XDG_CURRENT_DESKTOP, Hyprland
+          env = XDG_SESSION_TYPE, wayland
+          env = XDG_SESSION_DESKTOP, Hyprland
+          env = GDK_BACKEND, wayland, x11
+          env = CLUTTER_BACKEND, wayland
+          env = QT_QPA_PLATFORM=wayland;xcb
+          env = QT_WAYLAND_DISABLE_WINDOWDECORATION, 1
+          env = QT_AUTO_SCREEN_SCALE_FACTOR, 1
+          env = SDL_VIDEODRIVER, x11
+          env = MOZ_ENABLE_WAYLAND, 1
+          exec-once = dbus-update-activation-environment --systemd --all
+          exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+          exec-once = nm-applet --indicator
+          exec-once = lxqt-policykit-agent
+    exec-once = waybar
+    exec-once = swaync
+    exec-once = logid
+    exec-once = streamdeck -n
+    exec-once = swww-daemon #Wallpaper
+    exec-once = random-wallpaper
+    exec-once = thunar --daemon #Start file manager daemon in the background
+    exec-once = goxlr-daemon --http-disable
+    exec-once = solaar -w hide
+          monitor=,preferred,auto,1
+    # monitor=,3840x2160,auto,1
 
     # Set programs that you use
     $terminal = kitty
@@ -17,49 +45,116 @@
     $browser = appimage-run -d /home/cameron/2_desktop/zen-specific.AppImage
     # $browser = firefox
 
-    # Some default env vars.
-    env = XCURSOR_SIZE,24
-    env = QT_QPA_PLATFORMTHEME,qt5ct
-    env = XDG_CURRENT_DESKTOP,Hyprland
-    env = XDG_SESSION_TYPE,wayland
-    env = WLR_NO_HARDWARE_CURSORS,1
-      input {
-        kb_layout = us
-        kb_variant =
-        kb_model =
-        kb_options =
-        kb_rules =
+          general {
+            gaps_in = 5
+            gaps_out = 5
+            border_size = 3
+            layout = dwindle
+            resize_on_border = true
+            col.active_border = rgba(6ee9f8ff) 
+            col.inactive_border = rgba(4e112aff)
+            # allow_tearing = false
+          }
+          input {
+            kb_options = grp:alt_shift_toggle
+            kb_options = caps:super
+            follow_mouse = 1
+            touchpad {
+              natural_scroll = true
+              disable_while_typing = false
+              scroll_factor = 0.2
+            }
+            sensitivity = 1 # -1.0 - 1.0, 0 means no modification.
+            accel_profile = flat
+          }
 
 
-        follow_mouse = 1
+    #Thunar Float
+    windowrule = float, class:^(thunar)$
+    windowrule = center, class:^(thunar)$
+    windowrule = size 2500 1000, class:^(thunar)$
 
-        touchpad {
-            natural_scroll = yes
-            disable_while_typing = false
-            scroll_factor = 0.2
-        }
+    #Pulse Audio
+    # windowrule = float, class:^(org.pulseaudio.pavucontrol)$, 
+    # windowrule = move 83% 2.5%, class:^(org.pulseaudio.pavucontrol)$
+    # windowrule = size 600 1000, class:^(org.pulseaudio.pavucontrol)$
+    windowrule = float, class:^(Volume Control)$, 
+    windowrule = move 83% 2.5%, class:^(Volume Control)$
+    windowrule = size 600 1000, class:^(Volume Control)$
 
-        sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
-        accel_profile = flat
-        left_handed = false
-    }
 
-    # Cofigure touchpad gestures
+        #Rofi
+        windowrule = float, class:^(Rofi)$
+        windowrule = center, class:^(Rofi)$
+        # windowrule = size 1000 350, class:^(Rofi)$
 
-    gestures {
-        workspace_swipe = on
-        workspace_swipe_fingers = 3
-        workspace_swipe_distance = 1200
-    }
+    #Workspaces
+    # windowrule = workspace 3, title:^(.\*Espanso.\*)$
+    # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
 
-    # device:MX Master 3S {
-    #     sensitivity = -0.5
-    # }
-    #
-    device {
-            name = apple-inc.-magic-trackpad-2
-            sensitivity = +1.0
-    }
+    # Transparency Rules
+    windowrule = opacity 1, class:^(firefox)$
+    # windowrule = opacity 0.95, class:^(firefox)$
+    # windowrule = opacity 1, class:^(Zen Browser)$
+    windowrule = opacity 0.95, class:^(zen)$
+    windowrule = opacity 0.95, class:^(discord)$
+    windowrule = opacity 0.95, class:^(Cider)$
+    # windowrule = opacity 0.85, ^(kitty)$
+    # Layer Rules
+    layerrule = blur, ^(swaync)$
+    layerrule = blur, ^(waybar)$
+
+
+          gestures {
+            workspace_swipe = true
+            workspace_swipe_fingers = 3
+            workspace_swipe_distance = 1200
+          }
+          misc {
+            initial_workspace_tracking = 0
+            mouse_move_enables_dpms = true
+            key_press_enables_dpms = false
+            # vrr = 1
+            force_default_wallpaper = 0
+          }
+          animations {
+            enabled = yes
+            bezier = wind, 0.05, 0.9, 0.1, 1.05
+            bezier = winIn, 0.1, 1.1, 0.1, 1.1
+            bezier = winOut, 0.3, -0.3, 0, 1
+            bezier = liner, 1, 1, 1, 1
+            animation = windows, 1, 6, wind, popin 80%
+            animation = windowsIn, 1, 6, winIn, popin 80%
+            animation = windowsOut, 1, 5, winOut, popin 80%
+            animation = windowsMove, 1, 5, wind, slide
+            animation = border, 1, 10, default
+            animation = fade, 1, 10, default
+            animation = workspaces, 1, 5, default
+          }
+          decoration {
+            rounding = 0
+            blur {
+                enabled = true
+                size = 3
+                passes = 1
+                new_optimizations = on
+                ignore_opacity = off
+            }
+            shadow {
+                enabled = true
+                range = 4
+                render_power = 3
+                color = rgba(1a1a1aee)
+                }
+          }
+          plugin {
+            hyprtrails {
+            }
+          }
+          dwindle {
+            pseudotile = true
+            preserve_split = true
+          }
 
     $mainMod = SUPER
 
@@ -130,98 +225,6 @@
 
     # Screenshots
     bind = $mainMod, S, exec, screenshot
-
-
-    misc {
-        force_default_wallpaper = 0 # Set to 0 to disable the anime mascot wallpapers
-        vrr = 1
-    }
-
-    general {
-        gaps_in = 5
-        gaps_out = 20
-        border_size = 2
-        col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
-        col.inactive_border = rgba(595959aa)
-
-        layout = dwindle
-
-        allow_tearing = false
-    }
-
-    decoration {
-        rounding = 8
-
-        blur {
-            enabled = false
-            size = 3
-            passes = 1
-        }
-
-        drop_shadow = yes
-        shadow_range = 4
-        shadow_render_power = 3
-        col.shadow = rgba(1a1a1aee)
-    }
-
-    animations {
-        enabled = yes
-
-        bezier = myBezier, 0.05, 0.9, 0.1, 1.05
-
-        animation = windows, 1, 7, myBezier
-        animation = windowsOut, 1, 7, default, popin 80%
-        animation = border, 1, 10, default
-        animation = borderangle, 1, 8, default
-        animation = fade, 1, 7, default
-        animation = workspaces, 1, 6, default
-    }
-
-    dwindle {
-        pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
-        preserve_split = yes # you probably want this
-    }
-
-
-    exec-once = waybar
-    exec-once = swaync
-    exec-once = logid
-    exec-once = streamdeck -n
-    exec-once = swww-daemon #Wallpaper
-    exec-once = random-wallpaper
-    exec-once = thunar --daemon #Start file manager daemon in the background
-    exec-once = goxlr-daemon --http-disable
-    exec-once = solaar -w hide
-
-    #Thunar Float
-    windowrule = float, ^(thunar)$
-    windowrule = center, ^(thunar)$
-    windowrule = size 2500 1000, ^(thunar)$
-
-    #Pulse Audio
-    windowrule = float, ^(pavucontrol)$
-    windowrule = move 83% 2.5%, ^(pavucontrol)$
-    windowrule = size 600 1000, ^(pavucontrol)$
-
-
-        #Rofi
-        windowrule = float, ^(Rofi)$
-        windowrule = center, ^(Rofi)$
-        windowrule = size 1000 350, ^(Rofi)$
-
-    #Workspaces
-    # windowrule = workspace 3, title:^(.\*Espanso.\*)$
-    # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
-
-    # Transparency Rules
-    windowrule = opacity 1, ^(firefox)$
-    # windowrule = opacity 0.95, ^(firefox)$
-    windowrule = opacity 0.95, ^(discord)$
-    windowrule = opacity 0.95, ^(Cider)$
-    # windowrule = opacity 0.85, ^(kitty)$
-    # Layer Rules
-    layerrule = blur, ^(swaync)$
-    layerrule = blur, ^(waybar)$
-
-  '';
+        '';
+};
 }
