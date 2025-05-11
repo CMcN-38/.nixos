@@ -23,7 +23,7 @@
       bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
       bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
       bind-key -r i run-shell "tmux neww tmux-cht.sh"
-      bind C-f send-keys -t.- 'tmux-sessioniser' Enter     
+      bind f send-keys -t.- 'tmux-sessioniser' Enter     
       run-shell ${pkgs.tmuxPlugins.sensible}/share/tmux-plugins/sensible/sensible.tmux
       # run-shell ${pkgs.tmuxPlugins.catppuccin}/share/tmux-plugins/catppuccin/catppuccin.tmux
       # run-shell ${pkgs.tmuxPlugins.onedark-theme}/share/tmux-plugins/onedark-theme/tmux-onedark-theme.tmux
