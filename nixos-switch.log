@@ -1,34 +1,34 @@
 warning: Git tree '/home/cameron/.nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/cameron/.nixos' is dirty
-error:
-       … while calling the 'head' builtin
-         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/attrsets.nix:1534:13:
-         1533|           if length values == 1 || pred here (elemAt values 1) (head values) then
-         1534|             head values
-             |             ^
-         1535|           else
+evaluation warning: `programs.zsh.initExtraFirst` is deprecated, use `programs.zsh.initContent` with `lib.mkBefore` instead.
 
-       … while evaluating the attribute 'value'
-         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/modules.nix:1084:7:
-         1083|     // {
-         1084|       value = addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |       ^
-         1085|       inherit (res.defsFinal') highestPrio;
+                    Example: programs.zsh.initContent = lib.mkBefore "your content here";
+evaluation warning: `programs.zsh.initExtra` is deprecated, use `programs.zsh.initContent` instead.
 
-       … while evaluating the option `system.build.toplevel':
-
-       … while evaluating definitions from `/nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/nixos/modules/system/activation/top-level.nix':
-
-       … while evaluating the option `assertions':
-
-       … while evaluating definitions from `/nix/store/b24snx9hs9nvi76avsrplzsff4wcbz32-source/nixos/common.nix':
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: syntax error, unexpected '{', expecting INHERIT
-       at /nix/store/xfwsp7zmm6dysgcf8xmzqirsm4ww0iih-source/modules/home/waybar/targaryen.nix:9:1:
-            8|   programs.waybar.settings = {
-            9| {
-             | ^
-           10|     "layer": "top",
+                    Example: programs.zsh.initContent = "your content here";
+these 9 derivations will be built:
+  /nix/store/b9sa70bxfsh8syaaxpaxi0cggxp1hq6d-waybar-style.css.drv
+  /nix/store/mic6x3rdkj8jia6n3gwdnv4y7xhiyqzm-waybar-config.json.drv
+  /nix/store/7njlclhrvfqvzl27m2w24knlixvx0vk4-home-manager-files.drv
+  /nix/store/wg1max14vdnx17j7v9827q9b0brb75sb-activation-script.drv
+  /nix/store/kk2ajcrnnzr0v8vjqyjln8cazqg5kb7w-home-manager-generation.drv
+  /nix/store/zk52g0hnw78yfq4n904glbdklrjx0aq7-unit-home-manager-cameron.service.drv
+  /nix/store/ansi19k3hbc5cgnml0sl481xz7cka17k-system-units.drv
+  /nix/store/1jdj6ngimm4pjqjhkhkdm85447kaxgkn-etc.drv
+  /nix/store/p6i5v4gvsdh3h9wibczx15jd3lrakpqf-nixos-system-targaryen-25.05.20250508.dda3dcd.drv
+building '/nix/store/b9sa70bxfsh8syaaxpaxi0cggxp1hq6d-waybar-style.css.drv'...
+building '/nix/store/mic6x3rdkj8jia6n3gwdnv4y7xhiyqzm-waybar-config.json.drv'...
+building '/nix/store/wg1max14vdnx17j7v9827q9b0brb75sb-activation-script.drv'...
+building '/nix/store/7njlclhrvfqvzl27m2w24knlixvx0vk4-home-manager-files.drv'...
+building '/nix/store/kk2ajcrnnzr0v8vjqyjln8cazqg5kb7w-home-manager-generation.drv'...
+building '/nix/store/zk52g0hnw78yfq4n904glbdklrjx0aq7-unit-home-manager-cameron.service.drv'...
+building '/nix/store/ansi19k3hbc5cgnml0sl481xz7cka17k-system-units.drv'...
+building '/nix/store/1jdj6ngimm4pjqjhkhkdm85447kaxgkn-etc.drv'...
+building '/nix/store/p6i5v4gvsdh3h9wibczx15jd3lrakpqf-nixos-system-targaryen-25.05.20250508.dda3dcd.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for cameron...
+restarting sysinit-reactivation.target
+the following new units were started: NetworkManager-dispatcher.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+Done. The new configuration is /nix/store/ha58ih448bnarfrs5alm1i6ng40chw16-nixos-system-targaryen-25.05.20250508.dda3dcd
