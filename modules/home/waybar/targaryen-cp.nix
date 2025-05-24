@@ -127,9 +127,8 @@
   programs.waybar.style = ''
 * {
     min-height: 0;
-    /* font-family: Lexend, "Font Awesome 6 Free Solid"; */
     font-family: Fira Code Nerd Font;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
