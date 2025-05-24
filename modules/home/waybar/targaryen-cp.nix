@@ -30,15 +30,15 @@
     ];
 
 
-    # "custom/music-player"= {
-    #     "interval"= 1;
-    #     "format"= "{}";
-    #     "return-type"= "json";
-    #     "exec"= "~/.nixos/modules/home/waybar/scripts/music_player.sh grep";
-    #     "on-click"= "~/.nixos/modules/home/waybar/scripts/music_player.sh previous";
-    #     "on-click-middle"= "~/.nixos/modules/home/waybar/scripts/music_player.sh pause";
-    #     "on-click-right"= "~/.nixos/modules/home/waybar/scripts/music_player.sh next";
-    # };
+    "custom/music-player"= {
+        "interval"= 1;
+        "format"= "{}";
+        "return-type"= "json";
+        "exec"= "~/.nixos/modules/home/waybar/scripts/music_player.sh grep";
+        "on-click"= "~/.nixos/modules/home/waybar/scripts/music_player.sh previous";
+        "on-click-middle"= "~/.nixos/modules/home/waybar/scripts/music_player.sh pause";
+        "on-click-right"= "~/.nixos/modules/home/waybar/scripts/music_player.sh next";
+    };
 
     "wlr/workspaces"= {
         "on-click"= "activate";
@@ -101,27 +101,29 @@
         "on-click"= "pavucontrol";
     };
 
-    # "pulseaudio#microphone"= {
-    #     "format"= "{format_source}";
-    #     "format-source"= " {volume}%";
-    #     "format-source-muted"= "";
-    #     "on-click"= "pavucontrol -t 4";
-    #     "on-click-middle"= "~/.config/hypr/scripts/volume.sh --toggle-mic";
-    #     "on-scroll-up"= "~/.config/hypr/scripts/volume.sh --mic-inc";
-    #     "on-scroll-down"= "~/.config/hypr/scripts/volume.sh --mic-dec";
-    #     "tooltip-format"= "{source_desc} | {source_volume}%";
+    "pulseaudio#microphone"= {
+        "format"= "{format_source}";
+        "format-source"= " {volume}%";
+        "format-source-muted"= "";
+        "on-click"= "pavucontrol -t 4";
+        "on-click-middle"= "~/.config/hypr/scripts/volume.sh --toggle-mic";
+        "on-scroll-up"= "~/.config/hypr/scripts/volume.sh --mic-inc";
+        "on-scroll-down"= "~/.config/hypr/scripts/volume.sh --mic-dec";
+        "tooltip-format"= "{source_desc} | {source_volume}%";
     };
 
-    # "custom/sep"= {
-    #     "format"= "|";
-    #     "tooltip"= false;
-    # };
+    "custom/sep"= {
+        "format"= "|";
+        "tooltip"= false;
+    };
 
-    # "custom/power"= {
-    #     "tooltip"= false;
-    #     # "on-click"= "~/.config/rofi/powermenu/type-2/powermenu.sh &";
-    #     "format"= "⏻ ";
+    "custom/power"= {
+        "tooltip"= false;
+        # "on-click"= "~/.config/rofi/powermenu/type-2/powermenu.sh &";
+        "format"= "⏻ ";
         };
+};
+};
   programs.waybar.style = ''
 * {
     min-height: 0;
