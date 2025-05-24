@@ -1,15 +1,34 @@
 warning: Git tree '/home/cameron/.nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/cameron/.nixos' is dirty
-evaluation warning: `programs.zsh.initExtraFirst` is deprecated, use `programs.zsh.initContent` with `lib.mkBefore` instead.
+error:
+       … while calling the 'head' builtin
+         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/attrsets.nix:1534:13:
+         1533|           if length values == 1 || pred here (elemAt values 1) (head values) then
+         1534|             head values
+             |             ^
+         1535|           else
 
-                    Example: programs.zsh.initContent = lib.mkBefore "your content here";
-evaluation warning: `programs.zsh.initExtra` is deprecated, use `programs.zsh.initContent` instead.
+       … while evaluating the attribute 'value'
+         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/modules.nix:1084:7:
+         1083|     // {
+         1084|       value = addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |       ^
+         1085|       inherit (res.defsFinal') highestPrio;
 
-                    Example: programs.zsh.initContent = "your content here";
-activating the configuration...
-setting up /etc...
-reloading user units for cameron...
-restarting sysinit-reactivation.target
-the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/69fzhg83qafwf23yjaynk36sv6m8hcvh-nixos-system-targaryen-25.05.20250508.dda3dcd
+       … while evaluating the option `system.build.toplevel':
+
+       … while evaluating definitions from `/nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/nixos/modules/system/activation/top-level.nix':
+
+       … while evaluating the option `assertions':
+
+       … while evaluating definitions from `/nix/store/b24snx9hs9nvi76avsrplzsff4wcbz32-source/nixos/common.nix':
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: syntax error, unexpected '{', expecting INHERIT
+       at /nix/store/xfwsp7zmm6dysgcf8xmzqirsm4ww0iih-source/modules/home/waybar/targaryen.nix:9:1:
+            8|   programs.waybar.settings = {
+            9| {
+             | ^
+           10|     "layer": "top",
