@@ -61,7 +61,7 @@
       };
       "network#wifi" = {
         "interval" = 1;
-        "interface" = "wlp1s0";
+        "interface" = "wlp2s0";
         # //"interface"= "wlp2s0";
         "format-icons" = ["󰤯 " "󰤟 " "󰤢 " "󰤥 " "󰤨 "];
         "format-wifi" = "{icon}";

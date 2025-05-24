@@ -7,7 +7,8 @@
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.extraConfig = ''
     # Monitor Sttings
-    monitor=,2736x1824,auto,1.266667
+    # monitor=,2736x1824,auto,1.266667
+    monitor=,2736x1824,auto,1.5
     # monitor=,3840x2160,auto,1
 
     # Set programs that you use
@@ -198,7 +199,7 @@
     #Thunar Float
     windowrule = float, class:^(thunar)$
     windowrule = center, class:^(thunar)$
-    windowrule = size 2500 1000, class:^(thunar)$
+    windowrule = size 1500 1000, class:^(thunar)$
 
     #Pulse Audio
     windowrule = float, class:^(pavucontrol)$
