@@ -29,8 +29,8 @@
     ../modules/home/kitty/stark.nix
     ../modules/home/btop/stark.nix
     ../modules/home/mpv/stark.nix
-    # ../modules/home/rofi/stark.nix
-    # ../modules/home/starship/stark.nix
+    ../modules/home/rofi/stark.nix
+    ../modules/home/starship/stark.nix
     ../modules/home/swaync/stark.nix
     ../modules/home/waybar/stark.nix
     ../modules/home/wofi/stark.nix
