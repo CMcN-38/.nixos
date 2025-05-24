@@ -32,7 +32,7 @@
     ../modules/home/rofi/targaryen.nix
     ../modules/home/starship/targaryen.nix
     ../modules/home/swaync/targaryen.nix
-    ../modules/home/waybar/targaryen.nix
+    ../modules/home/waybar/targaryen-cp.nix
     ../modules/home/wofi/targaryen.nix
     ../modules/home/tmux/targaryen.nix
     ../modules/home/zsh/targaryen.nix
