@@ -196,28 +196,28 @@
     exec-once = solaar -w hide
 
     #Thunar Float
-    windowrule = float, ^(thunar)$
-    windowrule = center, ^(thunar)$
-    windowrule = size 2500 1000, ^(thunar)$
+    windowrule = float, class:^(thunar)$
+    windowrule = center, class:^(thunar)$
+    windowrule = size 2500 1000, class:^(thunar)$
 
     #Pulse Audio
-    windowrule = float, ^(pavucontrol)$
-    windowrule = move 83% 2.5%, ^(pavucontrol)$
-    windowrule = size 600 1000, ^(pavucontrol)$
+    windowrule = float, class:^(pavucontrol)$
+    windowrule = move 83% 2.5%, class:^(pavucontrol)$
+    windowrule = size 600 1000, class:^(pavucontrol)$
 
     #Workspaces
     # windowrule = workspace 3, title:^(.\*Espanso.\*)$
     # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
 
     # Transparency Rules
-    windowrule = opacity 1, ^(firefox)$
-    # windowrule = opacity 0.95, ^(firefox)$
-    windowrule = opacity 0.95, ^(discord)$
-    windowrule = opacity 0.95, ^(Cider)$
-    # windowrule = opacity 0.85, ^(kitty)$
+    windowrule = opacity 1, class:^(firefox)$
+    # windowrule = opacity 0.95, class:^(firefox)$
+    windowrule = opacity 0.95, class:^(discord)$
+    windowrule = opacity 0.95, class:^(Cider)$
+    # windowrule = opacity 0.85, class:^(kitty)$
     # Layer Rules
-    layerrule = blur, ^(swaync)$
-    layerrule = blur, ^(waybar)$
+    layerrule = blur, class:^(swaync)$
+    layerrule = blur, class:^(waybar)$
 
   '';
 }

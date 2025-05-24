@@ -38,7 +38,7 @@
     libnotify
     logiops
     xorg.libxcb
-    rocmPackages_5.llvm.llvm
+    #rocmPackages_5.llvm.llvm
     networkmanagerapplet
     nodejs_22
     openssl.dev

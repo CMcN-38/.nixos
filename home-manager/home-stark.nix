@@ -28,14 +28,14 @@
     ../modules/home/hypr/stark.nix
     ../modules/home/kitty/stark.nix
     ../modules/home/btop/stark.nix
-    ../modules/home/mpv/targaryen.nix
-    ../modules/home/rofi/targaryen.nix
-    ../modules/home/starship/targaryen.nix
-    ../modules/home/swaync/targaryen.nix
+    ../modules/home/mpv/stark.nix
+    # ../modules/home/rofi/stark.nix
+    # ../modules/home/starship/stark.nix
+    ../modules/home/swaync/stark.nix
     ../modules/home/waybar/stark.nix
-    ../modules/home/wofi/targaryen.nix
-    ../modules/home/tmux/targaryen.nix
-    ../modules/home/zsh/targaryen.nix
+    ../modules/home/wofi/stark.nix
+    ../modules/home/tmux/stark.nix
+    ../modules/home/zsh/stark.nix
   ];
 
   home.username = "cameron";
