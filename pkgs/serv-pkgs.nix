@@ -27,8 +27,6 @@
   environment.systemPackages = with pkgs; [
                 alsa-lib
                 alsa-utils
-                alsaequal
-                alsa-oss
     appimage-run
     cargo
     clang_18
