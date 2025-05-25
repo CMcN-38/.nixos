@@ -25,6 +25,10 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
+                alsa-lib
+                alsa-utils
+                alsaequal
+                alsa-oss
     appimage-run
     cargo
     clang_18
@@ -38,7 +42,7 @@
     libnotify
     logiops
     xorg.libxcb
-    rocmPackages_5.llvm.llvm
+    # rocmPackages_5.llvm.llvm
     networkmanagerapplet
     nodejs_22
     openssl.dev

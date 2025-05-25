@@ -17,7 +17,8 @@
 
     "modules-left"= ["hyprland/workspaces" 
                 "custom/sep"
-                "hyprland/window"];
+                # "hyprland/window"
+                        ];
     "modules-center"= ["custom/music-player"];
     "modules-right"= [
         "custom/sep"
@@ -26,7 +27,7 @@
         "clock"
         "clock#date"
         "custom/sep"
-        "tray"
+        # "tray"
     ];
 
 
@@ -40,8 +41,7 @@
         "on-click-right"= "~/.nixos/modules/home/waybar/scripts/music_player.sh next";
     };
 
-    "wlr/workspaces"= {
-        "on-click"= "activate";
+    "wlr/workspaces"= { "on-click"= "activate";
         "format"= "{name}";
         "all-outputs"= true;
         "disable-scroll"= false;
@@ -54,7 +54,7 @@
             "(.{42}).*"= "$1..";
         };
         "icon"= true;
-        "icon-size"= 22;
+        "icon-size"= 25;
     };
 
     "tray"= {
@@ -106,9 +106,9 @@
         "format-source"= " {volume}%";
         "format-source-muted"= "";
         "on-click"= "pavucontrol -t 4";
-        "on-click-middle"= "~/.config/hypr/scripts/volume.sh --toggle-mic";
-        "on-scroll-up"= "~/.config/hypr/scripts/volume.sh --mic-inc";
-        "on-scroll-down"= "~/.config/hypr/scripts/volume.sh --mic-dec";
+        "on-click-middle"= "~/.nixos/modules/home/waybar/scripts/volume.sh --toggle-mic";
+        "on-scroll-up"= "~/.nixos/modules/home/waybar/scripts/volume.sh --mic-inc";
+        "on-scroll-down"= "~/.nixos/modules/home/waybar/scripts/volume.sh --mic-dec";
         "tooltip-format"= "{source_desc} | {source_volume}%";
     };
 

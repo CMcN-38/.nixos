@@ -29,8 +29,8 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
-    # pavucontrol
-    lxqt.pavucontrol-qt
+    pavucontrol
+    # lxqt.pavucontrol-qt
     #Screenshot Tools
     grim
     slurp
