@@ -169,7 +169,8 @@ wayland.windowManager.hyprland = {
     bind = $mainMod, J, togglesplit, # dwindle
     bind = $mainMod, Z, exec, $browser
     bind = $mainMod, O, exec, obsidian
-    bind = $mainMod, C, exec, appimage-run -d /home/cameron/2_desktop/Cider-linux-appimage-x64.AppImage
+    bind = $mainMod, C, exec, Cider
+    # bind = $mainMod, C, exec, appimage-run -d /home/cameron/2_desktop/Cider-linux-appimage-x64.AppImage
     bind = $mainMod, D, exec, discordcanary
 
     # Move focus with mainMod + arrow keys
