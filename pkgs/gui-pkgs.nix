@@ -27,9 +27,9 @@
   environment.systemPackages = with pkgs; [
     blanket
     calibre
+                # cider-2
     discord
     gimp
-                google-chrome
     gnome-podcasts
     goxlr-utility
     firefox
