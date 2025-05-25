@@ -1,34 +1,64 @@
 warning: Git tree '/home/cameron/.nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/cameron/.nixos' is dirty
-error:
-       … while calling the 'head' builtin
-         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/attrsets.nix:1534:13:
-         1533|           if length values == 1 || pred here (elemAt values 1) (head values) then
-         1534|             head values
-             |             ^
-         1535|           else
+evaluation warning: `programs.zsh.initExtraFirst` is deprecated, use `programs.zsh.initContent` with `lib.mkBefore` instead.
 
-       … while evaluating the attribute 'value'
-         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/modules.nix:1084:7:
-         1083|     // {
-         1084|       value = addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |       ^
-         1085|       inherit (res.defsFinal') highestPrio;
+                    Example: programs.zsh.initContent = lib.mkBefore "your content here";
+evaluation warning: `programs.zsh.initExtra` is deprecated, use `programs.zsh.initContent` instead.
 
-       … while evaluating the option `system.build.toplevel':
-
-       … while evaluating definitions from `/nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/nixos/modules/system/activation/top-level.nix':
-
-       … while evaluating the option `assertions':
-
-       … while evaluating definitions from `/nix/store/b24snx9hs9nvi76avsrplzsff4wcbz32-source/nixos/common.nix':
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: syntax error, unexpected '{', expecting INHERIT
-       at /nix/store/xfwsp7zmm6dysgcf8xmzqirsm4ww0iih-source/modules/home/waybar/targaryen.nix:9:1:
-            8|   programs.waybar.settings = {
-            9| {
-             | ^
-           10|     "layer": "top",
+                    Example: programs.zsh.initContent = "your content here";
+evaluation warning: The option `hardware.pulseaudio' defined in `/nix/store/zwi3z47b7wviwn2visk66m970p65k376-source/pkgs/serv-pkgs.nix' has been renamed to `services.pulseaudio'.
+these 17 derivations will be built:
+  /nix/store/gh8rz2l8r2rl5594rk6h7s592vbaxv2z-waybar-config.json.drv
+  /nix/store/w3yk9mg3z3c0yk0dvz6yvfcfmrxqigki-hm_hyprhyprland.conf.drv
+  /nix/store/09w7lyng0vl197mjj00jqabxlr5crhw7-activation-script.drv
+  /nix/store/4b16qfwky3wgz82sgzsv5h3dx146wzwq-home-manager-files.drv
+  /nix/store/7kg9rhkm49dpnz90qv6kyb6jah4ikchn-home-manager-generation.drv
+  /nix/store/1b0gcjqfvinjm9phc8qyvh0g5dkysav5-unit-home-manager-cameron.service.drv
+  /nix/store/hsy26kzxbdl39b4gqwam9ivilfvgpwmh-system-path.drv
+  /nix/store/6kxbl19dpwb81szi72fkrl3ip9vwmma3-dbus-1.drv
+  /nix/store/whayphyj8dan7iij264bv77sdj0sclms-X-Restart-Triggers-dbus.drv
+  /nix/store/73al9kijszvryq1577a37xil6v3bg26j-unit-dbus.service.drv
+  /nix/store/b8nrcxwrgbnsq10qm52l6yhxmi9c3af3-X-Restart-Triggers-polkit.drv
+  /nix/store/7c5jyzp8npj4v9gqk9nqb7j5cx3jizlb-unit-polkit.service.drv
+  /nix/store/9s7clfg4gvcisdi6a0d5bwvlq4zy53zj-system-units.drv
+  /nix/store/qc0nann22b1lr136z3g2a0mwq9rnr61g-unit-dbus.service.drv
+  /nix/store/h0c29x67ywaij0is9p6r5lihjvyzjznb-user-units.drv
+  /nix/store/ddpilfi2576p6y0hl9pxql8rl1blcpxa-etc.drv
+  /nix/store/jv1fhx321iai77cqyhjzcb9r1b87hkqf-nixos-system-targaryen-25.05.20250508.dda3dcd.drv
+these 3 paths will be fetched (7.89 MiB download, 34.10 MiB unpacked):
+  /nix/store/x2fk94lvyaaac4gh4p0spsrs6kvv4k2s-apprun-cli-0.3.2
+  /nix/store/ivkvp7cqs0snkd88k2b4q0b2a0b2iqj0-pwvucontrol-0.4.9
+  /nix/store/fry8xi7nm8pm9g807l6lfd0w1swx850k-wireplumber-0.4.17
+copying path '/nix/store/x2fk94lvyaaac4gh4p0spsrs6kvv4k2s-apprun-cli-0.3.2' from 'https://cache.nixos.org'...
+copying path '/nix/store/fry8xi7nm8pm9g807l6lfd0w1swx850k-wireplumber-0.4.17' from 'https://cache.nixos.org'...
+building '/nix/store/w3yk9mg3z3c0yk0dvz6yvfcfmrxqigki-hm_hyprhyprland.conf.drv'...
+building '/nix/store/gh8rz2l8r2rl5594rk6h7s592vbaxv2z-waybar-config.json.drv'...
+copying path '/nix/store/ivkvp7cqs0snkd88k2b4q0b2a0b2iqj0-pwvucontrol-0.4.9' from 'https://cache.nixos.org'...
+building '/nix/store/09w7lyng0vl197mjj00jqabxlr5crhw7-activation-script.drv'...
+building '/nix/store/4b16qfwky3wgz82sgzsv5h3dx146wzwq-home-manager-files.drv'...
+building '/nix/store/7kg9rhkm49dpnz90qv6kyb6jah4ikchn-home-manager-generation.drv'...
+building '/nix/store/1b0gcjqfvinjm9phc8qyvh0g5dkysav5-unit-home-manager-cameron.service.drv'...
+building '/nix/store/hsy26kzxbdl39b4gqwam9ivilfvgpwmh-system-path.drv'...
+building '/nix/store/b8nrcxwrgbnsq10qm52l6yhxmi9c3af3-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/6kxbl19dpwb81szi72fkrl3ip9vwmma3-dbus-1.drv'...
+building '/nix/store/7c5jyzp8npj4v9gqk9nqb7j5cx3jizlb-unit-polkit.service.drv'...
+building '/nix/store/whayphyj8dan7iij264bv77sdj0sclms-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/73al9kijszvryq1577a37xil6v3bg26j-unit-dbus.service.drv'...
+building '/nix/store/qc0nann22b1lr136z3g2a0mwq9rnr61g-unit-dbus.service.drv'...
+building '/nix/store/9s7clfg4gvcisdi6a0d5bwvlq4zy53zj-system-units.drv'...
+building '/nix/store/h0c29x67ywaij0is9p6r5lihjvyzjznb-user-units.drv'...
+building '/nix/store/ddpilfi2576p6y0hl9pxql8rl1blcpxa-etc.drv'...
+building '/nix/store/jv1fhx321iai77cqyhjzcb9r1b87hkqf-nixos-system-targaryen-25.05.20250508.dda3dcd.drv'...
+stopping the following units: audit.service, kmod-static-nodes.service, logrotate-checkconf.service, mount-pstore.service, network-setup.service, NetworkManager.service, nscd.service, resolvconf.service, rtkit-daemon.service, systemd-modules-load.service, systemd-oomd.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-tmpfiles-resetup.service, systemd-vconsole-setup.service, wpa_supplicant.service
+NOT restarting the following changed units: bluetooth.service, getty@tty1.service, systemd-fsck@dev-disk-by\x2duuid-AB63\x2dEA34.service, systemd-journal-flush.service, systemd-logind.service, systemd-random-seed.service, systemd-remount-fs.service, systemd-update-utmp.service, systemd-user-sessions.service, user-runtime-dir@1000.service, user@1000.service
+activating the configuration...
+setting up /etc...
+restarting systemd...
+reloading user units for cameron...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service, reload-systemd-vconsole-setup.service
+restarting the following units: network-addresses-wlp2s0.service, nix-daemon.service, polkit.service, sshd.service, systemd-journald.service, systemd-udevd.service
+starting the following units: audit.service, kmod-static-nodes.service, logrotate-checkconf.service, mount-pstore.service, network-setup.service, NetworkManager.service, nscd.service, resolvconf.service, rtkit-daemon.service, systemd-modules-load.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-tmpfiles-resetup.service, systemd-vconsole-setup.service, wpa_supplicant.service
+the following new units were started: NetworkManager-dispatcher.service, systemd-hostnamed.service
+Done. The new configuration is /nix/store/adm6jrcm5nq198s5r5nkirdn1qi619ci-nixos-system-targaryen-25.05.20250508.dda3dcd
