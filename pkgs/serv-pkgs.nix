@@ -87,5 +87,6 @@
   };
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+  hardware.pulseaudio.extraConfig = "load-module module-device-manager";
   services.blueman.enable = true;
 }
