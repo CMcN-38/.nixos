@@ -1,33 +1,34 @@
 warning: Git tree '/home/cameron/.nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/cameron/.nixos' is dirty
-evaluation warning: `programs.zsh.initExtraFirst` is deprecated, use `programs.zsh.initContent` with `lib.mkBefore` instead.
+error:
+       … while calling the 'head' builtin
+         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/attrsets.nix:1534:13:
+         1533|           if length values == 1 || pred here (elemAt values 1) (head values) then
+         1534|             head values
+             |             ^
+         1535|           else
 
-                    Example: programs.zsh.initContent = lib.mkBefore "your content here";
-evaluation warning: `programs.zsh.initExtra` is deprecated, use `programs.zsh.initContent` instead.
+       … while evaluating the attribute 'value'
+         at /nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/lib/modules.nix:1084:7:
+         1083|     // {
+         1084|       value = addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |       ^
+         1085|       inherit (res.defsFinal') highestPrio;
 
-                    Example: programs.zsh.initContent = "your content here";
-evaluation warning: The option `hardware.pulseaudio' defined in `/nix/store/9snzaadv4rsdl8bb6q4kyabqw9290ymb-source/pkgs/serv-pkgs.nix' has been renamed to `services.pulseaudio'.
-these 8 derivations will be built:
-  /nix/store/flibyrlffqc85swsh2xiggrd5r0svdsy-hm_hyprhyprland.conf.drv
-  /nix/store/99s8z1zysc40gwxmq01gxx9ildwgmq09-activation-script.drv
-  /nix/store/s53rx0cxr80ganqr6pyi6plsp6cf4w1i-home-manager-files.drv
-  /nix/store/s9pwf73wnqaqhw6i53hx03ax9xrgdd0s-home-manager-generation.drv
-  /nix/store/2ndbl91q4jaz05rky3gy66d5gqnvr1lh-unit-home-manager-cameron.service.drv
-  /nix/store/db326vxgbww9614hwfh1dykxzfswsriy-system-units.drv
-  /nix/store/dbhd0jx4yll0zv3k3jz1q3qvji23cd91-etc.drv
-  /nix/store/rbcvip1waklgfsrxaqk9a6hiydbrmyj2-nixos-system-targaryen-25.11.20250523.063f43f.drv
-building '/nix/store/flibyrlffqc85swsh2xiggrd5r0svdsy-hm_hyprhyprland.conf.drv'...
-building '/nix/store/99s8z1zysc40gwxmq01gxx9ildwgmq09-activation-script.drv'...
-building '/nix/store/s53rx0cxr80ganqr6pyi6plsp6cf4w1i-home-manager-files.drv'...
-building '/nix/store/s9pwf73wnqaqhw6i53hx03ax9xrgdd0s-home-manager-generation.drv'...
-building '/nix/store/2ndbl91q4jaz05rky3gy66d5gqnvr1lh-unit-home-manager-cameron.service.drv'...
-building '/nix/store/db326vxgbww9614hwfh1dykxzfswsriy-system-units.drv'...
-building '/nix/store/dbhd0jx4yll0zv3k3jz1q3qvji23cd91-etc.drv'...
-building '/nix/store/rbcvip1waklgfsrxaqk9a6hiydbrmyj2-nixos-system-targaryen-25.11.20250523.063f43f.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for cameron...
-restarting sysinit-reactivation.target
-the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/inqhvjwfh9i24b86940w7fshnx4p3px3-nixos-system-targaryen-25.11.20250523.063f43f
+       … while evaluating the option `system.build.toplevel':
+
+       … while evaluating definitions from `/nix/store/1yvl4w6xbqz33m5xffwy8811lad2gqw4-source/nixos/modules/system/activation/top-level.nix':
+
+       … while evaluating the option `assertions':
+
+       … while evaluating definitions from `/nix/store/b24snx9hs9nvi76avsrplzsff4wcbz32-source/nixos/common.nix':
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: syntax error, unexpected '{', expecting INHERIT
+       at /nix/store/xfwsp7zmm6dysgcf8xmzqirsm4ww0iih-source/modules/home/waybar/targaryen.nix:9:1:
+            8|   programs.waybar.settings = {
+            9| {
+             | ^
+           10|     "layer": "top",
