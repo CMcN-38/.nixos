@@ -97,16 +97,17 @@
             "car"= "";
             "default"= [" " " " " "];
         };
-        "on-click-middle"= "pamixer -t";
-        "on-click"= "pavucontrol";
+        "on-click"= "pamixer -t";
+        "on-click-right"= "pwvucontrol";
     };
 
     "pulseaudio#microphone"= {
         "format"= "{format_source}";
         "format-source"= " {volume}%";
         "format-source-muted"= "";
-        "on-click"= "pavucontrol -t 4";
-        "on-click-middle"= "~/.nixos/modules/home/waybar/scripts/volume.sh --toggle-mic";
+        "on-click-right"= "pavucontrol -t 4";
+        # "on-click-middle"= "~/.nixos/modules/home/waybar/scripts/volume.sh --toggle-mic";
+        "on-click"= "~/.nixos/modules/home/waybar/scripts/volume.sh --toggle-mic";
         "on-scroll-up"= "~/.nixos/modules/home/waybar/scripts/volume.sh --mic-inc";
         "on-scroll-down"= "~/.nixos/modules/home/waybar/scripts/volume.sh --mic-dec";
         "tooltip-format"= "{source_desc} | {source_volume}%";
