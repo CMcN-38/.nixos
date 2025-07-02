@@ -35,10 +35,14 @@
     firefox
     evince
     kitty
-    libreoffice
+    # libreoffice
     localsend
     obsidian
     obs-studio
+        proton-pass
+        protonvpn-gui
+        protonmail-desktop
+        protonmail-bridge
                 rpi-imager
     thunderbird
     transmission_4-gtk
