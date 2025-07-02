@@ -40,7 +40,7 @@
     obsidian
     obs-studio
         proton-pass
-        protonvpn-gui
+        # protonvpn-gui
         protonmail-desktop
         protonmail-bridge
                 rpi-imager

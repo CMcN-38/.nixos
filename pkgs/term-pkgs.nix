@@ -37,6 +37,7 @@
     mpv
     neofetch
     nix-search-cli
+        protonvpn-cli
     starship
     timg
     unzip
