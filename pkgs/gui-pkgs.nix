@@ -26,7 +26,6 @@
 
   environment.systemPackages = with pkgs; [
     blanket
- _1password-gui
     calibre
                 # cider-2
     discord
