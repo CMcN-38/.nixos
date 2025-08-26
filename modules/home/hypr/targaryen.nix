@@ -116,6 +116,10 @@ wayland.windowManager.hyprland = {
             key_press_enables_dpms = false
             # vrr = 1
             force_default_wallpaper = 0
+            
+          }
+          ecosystem {
+                no_update_news = true
           }
           animations {
             enabled = yes
