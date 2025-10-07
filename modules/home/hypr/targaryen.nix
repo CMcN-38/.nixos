@@ -36,8 +36,8 @@ wayland.windowManager.hyprland = {
     exec-once = goxlr-daemon --http-disable
     exec-once = solaar -w hide
     exec-once = syncthing
-          monitor=,preferred,auto,1
-    # monitor=,3840x2160@144,auto,1
+          # monitor=,preferred,auto,1
+    monitor=,3840x2160,auto,1
 
     # Set programs that you use
     $terminal = kitty
