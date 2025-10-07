@@ -88,4 +88,13 @@
   hardware.bluetooth.powerOnBoot = true;
   hardware.pulseaudio.extraConfig = "load-module module-device-manager";
   services.blueman.enable = true;
+
+  programs.ssh = {
+        extraConfig = "
+                Host stark
+                        Hostname 192.168.4.96
+                        Port 22
+                        User cameron
+        ";
+        };
 }

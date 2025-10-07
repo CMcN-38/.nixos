@@ -117,7 +117,7 @@
   users.users.cameron = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = ["wheel" "input"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "input" ]; # Enable ‘sudo’ for the user.
   };
 
   services.udev.extraRules = ''
@@ -137,6 +137,12 @@
     XDG_SESSION_TYPE = "wayland";
     XDG_SESSION_DESKTOP = "Hyprland";
   };
+
+  fileSystems."/mnt/hdd" = {
+        device = "/dev/disk/by-uuid/8a49d9d1-999f-46b1-b4ea-461f85933795";
+        fsType = "ext4";
+        options = [ "defaults" "users" "rw" "nofail" "user"];
+        };
 
   #┓
   #┣┓┏┓┏┳┓┏┓━━┏┳┓┏┓┏┓┏┓┏┓┏┓┏┓  ┓┏┳┓┏┓┏┓┏┓╋
