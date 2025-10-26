@@ -40,6 +40,7 @@
     logiops
     xorg.libxcb
     # rocmPackages_5.llvm.llvm
+                mosh
     networkmanagerapplet
     nodejs_22
     openssl.dev
