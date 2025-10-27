@@ -34,7 +34,6 @@
     goxlr-utility
     firefox
     evince
-                hypnotix
     kitty
     # libreoffice
     localsend
