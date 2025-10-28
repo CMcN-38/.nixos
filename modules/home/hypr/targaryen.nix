@@ -94,11 +94,11 @@ wayland.windowManager.hyprland = {
     # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
     
 
-    windowrulev2 = workspace 1, title:^(.\*kitty.\*)$
+    windowrulev2 = workspace 1, title:kitty
     windowrulev2 = workspace 2, title:^(.\*Zen Browser.\*)$
-    windowrulev2 = workspace 3, title:^(.\*cider.\*)$
-    windowrulev2 = workspace 4, title:^(.\*Discord.\*)$
-    windowrulev2 = workspace 5, class:^(.\*obsidian.\*)$
+    windowrulev2 = workspace 3, title:cider
+    windowrulev2 = workspace 4, title:Discord
+    windowrulev2 = workspace 5, class:obsidian
 
     # Transparency Rules
     windowrule = opacity 1, class:^(firefox)$
