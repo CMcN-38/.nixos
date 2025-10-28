@@ -92,6 +92,13 @@ wayland.windowManager.hyprland = {
     #Workspaces
     # windowrule = workspace 3, title:^(.\*Espanso.\*)$
     # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
+    
+
+    windowrule = workspace 1, title:^(.\*kitty.\*)$
+    windowrule = workspace 2, title:^(.\*browser.\*)$
+    windowrule = workspace 3, title:^(.\*Cider.\*)$
+    windowrule = workspace 4, title:^(.\*discord.\*)$
+    windowrule = workspace 5, title:^(.\*obsidian.\*)$
 
     # Transparency Rules
     windowrule = opacity 1, class:^(firefox)$
@@ -231,6 +238,14 @@ wayland.windowManager.hyprland = {
 
     # Screenshots
     bind = $mainMod, S, exec, screenshot
+
+    # Autolauch
+    exec-once = kitty
+    exec-once = appimage-run -d /home/cameron/2_desktop/zen-specific.AppImage
+    exec-once = Cider
+    exec-once = discordcanary
+    exec-once = obsidian
+    
         '';
 };
 }
