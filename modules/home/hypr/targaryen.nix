@@ -37,7 +37,7 @@ wayland.windowManager.hyprland = {
     exec-once = solaar -w hide
     exec-once = syncthing
           # monitor=,preferred,auto,1
-    monitor=,3840x2160@60,auto,1.25
+    monitor=,3840x2160@60,auto,1
 
     # Set programs that you use
     $terminal = kitty
