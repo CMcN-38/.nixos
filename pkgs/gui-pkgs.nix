@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     blanket
+    blender
     calibre
                 # cider-2
     discord
