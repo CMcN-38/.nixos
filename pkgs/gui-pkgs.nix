@@ -31,6 +31,7 @@
                 # cider-2
     discord
     gimp
+        google-chrome
     gnome-podcasts
     goxlr-utility
     firefox
@@ -43,6 +44,7 @@
         proton-pass
                 rpi-imager
     thunderbird
+                thonny
     transmission_4-gtk
 
     # zotero

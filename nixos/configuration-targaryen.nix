@@ -117,7 +117,7 @@
   users.users.cameron = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = ["wheel" "input" ]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "input" "dialout"]; # Enable ‘sudo’ for the user.
   };
 
   services.udev.extraRules = ''

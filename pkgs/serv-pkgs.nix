@@ -44,6 +44,7 @@
     networkmanagerapplet
     nodejs_22
     openssl.dev
+    pkg-config
     poppler_utils
     pamixer
     playerctl
@@ -89,6 +90,9 @@
   hardware.bluetooth.powerOnBoot = true;
   hardware.pulseaudio.extraConfig = "load-module module-device-manager";
   services.blueman.enable = true;
+
+  services.udisks2.enable = true;
+  services.devmon.enable = true; # optional: auto-mount for desktops
 
   programs.ssh = {
         extraConfig = "

@@ -140,5 +140,6 @@
     	if [ "$2" = true ] && compinit "$completion_file:1"
     }
 
+    export PATH="$HOME/.cargo/bin:$PATH"
   '';
 }
