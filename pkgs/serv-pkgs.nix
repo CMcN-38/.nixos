@@ -94,6 +94,11 @@
   services.udisks2.enable = true;
   services.devmon.enable = true; # optional: auto-mount for desktops
 
+
+  services.tailscale = {
+        enable = true;
+        };
+
   programs.ssh = {
         extraConfig = "
                 Host stark
