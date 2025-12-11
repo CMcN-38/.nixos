@@ -6,13 +6,13 @@ null_ls.setup({
                 --Python
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
-                null_ls.builtins.formatting.ruff,
+                null_ls.builtins.diagnostics.ruff,
                 -- Rust
-                null_ls.builtins.formatting.rustfmt,
+                -- null_ls.builtins.formatting.rustfmt,
                 --Nix
                 null_ls.builtins.formatting.alejandra,
                 null_ls.builtins.diagnostics.statix,
-                null_ls.builtins.formatting.deadnix,
+                null_ls.builtins.diagnostics.deadnix,
 
         },
 })
