@@ -6,7 +6,7 @@ null_ls.setup({
                 --Python
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
-                null_ls.builtins.diagnostics.ruff,
+                -- null_ls.builtins.diagnostics.ruff,
                 -- Rust
                 -- null_ls.builtins.formatting.rustfmt,
                 --Nix
