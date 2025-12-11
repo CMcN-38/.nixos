@@ -92,7 +92,14 @@
   #networking.firewall.allowedTCPPorts = [1373];
   #networking.firewall.allowedUDPPorts = [1373];
   # Or disable the firewall altogether.
-  networking.firewall.enable = false;
+  # networking.firewall.enable = false;
+  networking.firewall = {
+        enable = true;
+        trustedInterfaces = ["tailscale0"];
+        allowedUDPPorts = [config.services.tailscale.port];
+        allowedTCPPorts = [22];
+        };
+
   networking.useDHCP = false;
   # networking.useDHCP = true;
   networking.interfaces.wlp2s0.ipv4.addresses = [
