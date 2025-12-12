@@ -56,6 +56,12 @@
       harpoon2
     ];
 
+    extraPackages = with pkgs; [
+      lua-language-server
+      rust-analyzer
+      # jedi-language-server
+    ];
+
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
