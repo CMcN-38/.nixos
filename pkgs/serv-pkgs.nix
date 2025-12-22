@@ -53,6 +53,7 @@
         requests
         jedi-language-server
         pip
+        scipy
         wand
       ]))
     # rustup
