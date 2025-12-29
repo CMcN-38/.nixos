@@ -32,12 +32,13 @@
     fzf
     gh
     git
+    kontroll
     lazygit
     lsd
     mpv
     neofetch
     nix-search-cli
-        protonvpn-cli
+    proton-vpn-cli
     starship
     timg
     unzip

@@ -47,7 +47,7 @@
     transmission_4-gtk
 
     # zotero
-    zotero_7
+    zotero
   ];
 
   services.goxlr-utility.enable = true;

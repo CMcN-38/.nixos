@@ -36,7 +36,7 @@
     grim
     slurp
     swappy
-    rofi-wayland-unwrapped
+    rofi-unwrapped
     swaynotificationcenter
     swww
     waybar

@@ -45,7 +45,7 @@
     nodejs_22
     openssl.dev
     pkg-config
-    poppler_utils
+    poppler-utils
     pamixer
     playerctl
     (python3.withPackages (ps:
