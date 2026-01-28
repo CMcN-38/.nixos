@@ -96,8 +96,8 @@
   networking.firewall = {
         enable = true;
         trustedInterfaces = ["tailscale0"];
-        allowedUDPPorts = [config.services.tailscale.port];
-        allowedTCPPorts = [22];
+        allowedUDPPorts = [config.services.tailscale.port 47392];
+        allowedTCPPorts = [22 47392 8080];
         };
 
   networking.useDHCP = false;

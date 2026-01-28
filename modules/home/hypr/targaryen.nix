@@ -31,6 +31,7 @@ wayland.windowManager.hyprland = {
     exec-once = logid
     exec-once = streamdeck -n
     exec-once = swww-daemon #Wallpaper
+    exec-once = hypridle
     exec-once = random-wallpaper
     exec-once = thunar --daemon #Start file manager daemon in the background
     exec-once = goxlr-daemon --http-disable
@@ -99,6 +100,7 @@ wayland.windowManager.hyprland = {
     windowrule = workspace 3, class:^(Cider)$
     windowrule = workspace 4, class:^(discord)$ 
     windowrulev2 = workspace 5, class:obsidian
+    windowrulev2 = workspace 9, class:transmission-gtk
 
     # Transparency Rules
     windowrule = opacity 1, class:^(firefox)$
@@ -114,8 +116,8 @@ wayland.windowManager.hyprland = {
 
 
           gestures {
-            workspace_swipe = true
-            workspace_swipe_fingers = 3
+            # workspace_swipe = true
+            # workspace_swipe_fingers = 3
             workspace_swipe_distance = 1200
           }
           misc {
@@ -173,7 +175,7 @@ wayland.windowManager.hyprland = {
     # Basic app control bindings
     bind = $mainMod, RETURN, exec, $terminal
     bind = $mainMod, Q, killactive,
-    bind = $mainMod, M, exit,
+    # bind = $mainMod, M, exit,
     bind = $mainMod, F, exec, $fileManager
     bind = $mainMod, V, togglefloating,
     bind = $mainMod, SPACE, exec, $menu
@@ -245,7 +247,86 @@ wayland.windowManager.hyprland = {
     exec-once = Cider
     exec-once = discordcanary
     exec-once = obsidian
+    exec-once = transmission-gtk
     
         '';
 };
+        services.hypridle = {
+                enable = true;
+                settings = {
+                        general = {
+                                before_sleep_cmd = "loginctl lock-session";
+                                inhibit_sleep = 3;
+                                after_sleep_cmd = "hyprctl dispatch dpms on";
+                                ignore_dbus_inhibit = false;
+                                lock_cmd = "hyprlock";
+                        };
+
+                        listener = [
+                                {
+                                        timeout = 300;
+                                        on-timeout = "hyprlock";
+                                }
+                                {
+                                        timeout = 600;
+                                        on-timeout = "hyprctl dispatch dpms off";
+                                        on-resume = "hyprctl dispatch dpms on";
+                                }
+                        ];
+                };
+        };
+
+        programs.hyprlock = {
+                enable = true;
+                settings = {
+                        general = {
+                                hide_cursor = true;
+                                ignore_empty_input = true;
+                        };
+
+                        animations = {
+                                enabled = true;
+                                fade_in = {
+                                        duration = 300;
+                                        bezier = "easeOutQuint";
+                                };
+                                fade_out = {
+                                        duration = 300;
+                                        bezier = "easeOutQuint";
+                                };
+                        };
+
+                        background = [
+                                {
+                                        path = "screenshot";
+                                        blur_passes = 3;
+                                        blur_size = 8;
+                                }
+                        ];
+
+                        input-field = [
+                                {
+                                        size = "650, 100";
+                                        position = "0, 0";
+                                        monitor = "";
+                                        halign = "center";
+                                        valign = "center";
+
+                                        dots_center = true;
+                                        fade_on_empty = false;
+
+                                        font_color = "rgb(205, 214, 244)";
+                                        inner_color = "rgb(127, 132, 156)";
+                                        outer_color = "rgb(30, 30, 46)";
+                                        outline_thickness = 5;
+                                        rounding = 25;
+
+                                        placeholder_text = "...";
+                                        fail_text = "Try again...";
+                                        shadow_passes = 0;
+                                        
+                                }
+                        ];
+                };
+        };
 }

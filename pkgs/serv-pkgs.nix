@@ -26,11 +26,14 @@
 
   environment.systemPackages = with pkgs; [
     appimage-run
-                apprun-cli
+    apprun-cli
+    bluez
     cargo
     clang_18
     espanso-wayland
     gccgo13
+    gtk4
+    glib
     go
     hidapi
     imagemagick
@@ -39,15 +42,15 @@
     libnotify
     logiops
     xorg.libxcb
-    # rocmPackages_5.llvm.llvm
-                mosh
-    networkmanagerapplet
+    mosh
+    # networkmanagerapplet
     nodejs_22
     openssl.dev
     pkg-config
     poppler-utils
     pamixer
     playerctl
+
     (python3.withPackages (ps:
       with ps; [
         requests
@@ -57,9 +60,12 @@
         wand
       ]))
     # rustup
-        libsForQt5.qt5.qtwayland
+    libsForQt5.qt5.qtwayland
+    libsForQt5.qt5.qtgraphicaleffects
+    libsForQt5.qt5.qtsvg
+    libsForQt5.qt5.qtquickcontrols
+    libadwaita
     rustc
-    syncthing
     tesseract4
     tree-sitter
 
@@ -67,6 +73,7 @@
     wgnord
     wl-clipboard
     zig
+    zsa-udev-rules
   ];
 
   programs.streamdeck-ui = {

@@ -5,7 +5,7 @@
   ...
 }: {
   programs.zsh.enable = true;
-  # programs.zsh.dotDir = "/home/cameron/.config/zsh";
+  programs.zsh.dotDir = "/home/cameron/.config/zsh";
   programs.zsh.syntaxHighlighting.enable = true;
   programs.zsh.autosuggestion.enable = true;
   programs.zsh.historySubstringSearch.enable = true;
@@ -16,7 +16,8 @@
     zshrc = "vim ~/.config/zsh/.zshrc";
 
     # Colorize grep output (good for log files)
-    grep = "grep --color=auto";
+    # grep = "grep --color=auto";
+    grep = "rg";
     egrep = "egrep --color=auto";
     fgrep = "fgrep --color=auto";
 
@@ -36,6 +37,10 @@
     # Colour
     # alias ls="ls -G --color=auto"
     ls = "lsd";
+
+    # improved cat
+    cat = "bat";
+    find = "fd";
 
     # easier to read disk
     df = "df -h"; # human-readable sizes
@@ -141,5 +146,7 @@
     }
 
     export PATH="$HOME/.cargo/bin:$PATH"
+
+    eval "$(zoxide init --cmd cd zsh)"
   '';
 }

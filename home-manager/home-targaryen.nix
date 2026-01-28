@@ -117,18 +117,19 @@
         accent = "pink";
       };
     };
-    theme = {
-      name = "rose-pine";
-      package = pkgs.rose-pine-gtk-theme;
-    };
     # theme = {
-    #   name = "catppuccin-mocha-blue-compact+default";
-    #   package = pkgs.catppuccin-gtk.override {
-    #     accents = ["blue"];
-    #     variant = "mocha";
-    #     size = "compact";
-    #   };
+    #   name = "rose-pine";
+    #   package = pkgs.rose-pine-gtk-theme;
     # };
+    theme = {
+      name = "Catppuccin-GTK-Teal-Dark-Compact";
+      package = pkgs.magnetic-catppuccin-gtk.override {
+        accent = ["teal"];
+        shade = "dark";
+        size = "compact";
+        tweaks = ["float" "macos"];
+      };
+    };
     gtk3.extraConfig = {
       Settings = ''
         gtk-application-prefer-dark-theme=0
