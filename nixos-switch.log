@@ -1,41 +1,22 @@
 warning: Git tree '/home/cameron/.nixos' is dirty
-building the system configuration...
-warning: Git tree '/home/cameron/.nixos' is dirty
-evaluation warning: `programs.zsh.initExtraFirst` is deprecated, use `programs.zsh.initContent` with `lib.mkBefore` instead.
+error:
+       … while calling the 'seq' builtin
+         at /nix/store/xzl5dhddgjxp2p18h5qpkhvlkp8128j1-source/lib/modules.nix:361:18:
+          360|         options = checked options;
+          361|         config = checked (removeAttrs config [ "_module" ]);
+             |                  ^
+          362|         _module = checked (config._module);
 
-                    Example: programs.zsh.initContent = lib.mkBefore "your content here";
-evaluation warning: `programs.zsh.initExtra` is deprecated, use `programs.zsh.initContent` instead.
+       … while calling the 'throw' builtin
+         at /nix/store/xzl5dhddgjxp2p18h5qpkhvlkp8128j1-source/lib/modules.nix:333:13:
+          332|           else
+          333|             throw baseMsg
+             |             ^
+          334|         else
 
-                    Example: programs.zsh.initContent = "your content here";
-evaluation warning: The option `hardware.pulseaudio' defined in `/nix/store/94y0n9ggv3193gkw5sl4h7ps609jcv58-source/pkgs/serv-pkgs.nix' has been renamed to `services.pulseaudio'.
-these 11 derivations will be built:
-  /nix/store/3f8s465qfxky56miby7v2qh9djkxlrmr-system-path.drv
-  /nix/store/mw3zmk0sqrv3mp44bqslhzzsnvibjx8z-dbus-1.drv
-  /nix/store/481irdqjy5ln75lycni3ink6fmyii818-X-Restart-Triggers-dbus.drv
-  /nix/store/lwgxkl3fgbfamp6pqxph85ka8zi74ngf-unit-dbus.service.drv
-  /nix/store/0p2j248hq5nykyi8zf6029as4w7j0929-user-units.drv
-  /nix/store/7bm2yqs9fpb5kdvn1l61mx7izabpx73x-unit-dbus.service.drv
-  /nix/store/nwhrqfl79l86yz6v4pnni34w9svmkhd6-X-Restart-Triggers-polkit.drv
-  /nix/store/h2b87m880jzaya3ckwdh11is90260b9k-unit-polkit.service.drv
-  /nix/store/6prh3v9r5l8yhq89k7v4li0s4s8i478a-system-units.drv
-  /nix/store/hp6ibcghsz3x3mxvscg88dhl2xm0lwsy-etc.drv
-  /nix/store/2irhjgs8laykmmjbal4587dwh82n71dq-nixos-system-targaryen-26.05.20251228.c0b0e0f.drv
-building '/nix/store/3f8s465qfxky56miby7v2qh9djkxlrmr-system-path.drv'...
-building '/nix/store/nwhrqfl79l86yz6v4pnni34w9svmkhd6-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/mw3zmk0sqrv3mp44bqslhzzsnvibjx8z-dbus-1.drv'...
-building '/nix/store/h2b87m880jzaya3ckwdh11is90260b9k-unit-polkit.service.drv'...
-building '/nix/store/481irdqjy5ln75lycni3ink6fmyii818-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/7bm2yqs9fpb5kdvn1l61mx7izabpx73x-unit-dbus.service.drv'...
-building '/nix/store/lwgxkl3fgbfamp6pqxph85ka8zi74ngf-unit-dbus.service.drv'...
-building '/nix/store/6prh3v9r5l8yhq89k7v4li0s4s8i478a-system-units.drv'...
-building '/nix/store/0p2j248hq5nykyi8zf6029as4w7j0929-user-units.drv'...
-building '/nix/store/hp6ibcghsz3x3mxvscg88dhl2xm0lwsy-etc.drv'...
-building '/nix/store/2irhjgs8laykmmjbal4587dwh82n71dq-nixos-system-targaryen-26.05.20251228.c0b0e0f.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for cameron...
-restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
-the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/f584y6vvgd7vnnjlmjy6l0m7y817y3kr-nixos-system-targaryen-26.05.20251228.c0b0e0f
+       error: The option `xdg.userDirs' does not exist. Definition values:
+       - In `/nix/store/4gp84bx77n2wxb04kayf8iq768d3582p-source/nixos/configuration-targaryen.nix':
+           {
+             createDirectories = false;
+           }
+Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/cameron/.nixos/#nixosConfigurations."targaryen".config.system.build.nixos-rebuild' --no-link' returned non-zero exit status 1.
