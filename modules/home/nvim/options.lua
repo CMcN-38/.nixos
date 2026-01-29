@@ -17,8 +17,8 @@ vim.o.showmode = false
 vim.o.autoindent = true
 vim.o.breakindent = true
 vim.o.expandtab = true
-vim.o.tabstop = 8
-vim.o.shiftwidth = 8
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 vim.o.smarttab = true
 
 -- minimum number of lines to keep above and below the cursor

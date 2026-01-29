@@ -56,6 +56,12 @@
       harpoon2
     ];
 
+    extraPackages = with pkgs; [
+      lua-language-server
+      rust-analyzer
+      # jedi-language-server
+    ];
+
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
       ${builtins.readFile ./plugins/treesitter.lua}
@@ -71,6 +77,12 @@
       ${builtins.readFile ./plugins/none-ls.lua}
       ${builtins.readFile ./plugins/telescope.lua}
       ${builtins.readFile ./plugins/harpoon.lua}
+
+        vim.diagnostic.config({
+  virtual_text = true,   -- 🔥 enable inline text
+  signs = true,          -- keep gutter signs
+  update_in_insert = false,
+})
     '';
   };
 }

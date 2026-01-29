@@ -26,10 +26,14 @@
 
   environment.systemPackages = with pkgs; [
     appimage-run
+    apprun-cli
+    bluez
     cargo
     clang_18
     espanso-wayland
     gccgo13
+    gtk4
+    glib
     go
     hidapi
     imagemagick
@@ -38,24 +42,30 @@
     libnotify
     logiops
     xorg.libxcb
-    rocmPackages_5.llvm.llvm
-    networkmanagerapplet
+    mosh
+    # networkmanagerapplet
     nodejs_22
     openssl.dev
-    poppler_utils
+    pkg-config
+    poppler-utils
     pamixer
     playerctl
+
     (python3.withPackages (ps:
       with ps; [
         requests
         jedi-language-server
         pip
+        scipy
         wand
       ]))
     # rustup
-        libsForQt5.qt5.qtwayland
+    libsForQt5.qt5.qtwayland
+    libsForQt5.qt5.qtgraphicaleffects
+    libsForQt5.qt5.qtsvg
+    libsForQt5.qt5.qtquickcontrols
+    libadwaita
     rustc
-    syncthing
     tesseract4
     tree-sitter
 
@@ -63,6 +73,7 @@
     wgnord
     wl-clipboard
     zig
+    zsa-udev-rules
   ];
 
   programs.streamdeck-ui = {
@@ -85,5 +96,23 @@
   };
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+  hardware.pulseaudio.extraConfig = "load-module module-device-manager";
   services.blueman.enable = true;
+
+  services.udisks2.enable = true;
+  services.devmon.enable = true; # optional: auto-mount for desktops
+
+
+  services.tailscale = {
+        enable = true;
+        };
+
+  programs.ssh = {
+        extraConfig = "
+                Host stark
+                        Hostname 192.168.4.96
+                        Port 22
+                        User cameron
+        ";
+        };
 }

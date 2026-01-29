@@ -24,27 +24,36 @@
   #┗┫┗ ┛┗┗ ┛ ┗┻┗
   # ┛
 
+services.udev.packages = [
+  pkgs.keymapp
+  pkgs.zsa-udev-rules
+];
+
   environment.systemPackages = with pkgs; [
-    alejandra
-    btop
-    docker
-    file
-    fzf
-    gh
-    git
-    lazygit
-    lsd
-    mpv
-    neofetch
-    nix-search-cli
-    starship
-    timg
-    unzip
-    vim
-    wally-cli
-    wget
-    yarn
-    zoxide
+    alejandra           # nix formatter
+    bat                 # improved cat
+    bluetui             # tui bluetooth manager
+    btop                # tui taskmanager
+    docker              # docker containters
+    # file               
+    fastfetch           # system info
+    fd                  # improved find
+    fzf                 # fuzzy finder
+    gh                  # github cli
+    git                 # git
+    impala              # tui wifi manager
+    kontroll            # keyboard smart control
+    lazygit             # tui git interface
+    lsd                 # improved ls
+    man-db              # manual page browser
+    ripgrep             # improved grep
+    starship            # shell prompt
+    timg                # tty image viewer
+    tldr                # man pages tldr
+    unzip               # unzip
+    vim                 # base vim
+    wally-cli           # zsa flasher
+    zoxide              # improved cd
   ];
 
   # ┓   ┓┓

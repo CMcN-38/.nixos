@@ -61,7 +61,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "25.11"; # Did you read the comment?
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -92,7 +92,13 @@
   #networking.firewall.allowedTCPPorts = [1373];
   #networking.firewall.allowedUDPPorts = [1373];
   # Or disable the firewall altogether.
-  networking.firewall.enable = false;
+  networking.firewall = {
+        enable = true;
+        trustedInterfaces = ["tailscale0"];
+        allowedUDPPorts = [config.services.tailscale.port 47392];
+        allowedTCPPorts = [22 47392 8080];
+        };
+
   networking.useDHCP = false;
   # networking.useDHCP = true;
   networking.interfaces.wlp2s0.ipv4.addresses = [
@@ -117,7 +123,7 @@
   users.users.cameron = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = ["wheel" "input"]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "input" "dialout"]; # Enable ‘sudo’ for the user.
   };
 
   services.udev.extraRules = ''
@@ -137,6 +143,12 @@
     XDG_SESSION_TYPE = "wayland";
     XDG_SESSION_DESKTOP = "Hyprland";
   };
+
+  fileSystems."/mnt/hdd" = {
+        device = "/dev/disk/by-uuid/8a49d9d1-999f-46b1-b4ea-461f85933795";
+        fsType = "ext4";
+        options = [ "defaults" "users" "rw" "nofail" "user"];
+        };
 
   #┓
   #┣┓┏┓┏┳┓┏┓━━┏┳┓┏┓┏┓┏┓┏┓┏┓┏┓  ┓┏┳┓┏┓┏┓┏┓╋

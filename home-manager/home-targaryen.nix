@@ -41,7 +41,7 @@
   home.username = "cameron";
   home.homeDirectory = "/home/cameron";
 
-  home.stateVersion = "24.11"; # Please read the comment before changing.
+  home.stateVersion = "25.11"; # Please read the comment before changing.
 
   # home.enableNixpkgsReleaseCheck = false;
   # The home.packages option allows you to install Nix packages into your
@@ -117,18 +117,19 @@
         accent = "pink";
       };
     };
-    theme = {
-      name = "rose-pine";
-      package = pkgs.rose-pine-gtk-theme;
-    };
     # theme = {
-    #   name = "catppuccin-mocha-blue-compact+default";
-    #   package = pkgs.catppuccin-gtk.override {
-    #     accents = ["blue"];
-    #     variant = "mocha";
-    #     size = "compact";
-    #   };
+    #   name = "rose-pine";
+    #   package = pkgs.rose-pine-gtk-theme;
     # };
+    theme = {
+      name = "Catppuccin-GTK-Teal-Dark-Compact";
+      package = pkgs.magnetic-catppuccin-gtk.override {
+        accent = ["teal"];
+        shade = "dark";
+        size = "compact";
+        tweaks = ["float" "macos"];
+      };
+    };
     gtk3.extraConfig = {
       Settings = ''
         gtk-application-prefer-dark-theme=0

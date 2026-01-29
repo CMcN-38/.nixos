@@ -25,28 +25,25 @@
   # ┛
 
   environment.systemPackages = with pkgs; [
-    blanket
-    calibre
-    discord
-    gimp
-                google-chrome
-    gnome-podcasts
-    goxlr-utility
-    firefox
-    evince
-    kitty
-    libreoffice
-    localsend
-    obsidian
-    obs-studio
-                rpi-imager
-    thunderbird
-    transmission_4-gtk
-
-    # zotero
-    zotero_7
+    blender                     # 3d rendering
+    calibre                     # e-book manager
+    discord                     # discord
+    evince                      # document viewer
+    goxlr-utility               # goxlr controller
+    imv                         # image viewer
+    kitty                       # terminal
+    keymapp                     # keyboard mapping
+    localsend                   # local file sending
+    mpv                         # multimedia player
+    obsidian                    # pkm notes
+    obs-studio                  # screen recording
+    proton-pass                 # password manager
+    syncthing                   # file sync
+    thonny                      # pi-zero IDE
+    transmission_4-gtk          # torrent interface
+    zotero                      # document manager (replacing with paperless)
   ];
 
   services.goxlr-utility.enable = true;
-  programs.steam.enable = true;
+  programs.steam.enable = true; 
 }
