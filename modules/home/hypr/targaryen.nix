@@ -38,8 +38,6 @@ wayland.windowManager.hyprland = {
     exec-once = solaar -w hide
     exec-once = syncthing
           # monitor=,preferred,auto,1
-    # Monitor Sttings
-    # monitor=,2736x1824,auto,1.266667
     monitor=,3840x2160@60,auto,1
 
     # Set programs that you use
@@ -49,18 +47,17 @@ wayland.windowManager.hyprland = {
     $browser = appimage-run -d /home/cameron/2_desktop/zen-specific.AppImage
     # $browser = firefox
 
-    general {
-        gaps_in = 5
-        gaps_out = 20
-        border_size = 2
-        col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
-        col.inactive_border = rgba(595959aa)
-
-        layout = dwindle
-        resize_on_border = true
-        # allow_tearing = false
-    }
-        input {
+          general {
+            gaps_in = 5
+            gaps_out = 5
+            border_size = 3
+            layout = dwindle
+            resize_on_border = true
+            col.active_border = rgba(6ee9f8ff) 
+            col.inactive_border = rgba(4e112aff)
+            # allow_tearing = false
+          }
+          input {
             kb_options = grp:alt_shift_toggle
             kb_options = caps:super
             follow_mouse = 1
@@ -72,6 +69,51 @@ wayland.windowManager.hyprland = {
             sensitivity = 1 # -1.0 - 1.0, 0 means no modification.
             accel_profile = flat
           }
+
+
+    windowrule = float true, match:class thunar
+    windowrule = center true, match:class thunar
+    windowrule = size 2500 1000, match:class thunar
+
+    #Pulse Audio
+    # windowrule = float, class:^(org.pulseaudio.pavucontrol)$, 
+    # windowrule = move 83% 2.5%, class:^(org.pulseaudio.pavucontrol)$
+    # windowrule = size 600 1000, class:^(org.pulseaudio.pavucontrol)$
+    windowrule = float true, match:class ^(Volume Control)$, 
+    windowrule = move 83% 2.5%, match:class ^(Volume Control)$
+    windowrule = size (600) (1000), match:class ^(Volume Control)$
+
+
+        #Rofi
+        windowrule = float true, match:class ^(Rofi)$
+        windowrule = center true, match:class ^(Rofi)$
+        # windowrule = size 1000 350, class:^(Rofi)$
+
+    #Workspaces
+    # windowrule = workspace 3, title:^(.\*Espanso.\*)$
+    # windowrule = workspace 3, title:^(Espanso Sync Tool)$
+    
+
+    windowrule = workspace 1, match:class ^(kitty)$
+    windowrule = workspace 2, match:class ^(zen)$ 
+    windowrule = workspace 3, match:class ^(Cider)$
+    windowrule = workspace 4, match:class ^(discord)$ 
+    windowrule = workspace 5, match:class obsidian
+    windowrule = workspace 9, match:class transmission-gtk
+
+    # Transparency Rules
+    # windowrule = match:opacity 1, match:class ^(firefox)$
+    windowrule = opacity 0.95, match:class ^(firefox)$
+    # windowrule = opacity 1, match:class ^(Zen Browser)$
+    windowrule = opacity 0.95, match:class ^(zen)$
+    windowrule = opacity 0.95, match:class ^(discord)$
+    windowrule = opacity 0.95, match:class ^(Cider)$
+    # windowrule = opacity 0.85, ^(kitty)$
+    # Layer Rules
+    layerrule = blur true, match:class ^(swaync)$
+    layerrule = blur true, match:class ^(waybar)$
+
+
           gestures {
             # workspace_swipe = true
             # workspace_swipe_fingers = 3
@@ -88,38 +130,36 @@ wayland.windowManager.hyprland = {
           ecosystem {
                 no_update_news = true
           }
+          animations {
+          
+              enabled = yes
 
-    decoration {
-        rounding = 8
+                  bezier = myBezier, 0.05, 0.9, 0.1, 1.05
 
-        blur {
-            enabled = false
-            size = 3
-            passes = 1
-            new_optimizations = on
-            ignore_opacity = off
-        }
-        shadow {
+                  animation = windows, 1, 7, myBezier
+                  animation = windowsOut, 1, 7, default, popin 80%
+                  animation = border, 1, 10, default
+                  animation = borderangle, 1, 8, default
+                  animation = fade, 1, 7, default
+                  animation = workspaces, 1, 6, default
+          }
+
+          decoration {
+            rounding = 8
+            blur {
+                enabled = false
+                size = 3
+                passes = 1
+                new_optimizations = on
+                ignore_opacity = off
+            }
+            shadow {
                 enabled = true
                 range = 4
                 render_power = 3
                 color = rgba(1a1a1aee)
                 }
-    }
-
-    animations {
-        enabled = yes
-
-        bezier = myBezier, 0.05, 0.9, 0.1, 1.05
-
-        animation = windows, 1, 7, myBezier
-        animation = windowsOut, 1, 7, default, popin 80%
-        animation = border, 1, 10, default
-        animation = borderangle, 1, 8, default
-        animation = fade, 1, 7, default
-        animation = workspaces, 1, 6, default
-    }
-
+          }
           plugin {
             hyprtrails {
             }
@@ -128,50 +168,6 @@ wayland.windowManager.hyprland = {
             pseudotile = true
             preserve_split = true
           }
-
-
-    #Thunar Float
-    windowrule = float, class:^(thunar)$
-    windowrule = center, class:^(thunar)$
-    windowrule = size 2500 1000, class:^(thunar)$
-
-    #Pulse Audio
-    # windowrule = float, class:^(org.pulseaudio.pavucontrol)$, 
-    # windowrule = move 83% 2.5%, class:^(org.pulseaudio.pavucontrol)$
-    # windowrule = size 600 1000, class:^(org.pulseaudio.pavucontrol)$
-    windowrule = float, class:^(Volume Control)$, 
-    windowrule = move 83% 2.5%, class:^(Volume Control)$
-    windowrule = size 600 1000, class:^(Volume Control)$
-
-
-        #Rofi
-        windowrule = float, class:^(Rofi)$
-        windowrule = center, class:^(Rofi)$
-        # windowrule = size 1000 350, class:^(Rofi)$
-
-    #Workspaces
-    # windowrule = workspace 3, title:^(.\*Espanso.\*)$
-    # windowrulev2 = workspace 3, title:^(Espanso Sync Tool)$
-    
-
-    windowrulev2 = workspace 1, class:^(kitty)$
-    windowrule = workspace 2, class:^(zen)$ 
-    windowrule = workspace 3, class:^(Cider)$
-    windowrule = workspace 4, class:^(discord)$ 
-    windowrulev2 = workspace 5, class:obsidian
-    windowrulev2 = workspace 9, class:transmission-gtk
-
-    # Transparency Rules
-    windowrule = opacity 1, class:^(firefox)$
-    # windowrule = opacity 0.95, class:^(firefox)$
-    # windowrule = opacity 1, class:^(Zen Browser)$
-    windowrule = opacity 0.95, class:^(zen)$
-    windowrule = opacity 0.95, class:^(discord)$
-    windowrule = opacity 0.95, class:^(Cider)$
-    # windowrule = opacity 0.85, ^(kitty)$
-    # Layer Rules
-    layerrule = blur, ^(swaync)$
-    layerrule = blur, ^(waybar)$
 
     $mainMod = SUPER
 
@@ -252,9 +248,7 @@ wayland.windowManager.hyprland = {
     exec-once = obsidian
     exec-once = transmission-gtk
     
-
-
-  '';
+        '';
 };
         services.hypridle = {
                 enable = true;
@@ -335,3 +329,4 @@ wayland.windowManager.hyprland = {
                 };
         };
 }
+

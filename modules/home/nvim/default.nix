@@ -77,7 +77,6 @@
       ${builtins.readFile ./plugins/none-ls.lua}
       ${builtins.readFile ./plugins/telescope.lua}
       ${builtins.readFile ./plugins/harpoon.lua}
-
         vim.diagnostic.config({
   virtual_text = true,   -- 🔥 enable inline text
   signs = true,          -- keep gutter signs
